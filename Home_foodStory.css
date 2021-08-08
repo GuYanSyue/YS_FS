@@ -1,0 +1,184 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+div {
+    display: block;
+}
+.mid {
+    float: left;
+    width: 100%;
+    text-align: center;     /*圖片文字置中關鍵*/
+}
+.col-red {
+    color: rgb(180, 1, 1);
+}
+.col-red2 {
+    color: rgb(170, 62, 62);
+}
+.header {   /*使未調整內容可以靠右*/
+    position: absolute;     /*設定absolute，該元素就會完全跳脫該頁面，換個說法，它浮在頁面之上。原本所占用的空間將不復存在*/
+    overflow: hidden;   /*自動隱藏超出的文字或圖片*/
+    left: 0;
+    top: 0;
+    z-index: 10; 
+    width: 100%;
+    height: 15%;
+    background-color:#744926;
+}
+.wrap {
+    position: relative;
+    max-width: 800px;
+    margin: 0 auto;     /*重要div置中*/
+    background-color: darkseagreen;
+}
+.a-container{    /*背景*/
+    overflow: hidden;
+    /*padding-top: 40px;
+    padding-bottom: 10px;*/
+    font-weight: bold;      /*粗體字*/
+    font-size: 25px;
+    background-color: rgb(204, 156, 110);
+}
+.h-top {
+    height: 100px;
+}
+.main {   
+    float: left;
+    position: relative;
+    margin-bottom: 30px;
+    width: 800px;
+    background-color:#f0ff9e;
+}
+.left-side {
+    float: left;
+    width: 100%;
+    background-color: rgb(175, 175, 228);
+}
+.details{
+    margin: 0 auto;     /*重要div置中*/
+    width: 100%;
+    height: auto !important;
+    font-family: DFKai-sb;    
+    background-color:#fff;  
+}
+.detail-div {
+    float: left;
+    margin-top: 20px;
+    padding: 30px;
+    width: 92%;
+    line-height: 36px;
+    font-size: 25px;
+    color: #792e10;
+    box-shadow: 2px 2px 2px gray;
+    background-color:#bae0f8;
+}
+p {
+    display: block;
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+}
+.detail-div p{
+    margin: 5px 0;
+    word-wrap: break-all;
+    word-break: normal;     /*亞洲語言及非亞洲語言的文字斷行規則來進行換行*/
+}
+.container{
+    float: left;
+    overflow: hidden;
+    padding-top: 40px;
+    padding-bottom: 10px;
+    width: 100%;
+    font-weight: bold;      /*粗體字*/
+    font-size: 18px; 
+    background-color: rgba(255, 255, 255, 0.904);
+}
+.MsoNormal {
+    float: left;
+    width: 100%;
+    /*margin: 5px;*/  /*不會有反應除非比.detail-div p裡還大*/
+    line-height: 20px;
+    font-size: 20px;
+}
+.p-tit1 {
+    width: 100%;
+    text-align: center;
+    padding-top: 30px;
+    padding-bottom: 30px;
+    line-height: 36px;
+    font-size: 25px;
+    color: darkblue;
+}
+/*Links文章去除連結底線*/
+a, a:link, a:visited {
+    color: rgb(0, 41, 155);     /*超連結字體顏色*/
+    text-decoration: none       /*none ←加這句 去除連結底線*/
+}
+a:hover {
+    color: rgb(0, 41, 155);     /*滑鼠停在超連結中文字的顏色*/
+    background-color: #f8d2ab;  /*滑鼠停留在超連結中文字的底色*/
+    text-decoration: none;      /*none ←加這句 去除連結底線*/
+}
+.p-tit2 {
+    width: 100%;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    font-size: 20px;
+    color: rgb(0, 41, 155);
+}
+.p-con {
+    line-height: 20px;
+    font-size: 18px;
+    color: rgb(0, 84, 163);
+}
+.sp-con {
+    color: rgb(118, 184, 32); 
+    font-size: 15px;
+}
+.con {
+    float: left;
+    width: 100%;
+    padding-top: 40px;
+    padding-bottom: 40px;
+    margin-top: 40px;
+    margin-bottom: 40px;
+}
+.conleft {
+    float: left;
+    width: 48.5%;
+    word-wrap: break-all;
+    word-break: normal;     /*亞洲語言及非亞洲語言的文字斷行規則來進行換行*/
+}
+.con-box {
+    position: absolute; 
+    bottom: 10px;
+    float: left;
+    width: 100%;
+}
+.con-box-p-tit {
+    font-size: 20px;
+    color: rgb(0, 41, 155);
+}
+.con-box-p {
+    line-height: 20px;
+    font-size: 15px;
+    color: rgb(0, 72, 139);  
+}
+.conright {
+    float: right;
+    width: 48.5%;
+    /*position: absolute;*/
+    word-wrap: break-all;
+    word-break: normal;     /*亞洲語言及非亞洲語言的文字斷行規則來進行換行*/
+}
+.right-side {
+    position: absolute;
+    right: -180px;
+    top: 0;
+    z-index: 2;
+    width: 180px;
+    height: 600px;
+    background-color: rgb(252, 189, 213);
+}

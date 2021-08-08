@@ -1,0 +1,298 @@
+.slider_container {
+    margin: 30px auto;
+    width: 480px;
+    height: 270px;
+    position: relative;
+    border: 20px solid;    
+    border-color: rgb(148, 175, 173);
+    border-bottom-width: 50px;
+    background: white;
+    box-shadow: #666 0 0 5px;
+}
+.slider_container div {
+    position: absolute;
+    top: 0;
+    left: 0;
+    opacity: 0;
+    filter: alpha(opacity=0);
+}
+/*當圖片數量增加，影片長度需更改，變為5s*圖片數量*/
+.slider_container div {
+    -webkit-animation: round 25s linear infinite;
+            animation: round 25s linear infinite;
+}
+/*100/45=2.222...2.222..=1sec*/
+@-webkit-keyframes round {
+    4% {
+        opacity: 1;
+        filter: alpha(opacity=100);
+        /* 0 - 1秒 淡入*/
+    }
+    20% {
+        opacity: 1;
+        filter: alpha(opacity=100);
+        /* 1- 5秒靜止*/
+    }
+    24% {
+        opacity: 0;
+        filter: alpha(opacity=0);
+        /* 5-6秒淡出*/
+    }
+}
+@keyframes round {
+    4% {
+        opacity: 1;
+        filter: alpha(opacity=100);
+        /* 0 - 1秒 淡入*/
+    }
+    20% {
+        opacity: 1;
+        filter: alpha(opacity=100);
+        /* 1- 5秒靜止*/
+    }
+    24% {
+        opacity: 0;
+        filter: alpha(opacity=0);
+        /* 5-6秒淡出*/
+    }
+}
+.slider_container div:nth-child(1) {
+    -webkit-animation-delay: 0s;
+            animation-delay: 0s;
+}
+.slider_container div:nth-child(2) {
+    -webkit-animation-delay: 5s;
+            animation-delay: 5s;
+}
+.slider_container div:nth-child(3) {
+    -webkit-animation-delay: 10s;
+            animation-delay: 10s;
+}
+.slider_container div:nth-child(4) {
+    -webkit-animation-delay: 15s;
+            animation-delay: 15s;
+}
+.slider_container div:nth-child(5) {
+    -webkit-animation-delay: 20s;
+            animation-delay: 20s;
+}
+.slider_container span {    
+    color: rgb(1, 42, 153);
+    background: rgba(255, 255, 255, 0.822);
+    position: absolute;
+    left: 0%;
+    bottom: -30px;
+    width: 340px;
+    height: 35px;
+    font-size: 20px;
+    text-align: center;
+    line-height: 35px;
+    -webkit-transform:scaleY(0);
+        -ms-transform:scaleY(0);
+            transform:scaleY(0);
+    -webkit-transition: all 0.5s ease-in-out;
+            transition: all 0.5s ease-in-out;
+}
+.slider_container:hover span {
+    width: 100%;
+    -webkit-transform:scaleY(1);
+        -ms-transform:scaleY(1);
+            transform:scaleY(1);
+}
+.slider_container:hover div {
+    -webkit-animation-play-state: paused;
+            animation-play-state: paused;
+}
+/*--------------------------------------------------------------------*/
+*{
+    margin: 0;
+    padding: 0;
+}
+div {
+    display: block;
+}
+.music-sty {
+    position: fixed; 
+    z-index: 20;
+    top: 5px; 
+    right: 0px; 
+    background-color: rgba(255, 255, 255, 0.774); 
+    width: 20%; 
+    height: 115px;
+}
+.mus-box {
+    font-family: DFKai-sb; 
+    color: rgb(44, 59, 16); 
+    margin: 5px;
+    float: left;
+    width: 100%;
+    text-align: center;
+}
+/*網頁最上方*/
+.header {   /*使未調整內容可以靠右*/
+    position: absolute;     /*設定absolute，該元素就會完全跳脫該頁面，換個說法，它浮在頁面之上。原本所占用的空間將不復存在*/
+    left: 0;
+    top: 0;
+    z-index: 10;
+    overflow: hidden;   /*自動隱藏超出的文字或圖片*/
+    width: 100%;
+    height: 15%;
+    background-color: rgb(121, 156, 59);
+}
+.wrap {
+    position: relative;
+    max-width: 800px;
+    margin: 0 auto;     /*重要div置中*/
+}
+/*背景*/
+.a-container {
+    overflow: hidden;
+    font-weight: bold;      /*粗體字*/
+    font-size: 22px;
+    background-color: rgb(189, 204, 160);
+}
+.h-top {
+    height: 100px;
+}
+.main {
+    float: left;
+    position: relative;
+    margin-bottom: 30px;
+    width: 800px;  
+}
+.details{
+    margin: 0 auto;     /*重要div置中*/
+    width: 100%;
+    /*height: 600px;
+    min-height: 600px;*/
+    height: auto !important;
+    color: #792e10; 
+    font-family: DFKai-sb;
+
+}
+.details h3{
+    float: left;
+    display: block;
+    position: relative;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    line-height: 40px;
+    width: 100%;
+    text-align: center;
+}
+.h3-tit{
+    float: left;
+    width: 100%;
+    font-size: 24px;
+}
+.date{
+    float: left;
+    width: 100%;
+    line-height: 36px;
+    font-size: 15px;
+}
+
+.detail-div {
+    float: left;
+    margin-top: 20px;
+    padding: 30px;
+    width: 92%;
+    line-height: 36px;
+    font-size: 24px;
+    box-shadow: 2px 2px 2px gray;
+    background-color:#bae0f8;
+}
+p {
+    display: block;
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+}
+.detail-div p{
+    margin: 5px 0;
+    word-wrap: break-all;
+    word-break: normal;     /*亞洲語言及非亞洲語言的文字斷行規則來進行換行*/
+}
+
+.container{
+    float: left;
+    overflow: hidden;
+    padding-top: 40px;
+    padding-bottom: 10px;
+    width: 100%;
+    font-weight: bold;      /*粗體字*/
+    font-size: 25px; 
+    background-color: rgba(255, 255, 255, 0.904);
+}
+.MsoNormal {
+    float: left;
+    width: 100%;
+    /*margin: 5px;*/  /*不會有反應除非比.detail-div p裡還大*/
+    line-height: 20px;
+    font-size: 20px;
+}
+
+.p-tit1 {
+    width: 100%;
+    text-align: center;
+    padding-top: 30px;
+    padding-bottom: 30px;
+    line-height: 36px;
+    font-size: 25px;
+    color: darkblue;
+}
+.p-tit2 {
+    width: 100%;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    font-size: 20px;
+    color: rgb(0, 41, 155);
+}
+.p-con {
+    padding-top: 10px;
+    padding-bottom: 20px;
+    font-size: 18px;
+    color: rgb(0, 72, 139);
+}
+.mid {
+    float: left;
+    width: 100%;
+    text-align: center;     /*圖片置中關鍵*/
+}
+.con {
+    float: left;
+    width: 100%;
+    padding-top: 40px;
+    padding-bottom: 40px;
+    margin-top: 40px;
+    margin-bottom: 40px;
+}
+.conleft {
+    position: relative;
+    float: left;
+    width: 50%;
+    height: 530px;
+}
+.con-box {
+    position: absolute; 
+    bottom: 10px;
+    float: left;
+    width: 100%;
+}
+.con-box-p-tit {
+    font-size: 20px;
+    color: rgb(0, 41, 155);
+}
+.con-box-p {
+    font-size: 15px;
+    color: rgb(0, 72, 139);
+    line-height: 20px;
+}
+.conright {
+    float: right;
+    width: 49%;
+    height: 530px;
+}

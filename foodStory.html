@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>yansyue．食物語台版活動預測</title>
     <link rel="stylesheet" href="foodStory.css" />
+    <script src='//ajax.googleapis.com/ajax/libs/jquery/2.0.0/jquery.min.js'></script>
 </head>
 <body>
     <div style="position: fixed; top: 100px; background-color: rgba(175, 103, 40, 0.582); width: 8%;"> 
@@ -522,13 +523,22 @@
                                 </div>
                             </div> 
                         </div>
-
-                    </div>
-                
+                    </div>               
             </div>
         </div>
     </div>
-    <script src="./foodStory.js"></script>
-    
+    <!--圖片防下載-->
+    <script>
+        //<![CDATA[
+        (function() {
+        var $postBody = $(".a-container"), // 文章區塊的位置
+        blankGif = "https://1.bp.blogspot.com/-XEdTvNh8cUc/WzTMxnI_yvI/AAAAAAAAXQg/4z0M8e_Avoc6s31yMbdBL5YyKgxz4oRjwCLcBGAs/s1600/blank.gif"; // 替代圖片網址
+        
+        $postBody.find("img").css("max-width","100%").wrap("<div></div>").on("load",function(){var d=$(this),b=this.width,a=this.height,e=d.attr("src"),c=d.parent();c.css({width:b,height:a,margin:"auto",background:"url('"+e+"')","background-size":"cover",position:"relative"});d.off("load").attr("src",blankGif).css({position:"absolute",width:"100%",height:"100%"})}).each(function(){var a=$(this);if(this.complete){a.trigger("load")}});
+        })();
+        //]]>
+    </script>
+    <!--Designed by WFU BLOG-->
+    <script src="./foodStory.js"></script> 
 </body>
 </html>

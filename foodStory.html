@@ -21,7 +21,20 @@
         <audio id="mus1" loop controls >
             <source src="music/【BGM】琳琅匠心.mp3" type="audio/mpeg">
         </audio>
-        <script>myVid=document.getElementById("mus1");myVid.volume=0.5</script>
+        <button id="btplay">播放</button>
+        <button id="btpause">暫停</button>
+        <script>
+            myVid=document.getElementById("mus1");myVid.volume=0.5
+            var ebtplay = document.querySelector("#btplay");
+            var ebtpause = document.querySelector("#btpause");
+            var emus1 = document.querySelector("#mus1");
+            ebtplay.onclick = function(){
+                emus1.play();
+            }
+            ebtpause.onclick = function(){
+                emus1.pause();
+            }
+        </script>
         <span class="mus-box">――原聲音樂「琳琅匠心」――</span>
         <span class="mus-box" style="font-size: 10px;">·食物語音樂商店·</span>
     </div>

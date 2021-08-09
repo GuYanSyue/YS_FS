@@ -233,8 +233,7 @@ p {
 .container{
     float: left;
     overflow: hidden;
-    padding-top: 40px;
-    padding-bottom: 10px;
+    padding-bottom: 40px;
     width: 100%;
     font-weight: bold;      /*粗體字*/
     font-size: 25px; 

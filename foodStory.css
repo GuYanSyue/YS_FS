@@ -291,8 +291,8 @@ p {
 }
 .con-box {
     position: absolute; 
-    bottom: 10px;
     float: left;
+    bottom: 10px; 
     width: 100%;
 }
 .con-box-p-tit {
@@ -308,4 +308,9 @@ p {
     float: right;
     width: 49%;
     height: 530px;
+}
+.Mso-con {
+    font-size: 16px;
+    color: #d1521f;
+    line-height: 20px;
 }

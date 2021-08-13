@@ -154,8 +154,11 @@ button:hover{
 }
 .wrap {
     position: relative;
+    margin: 0 auto;     /*重要區塊置中*/
     max-width: 800px;
-    margin: 0 auto;     /*重要div置中*/
+    background-image: url(images/wrap.jpg); 
+    background-image: url(images/wrap.png);
+    background-image: url(images/wrap.gif);
 }
 /*背景*/
 .a-container {
@@ -165,16 +168,17 @@ button:hover{
     background-color: rgb(189, 204, 160);
 }
 .h-top {
+    width: 100%;
     height: 100px;
 }
 .main {
-    float: left;
-    position: relative;
+    position: relative;     /*後續對齊用*/
+    float: left;  
     margin-bottom: 30px;
-    width: 800px;  
+    max-width: 800px;  
 }
 .details{
-    margin: 0 auto;     /*重要div置中*/
+    margin: 0 auto;     /*重要區塊置中*/
     width: 100%;
     /*height: 600px;
     min-height: 600px;*/
@@ -235,7 +239,7 @@ p {
     overflow: hidden;
     padding-bottom: 40px;
     width: 100%;
-    font-weight: bold;      /*粗體字*/
+    /*font-weight: bold;      /*粗體字*/
     font-size: 25px; 
     background-color: rgba(255, 255, 255, 0.904);
 }
@@ -265,7 +269,7 @@ p {
 }
 .p-con {
     padding-top: 10px;
-    padding-bottom: 20px;
+    padding-bottom: 10px;
     font-size: 18px;
     color: rgb(0, 72, 139);
 }
@@ -290,7 +294,7 @@ p {
 }
 .con-box {
     position: absolute; 
-    float: left;
+    /*float: left;*/
     bottom: 10px; 
     width: 100%;
 }
@@ -300,8 +304,8 @@ p {
 }
 .con-box-p {
     font-size: 15px;
-    color: rgb(0, 72, 139);
     line-height: 20px;
+    color: rgb(0, 72, 139);
 }
 .conright {
     float: right;
@@ -309,7 +313,7 @@ p {
     height: 530px;
 }
 .Mso-con {
+    line-height: 20px;
     font-size: 16px;
     color: #d1521f;
-    line-height: 20px;
 }

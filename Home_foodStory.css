@@ -1,9 +1,25 @@
+@media only screen and (max-width: 480px) {
+    .left-side {
+        clear: both;
+        /*紫色區塊*/
+    }
+    .detail-div {
+        width: 272px;
+        /*水藍色區塊*/
+    }
+    .right-side {
+        display:none
+    }
+}
 *{
     margin: 0;
     padding: 0;
 }
 div {
     display: block;
+}
+body {
+    font-size: 16px;
 }
 .mid {
     float: left;
@@ -28,7 +44,7 @@ div {
 }
 .wrap {
     position: relative;
-    max-width: 800px;
+    /*max-width: 800px;*/
     margin: 0 auto;     /*重要div置中*/
     background-color: darkseagreen;
 }
@@ -37,11 +53,10 @@ div {
     /*padding-top: 40px;
     padding-bottom: 10px;*/
     font-weight: bold;      /*粗體字*/
-    font-size: 25px;
     background-color: rgb(204, 156, 110);
 }
 .h-top {
-    height: 100px;
+    height: 360px;
 }
 .main {   
     float: left;
@@ -66,9 +81,7 @@ div {
     float: left;
     margin-top: 20px;
     padding: 30px;
-    width: 92%;
     line-height: 36px;
-    font-size: 25px;
     color: #792e10;
     box-shadow: 2px 2px 2px gray;
     background-color:#bae0f8;
@@ -103,6 +116,7 @@ p {
     font-size: 20px;
 }
 .p-tit1 {
+    float: left;
     width: 100%;
     text-align: center;
     padding-top: 30px;
@@ -122,6 +136,7 @@ a:hover {
     text-decoration: none;      /*none ←加這句 去除連結底線*/
 }
 .p-tit2 {
+    float: left;
     width: 100%;
     padding-top: 10px;
     padding-bottom: 10px;
@@ -129,6 +144,8 @@ a:hover {
     color: rgb(0, 41, 155);
 }
 .p-con {
+    float: left;
+    margin-bottom: 10px;
     line-height: 20px;
     font-size: 18px;
     color: rgb(0, 84, 163);

@@ -212,10 +212,9 @@ button:hover{
 }
 
 .detail-div {
-    float: left;
+    float: left;    /*不可缺，h3會被吃掉*/
     margin-top: 20px;
     padding: 30px;
-    width: 92%;
     line-height: 36px;
     font-size: 24px;
     box-shadow: 2px 2px 2px gray;

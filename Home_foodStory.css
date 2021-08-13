@@ -44,7 +44,7 @@ body {
 }
 .wrap {
     position: relative;
-    /*max-width: 800px;*/
+    max-width: 800px;
     margin: 0 auto;     /*重要div置中*/
     background-color: darkseagreen;
 }
@@ -59,10 +59,10 @@ body {
     height: 100px;
 }
 .main {   
-    float: left;
     position: relative;
+    float: left;
     margin-bottom: 30px;
-    width: 800px;
+    max-width: 800px;
     background-color:#f0ff9e;
 }
 .left-side {
@@ -79,7 +79,6 @@ body {
 }
 .detail-div {
     float: left;
-    max-width: 100%;
     margin-top: 20px;
     padding: 30px;
     line-height: 36px;
@@ -100,12 +99,12 @@ p {
     word-break: normal;     /*亞洲語言及非亞洲語言的文字斷行規則來進行換行*/
 }
 .container{
-    float: left;
+    /*float: left;*/
     overflow: hidden;
     padding-top: 40px;
     padding-bottom: 10px;
     width: 100%;
-    font-weight: bold;      /*粗體字*/
+    /*font-weight: bold;      /*粗體字*/
     font-size: 18px; 
     background-color: rgba(255, 255, 255, 0.904);
 }

@@ -1,22 +1,26 @@
 @media only screen and (max-width: 480px) {
+    /*.main {
+        width: 272px;
+    }*/
     .detail-div {
+        width: 272px;
         background-color: #ffff;
     }
     .conleft {
-        height: 40rem;
+        height: 7.5rem;
     }
-    .con-box {
-        top: 50%;
+    .con-box-p {
+        line-height: 0.3rem;
     }
 }
 .slider_container {
-    margin: 30px auto;
-    width: 480px;
-    height: 270px;
+    margin: 0.3rem auto;
+    width: 4.8rem;
+    height: 2.7rem;
     position: relative;
-    border: 20px solid;    
+    border: 0.2rem solid;    
     border-color: rgb(148, 175, 173);
-    border-bottom-width: 50px;
+    border-bottom-width: 0.5rem;
     background: white;
     box-shadow: #666 0 0 5px;
 }
@@ -27,41 +31,41 @@
     opacity: 0;
     filter: alpha(opacity=0);
 }
-/*當圖片數量增加，影片長度需更改，變為5s*圖片數量*/
+/*當圖片數量增加，影片長度需更改，變為4s*圖片數量*/
 .slider_container div {
-    -webkit-animation: round 25s linear infinite;
-            animation: round 25s linear infinite;
+    -webkit-animation: round 20s linear infinite;
+            animation: round 20s linear infinite;
 }
 /*100/45=2.222...2.222..=1sec*/
 @-webkit-keyframes round {
-    4% {
+    5% {
         opacity: 1;
         filter: alpha(opacity=100);
         /* 0 - 1秒 淡入*/
     }
-    20% {
+    25% {  /*5%*5*/
         opacity: 1;
         filter: alpha(opacity=100);
         /* 1- 5秒靜止*/
     }
-    24% {
+    30% {  /*25%+5%*/
         opacity: 0;
         filter: alpha(opacity=0);
         /* 5-6秒淡出*/
     }
 }
 @keyframes round {
-    4% {
+    5% {
         opacity: 1;
         filter: alpha(opacity=100);
         /* 0 - 1秒 淡入*/
     }
-    20% {
+    25% {
         opacity: 1;
         filter: alpha(opacity=100);
         /* 1- 5秒靜止*/
     }
-    24% {
+    30% {
         opacity: 0;
         filter: alpha(opacity=0);
         /* 5-6秒淡出*/
@@ -72,32 +76,32 @@
             animation-delay: 0s;
 }
 .slider_container div:nth-child(2) {
-    -webkit-animation-delay: 5s;
-            animation-delay: 5s;
+    -webkit-animation-delay: 4s;
+            animation-delay: 4s;
 }
 .slider_container div:nth-child(3) {
-    -webkit-animation-delay: 10s;
-            animation-delay: 10s;
+    -webkit-animation-delay: 8s;
+            animation-delay: 8s;
 }
 .slider_container div:nth-child(4) {
-    -webkit-animation-delay: 15s;
-            animation-delay: 15s;
+    -webkit-animation-delay: 12s;
+            animation-delay: 12s;
 }
 .slider_container div:nth-child(5) {
-    -webkit-animation-delay: 20s;
-            animation-delay: 20s;
+    -webkit-animation-delay: 16s;
+            animation-delay: 16s;
 }
 .slider_container span {    
     color: rgb(1, 42, 153);
     background: rgba(255, 255, 255, 0.822);
     position: absolute;
     left: 0%;
-    bottom: -30px;
-    width: 340px;
-    height: 35px;
-    font-size: 20px;
+    bottom: -0.3rem;
+    width: 3.4rem;
+    height: 0.35rem;
+    font-size: 0.2rem;
     text-align: center;
-    line-height: 35px;
+    line-height: 0.35rem;
     -webkit-transform:scaleY(0);
         -ms-transform:scaleY(0);
             transform:scaleY(0);
@@ -125,6 +129,13 @@ div {
 html {
     font-size: 16px;
 }
+.menu-sty {
+    position: fixed;
+    z-index: 20;
+    top: 100px; 
+    background-color: rgba(175, 103, 40, 0.582); 
+    width: 8%;
+}
 .music-sty {
     position: fixed; 
     z-index: 20;
@@ -135,16 +146,17 @@ html {
     height: 115px;
 }
 .mus-box {
-    font-family: DFKai-sb; 
-    color: rgb(44, 59, 16); 
+    float: left;     
     margin: 5px;
-    float: left;
     width: 100%;
     text-align: center;
+    font-size: 0.15rem;
+    font-family: DFKai-sb; 
+    color: rgb(44, 59, 16);
 }
 button {
-    width: 40px;
-    height: 40px;
+    width: 0.4rem;
+    height: 0.4rem;
     background: rgb(2, 221, 148);
     border: none;
     color: white;
@@ -163,7 +175,7 @@ button:hover{
     z-index: 10;
     overflow: hidden;   /*自動隱藏超出的文字或圖片*/
     width: 100%;
-    height: 15%;
+    height: 0.8rem;
     background-color: rgb(121, 156, 59);
 }
 .wrap {
@@ -178,12 +190,12 @@ button:hover{
 .a-container {
     overflow: hidden;
     font-weight: bold;      /*粗體字*/
-    font-size: 22px;
+    font-size: 0.2rem;
     background-color: rgb(189, 204, 160);
 }
 .h-top {
     width: 100%;
-    height: 100px;
+    height: 1rem;
 }
 .main {
     position: relative;     /*後續對齊用*/
@@ -199,7 +211,6 @@ button:hover{
     height: auto !important;
     color: #792e10; 
     font-family: DFKai-sb;
-
 }
 .details h3{
     float: left;
@@ -209,28 +220,28 @@ button:hover{
     padding-bottom: 10px;
     margin-top: 10px;
     margin-bottom: 10px;
-    line-height: 40px;
+    line-height: 0.4rem;
     width: 100%;
     text-align: center;
 }
 .h3-tit{
     float: left;
     width: 100%;
-    font-size: 24px;
+    font-size: 0.24rem;
 }
 .date{
     float: left;
     width: 100%;
     line-height: 36px;
-    font-size: 15px;
+    font-size: 0.15rem;
 }
 
 .detail-div {
     float: left;    /*不可缺，h3會被吃掉*/
     margin-top: 20px;
     padding: 30px;
-    line-height: 36px;
-    font-size: 24px;
+    line-height: 0.36rem;  /*所有間距*/
+    font-size: 0.18rem;
     box-shadow: 2px 2px 2px gray;
     background-color:#bae0f8;
 }
@@ -253,7 +264,7 @@ p {
     padding-bottom: 40px;
     width: 100%;
     /*font-weight: bold;      /*粗體字*/
-    font-size: 25px; 
+    font-size: 0.18rem; 
     background-color: rgba(255, 255, 255, 0.904);
 }
 .MsoNormal {
@@ -261,7 +272,7 @@ p {
     width: 100%;
     /*margin: 5px;*/  /*不會有反應除非比.detail-div p裡還大*/
     line-height: 20px;
-    font-size: 20px;
+    font-size: 0.18rem;
 }
 
 .p-tit1 {
@@ -269,21 +280,21 @@ p {
     text-align: center;
     padding-top: 30px;
     padding-bottom: 30px;
-    line-height: 36px;
-    font-size: 25px;
+    line-height: 0.36rem;
+    font-size: 0.25rem;
     color: darkblue;
 }
 .p-tit2 {
     width: 100%;
-    padding-top: 10px;
-    padding-bottom: 10px;
-    font-size: 20px;
+    padding-top: 0.1rem;
+    padding-bottom: 0.1rem;
+    font-size: 0.2rem;
     color: rgb(0, 41, 155);
 }
 .p-con {
-    padding-top: 10px;
-    padding-bottom: 10px;
-    font-size: 18px;
+    padding-top: 0.1rem;
+    padding-bottom: 0.1rem;
+    font-size: 0.18rem;
     color: rgb(0, 72, 139);
 }
 .mid {
@@ -303,7 +314,7 @@ p {
     position: relative;
     float: left;
     width: 50%;
-    min-height: 33.125rem;
+    min-height: 5.3rem;  /*530*/
 }
 .div-box {
     float: left;
@@ -311,26 +322,26 @@ p {
 .con-box {
     position: absolute; 
     /*float: left;*/
-    bottom: 10px; 
+    bottom: 0.1rem; 
     width: 100%;
 }
 .con-box-p-tit {
-    font-size: 20px;
+    font-size: 0.2rem;
     color: rgb(0, 41, 155);
 }
 .con-box-p {
     overflow: hidden;
-    font-size: 15px;
-    line-height: 20px;
+    font-size: 0.15rem;
+    line-height: 20px;  /*20*/
     color: rgb(0, 72, 139);
 }
 .conright {
     float: right;
     width: 49%;
-    height: 530px;
+    min-height: 5.3rem;
 }
 .Mso-con {
     line-height: 20px;
-    font-size: 16px;
+    font-size: 0.16rem;
     color: #d1521f;
 }

@@ -1,3 +1,14 @@
+@media only screen and (max-width: 480px) {
+    .detail-div {
+        background-color: #ffff;
+    }
+    .conleft {
+        height: 40rem;
+    }
+    .con-box {
+        top: 50%;
+    }
+}
 .slider_container {
     margin: 30px auto;
     width: 480px;
@@ -110,6 +121,9 @@
 }
 div {
     display: block;
+}
+html {
+    font-size: 16px;
 }
 .music-sty {
     position: fixed; 
@@ -289,7 +303,10 @@ p {
     position: relative;
     float: left;
     width: 50%;
-    height: 530px;
+    min-height: 33.125rem;
+}
+.div-box {
+    float: left;
 }
 .con-box {
     position: absolute; 
@@ -302,6 +319,7 @@ p {
     color: rgb(0, 41, 155);
 }
 .con-box-p {
+    overflow: hidden;
     font-size: 15px;
     line-height: 20px;
     color: rgb(0, 72, 139);

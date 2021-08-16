@@ -12,9 +12,9 @@
     .con-box-p {
         line-height: 0.3rem;
     }
-    #id {
+    /*.hide {
         display:none;
-    }
+    }*/
 }
 .slider_container {
     margin: 0.3rem auto;
@@ -151,7 +151,7 @@ html {
     color: rgb(44, 59, 16);
 }
 button {
-    width: 0.4rem;
+    width: 40px;
     height: 0.4rem;
     background: rgb(2, 221, 148);
     border: none;
@@ -164,18 +164,19 @@ button:hover{
     background: #750f0f;
 }
 #gotop {
-    position:fixed;
-    z-index:90;
-    right:30px;
-    bottom:31px;
-    display:none;
-    width:50px;
-    height:50px;
+    position: fixed;
+    z-index: 90;
+    right: 0.3rem;
+    bottom: 0.31rem;
+    display: none;
+    width: 0.5rem;
+    height: 0.5rem;
     color:#fff;
     background:#33b5e5;
-    line-height:50px;
-    border-radius:50%;
-    transition:all 0.5s;
+    line-height: 0.5rem;
+    font-size: 0.17rem;
+    border-radius: 50%;
+    transition: all 0.5s;
     text-align: center;
     box-shadow: 0 2px 5px 0 rgba(0,0,0,0.16), 0 2px 10px 0 rgba(0,0,0,0.12);
 }
@@ -233,7 +234,8 @@ button:hover{
 .a-container {
     overflow: hidden;
     font-weight: bold;      /*粗體字*/
-    font-size: 0.2rem;
+    font-size: 0.16rem;
+    color: #0099CC;
     background-color: rgb(189, 204, 160);
 }
 .h-top {

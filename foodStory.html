@@ -29,7 +29,7 @@
         </script>
         <span class="mus-box">――原聲音樂「琳琅匠心」――</span>
         <span class="mus-box" style="font-size: 0.1rem;">·食物語音樂商店·</span>
-        <span id="hide" class="mus-box" style="font-size: 0.1rem; background-color: rgba(255, 255, 255, 0.774);">這次是交響樂，開場小提琴有get到我*0^0*</span>    
+        <span class="mus-box hide" style="font-size: 0.1rem; background-color: rgba(255, 255, 255, 0.774);">這次是交響樂，開場小提琴有get到我*0^0*</span>    
     </div>
     <script type="text/javascript">
         $(function() {
@@ -49,10 +49,20 @@
             });
         });
     </script> 
-    <a id="gotop" href="https://www.blogger.com/blogger.g?blogID=2031514508322140995#" style="text-decoration: none;">
+    <a id="gotop" href="https://www.blogger.com/blogger.g?blogID=2031514508322140995#" style="text-decoration: none;">TOP</a>
         <!--<i class="fa fa-angle-up"></i>-->
-        TOP
-    </a>  
+    <script type="text/javascript">
+        $(document).ready(init);
+
+        function init() {
+
+            var now = new Date();
+
+            var str_NowDate = (now.getFullYear()) + "/" + (now.getMonth() + 1) + "/" + now.getDate();
+            $("#div_date").html(str_NowDate);
+        
+        }
+    </script>        
     <div class="header">
         <div class="wrap">
             <div class="nav">
@@ -67,8 +77,9 @@
             <div class="h-top"></div>
             <div class="main">          
                 <div style="text-align: center;">
-                    <h1 style="padding: 0.5rem;"><font face="標楷體" color="#2c1309">食物語</font></h1>
-                    <h2 style="line-height: 0.4rem; padding-bottom: 0.2rem;"><font face="標楷體" color="#af6728">台服未來活動預測</font></h2>
+                    <h1 style="padding: 0.5rem; padding-bottom: 0.1rem;"><font face="標楷體" color="#2c1309">食物語</font></h1>
+                    <h2 style="line-height: 0.4rem;"><font face="標楷體" color="#af6728">台服未來活動預測</font></h2>
+                    <p>&nbsp;</p><p>更新日期 <span id="div_date"></span></p><p>&nbsp;</p>                          
                 </div>                
                     <div class="details">
                         <h3><span class="h3-tit"><a name="1">---------------------【琳瑯匠心】---------------------</a></span><span class="date">活動時間：7月30日05:00至8月19日23:59</span></h3>               

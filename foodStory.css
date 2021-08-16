@@ -12,6 +12,9 @@
     .con-box-p {
         line-height: 0.3rem;
     }
+    #id {
+        display:none;
+    }
 }
 .slider_container {
     margin: 0.3rem auto;
@@ -129,13 +132,6 @@ div {
 html {
     font-size: 16px;
 }
-.menu-sty {
-    position: fixed;
-    z-index: 20;
-    top: 100px; 
-    background-color: rgba(175, 103, 40, 0.582); 
-    width: 8%;
-}
 .music-sty {
     position: fixed; 
     z-index: 20;
@@ -143,11 +139,11 @@ html {
     right: 0px; 
     background-color: rgba(255, 255, 255, 0.774); 
     width: 20%; 
-    height: 115px;
+    height: 1.15rem;
 }
 .mus-box {
     float: left;     
-    margin: 5px;
+    margin: 0.05rem;
     width: 100%;
     text-align: center;
     font-size: 0.15rem;
@@ -167,16 +163,63 @@ button {
 button:hover{
     background: #750f0f;
 }
+#gotop {
+    position:fixed;
+    z-index:90;
+    right:30px;
+    bottom:31px;
+    display:none;
+    width:50px;
+    height:50px;
+    color:#fff;
+    background:#33b5e5;
+    line-height:50px;
+    border-radius:50%;
+    transition:all 0.5s;
+    text-align: center;
+    box-shadow: 0 2px 5px 0 rgba(0,0,0,0.16), 0 2px 10px 0 rgba(0,0,0,0.12);
+}
+#gotop :hover{
+    background:#0099CC;
+}
 /*網頁最上方*/
 .header {   /*使未調整內容可以靠右*/
     position: absolute;     /*設定absolute，該元素就會完全跳脫該頁面，換個說法，它浮在頁面之上。原本所占用的空間將不復存在*/
+    overflow: hidden;   /*自動隱藏超出的文字或圖片*/
     left: 0;
     top: 0;
-    z-index: 10;
-    overflow: hidden;   /*自動隱藏超出的文字或圖片*/
+    z-index: 10; 
     width: 100%;
     height: 0.8rem;
-    background-color: rgb(121, 156, 59);
+    background-color: rgb(98, 136, 33);
+}
+.nav {
+    float: left;
+    display: inline;
+    position: relative;
+    width: 7rem;
+    height: 0.8rem;
+}
+.btn-index {
+    float: left;
+    display: inline;
+    text-align: center;
+    padding-top: 0.25rem;
+    margin-left: 0.5rem;
+    width: 1.5rem;
+    height: 0.55rem;
+    font-size: 0.25rem;
+    font-family: DFkai-sb;
+}
+/*Links文章去除連結底線*/
+.nav a:link, .nav a:visited {
+    color: rgb(14, 218, 197);     /*超連結字體顏色*/
+    text-decoration: none       /*none ←加這句 去除連結底線*/
+}
+.nav a:hover {
+    color: rgb(11, 110, 150);     /*滑鼠停在超連結中文字的顏色*/
+    background-color: #c1f8ab;  /*滑鼠停留在超連結中文字的底色*/
+    text-decoration: none;      /*none ←加這句 去除連結底線*/
 }
 .wrap {
     position: relative;

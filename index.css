@@ -131,5 +131,11 @@
     -webkit-animation-play-state: paused;
             animation-play-state: paused;
 }
-
+.menu-sty {
+    position: fixed;
+    z-index: 20;
+    top: 100px; 
+    background-color: rgba(175, 103, 40, 0.582); 
+    width: 8%;
+}
 

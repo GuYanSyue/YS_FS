@@ -16,7 +16,7 @@
         <button id="btplay">播放</button>
         <button id="btpause">暫停</button>
         <script>
-            myVid=document.getElementById("mus1");myVid.volume=0.5
+            myVid=document.getElementById("mus1"); myVid.volume=0.5
             var ebtplay = document.querySelector("#btplay");
             var ebtpause = document.querySelector("#btpause");
             var emus1 = document.querySelector("#mus1");
@@ -31,36 +31,16 @@
         <span class="mus-box" style="font-size: 0.1rem;">·食物語音樂商店·</span>
         <span class="mus-box hide" style="font-size: 0.1rem; background-color: rgba(255, 255, 255, 0.774);">這次是交響樂，開場小提琴有get到我*0^0*</span>    
     </div>
-    <script type="text/javascript">
-        $(function() {
-            /* 按下GoTop按鈕時的事件 */
-            $('#gotop').click(function(){
-                $('html,body').animate({ scrollTop: 0 }, 'slow');   /* 返回到最頂上 */
-                return false;
-            });
-            
-            /* 偵測卷軸滑動時，往下滑超過400px就讓GoTop按鈕出現 */
-            $(window).scroll(function() {
-                if ( $(this).scrollTop() > 400){
-                    $('#gotop').fadeIn();
-                } else {
-                    $('#gotop').fadeOut();
-                }
-            });
-        });
-    </script> 
+     
     <a id="gotop" href="https://www.blogger.com/blogger.g?blogID=2031514508322140995#" style="text-decoration: none;">TOP</a>
         <!--<i class="fa fa-angle-up"></i>-->
     <script type="text/javascript">
         $(document).ready(init);
 
         function init() {
-
             var now = new Date();
-
             var str_NowDate = (now.getFullYear()) + "/" + (now.getMonth() + 1) + "/" + now.getDate();
-            $("#div_date").html(str_NowDate);
-        
+            $("#div_date").html(str_NowDate);       
         }
     </script>        
     <div class="header">
@@ -77,7 +57,7 @@
             <div class="h-top"></div>
             <div class="main">          
                 <div style="text-align: center;">
-                    <h1 style="padding: 0.5rem; padding-bottom: 0.1rem;"><font face="標楷體" color="#2c1309">食物語</font></h1>
+                    <h1 style="padding: 0.5rem; padding-bottom: 0.1rem;"><font face="標楷體" color="#2c1309">食物語</h1>
                     <h2 style="line-height: 0.4rem;"><font face="標楷體" color="#af6728">台服未來活動預測</font></h2>
                     <p>&nbsp;</p><p>更新日期 <span id="div_date"></span></p><p>&nbsp;</p>                          
                 </div>                
@@ -101,7 +81,7 @@
                                 <p style="font-size: 0.25rem;">台版活動PV</p>
                                 <!--<video src="img/fd/《食物語》琳瑯匠心 台版PV.mp4" controls width="90%" height="90%">無法載入影片</video>-->
                                 <video id="video1" src="img/fd/《食物語》琳瑯匠心 台版PV.mp4" controls width="90%" height="90%">無法載入影片</video>
-                                <script>myVid=document.getElementById("video1");myVid.volume=0.2</script>
+                                <script>myVid=document.getElementById("video1"); myVid.volume=0.2</script>
                                 <div class="slider_container">
                                     <div>
                                         <img src="img/fd/分享_琳瑯匠心_1.jpg" alt="Day1" width="100%"/>
@@ -209,6 +189,10 @@
                                         <div id="image1" style="background-image: url(originalImage.jpg); position: absolute; left: 230px;">
                                             <img src="https://1.bp.blogspot.com/-XEdTvNh8cUc/WzTMxnI_yvI/AAAAAAAAXQg/4z0M8e_Avoc6s31yMbdBL5YyKgxz4oRjwCLcBGAs/s1600/blank.gif" height="475px" width="340px">
                                         </div><img src="img/fd/日記_瓷骨蓮心.jpeg" alt="團隊研發日記8_瓷骨蓮心" title="團隊研發日記8" border="2" width="45%">
+                                        <p class="p-con">&nbsp;<o:p></o:p></p>
+                                        <div id="image1" style="background-image: url(originalImage.jpg); position: absolute; left: 1rem;">
+                                            <img src="https://1.bp.blogspot.com/-XEdTvNh8cUc/WzTMxnI_yvI/AAAAAAAAXQg/4z0M8e_Avoc6s31yMbdBL5YyKgxz4oRjwCLcBGAs/s1600/blank.gif" height="345px" width="600px">
+                                        </div><img src="img/fd/瓷骨蓮心商品介面.jpg" alt="瓷骨蓮心商品介面" width="80%">
                                     </div>
                                     <div class="con">  
                                         <div class="conleft">
@@ -276,10 +260,63 @@
                             </div>
                         </div>
 
+                        <h3><span class="h3-tit" style="color: maroon;"><a name="1-2">---------------**【1.5周年慶祝活動】**---------------</a></span><span class="date">活動時間： 8月20日05:00 至 8月26日23:59</span></h3>
+                        <div class="detail-div">
+                            <div class="mid">
+                                <p>啊啊，我以為台版領不到剩下的陸版用來贈送的河北博物館聯動家具，代理阿官小燒突然開是要補齊東西啊...</p>
+                            </div>
+                            <div class="container">
+                                <div>
+                                    <p class="MsoNormal">【金燈映夜】限時登入領聯動版本御品家具<o:p></o:p></p>
+                                    <p class="MsoNormal">活動說明：活動期間，每天登入領全新河北博物館聯動專屬家具。<o:p></o:p></p>
+                                    <p class="MsoNormal">&nbsp;</p>
+                                    <p class="MsoNormal">【官方粉絲團活動】參與互動送魂芯<o:p></o:p></p>
+                                    <p class="MsoNormal">活動說明：詳情參見食物語官方粉絲團。<o:p></o:p></p>
+                                    <p class="MsoNormal">&nbsp;</p>
+                                    <p class="MsoNormal">【心願召喚】常駐御品食魂自選召喚陣重置！<o:p></o:p></p>
+                                    <p class="MsoNormal">活動說明：8/18~8/26。選擇的御品佔所有御品50%，珍品佔所有珍品25%。<o:p></o:p></p>
+                                    <p class="MsoNormal">&nbsp;</p>
+                                    <p class="MsoNormal">【1.5週年限時魂芯】限時商店開啟！<o:p></o:p></p>
+                                    <p class="MsoNormal">活動說明：雜物商店限時上架1.5週年魂芯，消耗170金玉即可購入；若使用折扣券可以以85金玉的價格購入。</p>
+                                    <p class="MsoNormal">*折扣券可以與禮包商城內進行購買。*</p>                              
+                                    <p class="MsoNormal">*折扣券、1.5週年魂芯將會在8/26 23:59後過期，請各位少主不要忘記使用。*<o:p></o:p></p>
+                                    <p class="MsoNormal">&nbsp;</p>
+                                    <p class="MsoNormal">【1.5週年特惠禮包】魂芯收藏禮包全新上線！<o:p></o:p></p>
+                                    <p class="MsoNormal">活動說明：於遊戲內商店購買。<o:p></o:p></p>
+                                    <p class="MsoNormal">※週年魂芯收藏禮包內含「魂芯」、*「半週年魂芯」、*「一週年魂芯」、「1.5週年魂芯」，其中「半週年魂芯」「一週年魂芯」為紀念魂芯，獲取後將會激活珍寶閣收藏，不可使用；「1.5週年魂芯」可在限時期間內正常使用~<o:p></o:p></p>
+                                    <p class="MsoNormal">&nbsp;</p>
+                                    <p class="MsoNormal">【滿堂彩】1.5周年限時累儲活動上線，少主時裝「新禧賀歲」限時返場<o:p></o:p></p>
+                                    <p class="MsoNormal">活動說明：復刻少主時裝，累儲條件不變，積分36.99(港幣)。<o:p></o:p></p>
+                                    <p class="MsoNormal">——新釀斟舊友，嘉禧賀吉年——<o:p></o:p></p>
+                                    <p><div id="image1" style="background-image: url(originalImage.jpg); position: absolute;">
+                                        <img src="https://1.bp.blogspot.com/-XEdTvNh8cUc/WzTMxnI_yvI/AAAAAAAAXQg/4z0M8e_Avoc6s31yMbdBL5YyKgxz4oRjwCLcBGAs/s1600/blank.gif" height="240px" width="660px">
+                                    </div><img src="img/fd/新禧賀歲_方塊.jpg" alt="新禧賀歲" title="新禧賀歲" width="32%"><img src="img/fd/裝扮_新禧賀歲.png" alt="裝扮_新禧賀歲" title="裝扮_新禧賀歲" width="57%"></p>
+                                    <p class="MsoNormal">&nbsp;</p>
+                                    <p class="MsoNormal">【天道酬勤】全新限時玩法，特殊訓練開啟！<o:p></o:p></p>
+                                    <p class="MsoNormal">活動說明：軍演社委託蟹釀橙製作了特殊型號機關蟹——「非命-訓練型」，它裝載各類訓練器材，可滿足少主日常訓練的需要。每次開啟活動，會設立不同的訓練目標和不同的戰場規則，請少主根據情況調整演練策略。<o:p></o:p></p>
+                                    <p class="MsoNormal">[玩法規則]：少主可派出3支隊伍上陣，同名食魂只能上陣1次，同一膳具只能穿戴1次；</p>
+                                    <p class="MsoNormal">[本期目標]：對「非命-訓練型」造成傷害，3支隊伍造成的傷害總量越高，排名越高；</p>
+                                    <p class="MsoNormal">*上陣食魂和膳具可隨時重置，但相應戰績也會隨之重置。*</p>
+                                    <p class="MsoNormal">*本次挑戰無需消耗任何物資，少主可盡全力進攻。*</p>
+                                    <p class="MsoNormal">*玩法入口：啟程-天道酬勤*</p>
+                                    <p class="MsoNormal">&nbsp;</p>
+                                    <p class="MsoNormal">&nbsp;</p>
+                                    <h3><span class="h3-tit"><a name="3">-----------------【復刻活動-霸王別姬】-----------------</a></span><span class="date">活動時間： 同1.5周年慶祝活動</span><p class="MsoNormal">——台前不見婆娑舞，幕後猶餘繞樑音——<o:p></o:p></p></h3>
+                                    <div class="container mid"><p class="MsoNormal">食魂：霸王别姬<o:p></o:p></p><div id="image1" style="background-image: url(originalImage.jpg); position: absolute; left: 210px;">
+                                        <img src="https://1.bp.blogspot.com/-XEdTvNh8cUc/WzTMxnI_yvI/AAAAAAAAXQg/4z0M8e_Avoc6s31yMbdBL5YyKgxz4oRjwCLcBGAs/s1600/blank.gif" height="330px" width="380px">
+                                    </div><img src="img/fd/浮水_食物語_霸王別姬.png" alt="霸王别姬" title="霸王别姬" width="50%"></div>
+                                    <div class="container mid"><p class="MsoNormal">珍品食魂：醃篤鮮、豆汁兒<o:p></o:p></p><div id="image1" style="background-image: url(originalImage.jpg); position: absolute; left: 210px;">
+                                        <img src="https://1.bp.blogspot.com/-XEdTvNh8cUc/WzTMxnI_yvI/AAAAAAAAXQg/4z0M8e_Avoc6s31yMbdBL5YyKgxz4oRjwCLcBGAs/s1600/blank.gif" height="330px" width="375px">
+                                    </div><img src="img/fd/醃篤鮮.jpg" alt="醃篤鮮" title="醃篤鮮" width="25%"><img src="img/fd/豆汁兒.jpg" alt="豆汁兒" title="豆汁兒" width="25%"></div>
+                                    <p class="MsoNormal">【復刻商店】收集「空桑紀念幣」兌換【粉墨傳奇】上海京劇院聯動家具套裝！<o:p></o:p></p>     
+                                    <p class="MsoNormal">*「空桑紀念幣」: 活動期間，通關主線及資源關卡均會掉落，用於在【復刻商店】中兌換復刻活動商品，或者解鎖[圖鑑-故事篇-活動故事]中往期已復刻過的活動劇情。復刻商店中材料頁簽的限購商品將在本次更新後刷新限購次數。*</p>
+                                </div>
+                            </div>
+                        </div>
                         <h3><span class="h3-tit"><a name="2">---------------------【浩海揚帆】---------------------</a></span><span class="date">活動時間： 預計9月3日05:00至 月 日23:59</span></h3>
                         <div class="detail-div">
                             <div class="mid">
-
+                                
                             </div>
                             <div class="container mid">
                                 <p><font>PV</font></p>
@@ -287,29 +324,29 @@
                             </div>
                             <div class="container">
                                 <div>
-                                    <p class="MsoNormal"><font size="4">新食魂: 明爐燒響螺（CV.魏超）、浪花東星斑（CV.馬洋）<o:p></o:p></font></p>
+                                    <p class="MsoNormal">新食魂: 明爐燒響螺（CV.魏超）、浪花東星斑（CV.馬洋）<o:p></o:p></p>
                                     <div id="image1" style="background-image: url(originalImage.jpg); position: absolute;">
                                         <img src="https://1.bp.blogspot.com/-XEdTvNh8cUc/WzTMxnI_yvI/AAAAAAAAXQg/4z0M8e_Avoc6s31yMbdBL5YyKgxz4oRjwCLcBGAs/s1600/blank.gif" height="305px" width="445px">
                                     </div><img src="img/fd/介紹_明爐燒響螺.jpg" alt="明爐燒響螺" title="明爐燒響螺" width="30%"><img src="img/fd/介紹_浪花東星斑.jpg" alt="浪花東星斑" title="浪花東星斑" width="30%">
-                                    <p class="MsoNormal"><font size="4">&nbsp;</font></p>
-                                    <p class="MsoNormal"><font size="4">【限時祈福】套裝「遠洋勝覽」登場！古船風格家俱限時祈福<o:p></o:p></font></p>
-                                    <p class="MsoNormal"><font size="4">&nbsp;</font></p>
-                                    <p class="MsoNormal"><font size="4">【甜夢儲蓄】擔仔麵專屬時裝「甜夢儲蓄」限時登場！<o:p></o:p></font></p>
-                                    <p class="MsoNormal"><font size="4">活動說明：活動期間完成指定任務。<o:p></o:p></font></p>
-                                    <p class="MsoNormal"><font size="4">——絨羽暖融融，伴我入甜夢——<o:p></o:p></font></p>
+                                    <p class="MsoNormal">&nbsp;</p>
+                                    <p class="MsoNormal">【限時祈福】套裝「遠洋勝覽」登場！古船風格家俱限時祈福<o:p></o:p></p>
+                                    <p class="MsoNormal">&nbsp;</p>
+                                    <p class="MsoNormal">【甜夢儲蓄】擔仔麵專屬時裝「甜夢儲蓄」限時登場！<o:p></o:p></p>
+                                    <p class="MsoNormal">活動說明：活動期間完成指定任務。<o:p></o:p></p>
+                                    <p class="MsoNormal">——絨羽暖融融，伴我入甜夢——<o:p></o:p></p>
                                     <p><div id="image1" style="background-image: url(originalImage.jpg); position: absolute;">
                                         <img src="https://1.bp.blogspot.com/-XEdTvNh8cUc/WzTMxnI_yvI/AAAAAAAAXQg/4z0M8e_Avoc6s31yMbdBL5YyKgxz4oRjwCLcBGAs/s1600/blank.gif" height="280px" width="330px">
                                     </div><img src="img/fd/浮水_食物語_擔仔麵.png" alt="擔仔麵" title="擔仔麵" width="40%"></p>                                 
-                                    <p class="MsoNormal"><font size="4">&nbsp;</font></p>       
-                                    <p class="MsoNormal"><font size="4">【海客奇珍】太白鴨專屬時裝「青鸞虎鼓」限時登場！<o:p></o:p></font></p>
-                                    <p class="MsoNormal"><font size="4">活動說明：活動期間累積儲值達指定積分。<o:p></o:p></font></p>
-                                    <p class="MsoNormal"><font size="4">——長劍嘯青冥，鸞歌共煙霞——<o:p></o:p></font></p>
+                                    <p class="MsoNormal">&nbsp;</p>       
+                                    <p class="MsoNormal">【海客奇珍】太白鴨專屬時裝「青鸞虎鼓」限時登場！<o:p></o:p></p>
+                                    <p class="MsoNormal">活動說明：活動期間累積儲值達指定積分。<o:p></o:p></p>
+                                    <p class="MsoNormal">——長劍嘯青冥，鸞歌共煙霞——<o:p></o:p></p>
                                     <p><div id="image1" style="background-image: url(originalImage.jpg); position: absolute;">
                                         <img src="https://1.bp.blogspot.com/-XEdTvNh8cUc/WzTMxnI_yvI/AAAAAAAAXQg/4z0M8e_Avoc6s31yMbdBL5YyKgxz4oRjwCLcBGAs/s1600/blank.gif" height="280px" width="330px">
                                     </div><img src="img/fd/浮水_食物語_太白鴨.png" alt="太白鴨" title="太白鴨" width="40%"></p>         
-                                    <p class="MsoNormal"><font size="4">&nbsp;</font></p>
-                                    <p class="MsoNormal"><font size="4">【時裝上新】臘味合蒸時裝「儺舞神戲」永久上架時裝商店！<o:p></o:p></font></p>
-                                    <p class="MsoNormal"><font size="4">——彩旌旋歌舞，儺面娛神明——<o:p></o:p></font></p>
+                                    <p class="MsoNormal">&nbsp;</p>
+                                    <p class="MsoNormal">【時裝上新】臘味合蒸時裝「儺舞神戲」永久上架時裝商店！<o:p></o:p></p>
+                                    <p class="MsoNormal">——彩旌旋歌舞，儺面娛神明——<o:p></o:p></p>
                                     <p><div id="image1" style="background-image: url(originalImage.jpg); position: absolute;">
                                         <img src="https://1.bp.blogspot.com/-XEdTvNh8cUc/WzTMxnI_yvI/AAAAAAAAXQg/4z0M8e_Avoc6s31yMbdBL5YyKgxz4oRjwCLcBGAs/s1600/blank.gif" height="280px" width="330px">
                                     </div><img src="img/fd/浮水_食物語_臘味合蒸.png" alt="臘味合蒸" title="臘味合蒸" width="40%"></p>
@@ -369,22 +406,19 @@
                             </div>
                             <div class="container">
                                 <div class="mid">
-                                    <p class="MsoNormal"><font size="5">【深海挽歌】世界王<o:p></o:p></font></p>
-                                    <p class="MsoNormal"><font size="4">——雲帆萬里渡重洋，浩海無際千星引——<o:p></o:p></font></p>
-                                    <p class="MsoNormal"><font size="4">&nbsp;</font></p>
+                                    <p class="MsoNormal" style="font-size: 0.25rem;">【深海挽歌】世界王<o:p></o:p></p>
+                                    <p class="MsoNormal">——雲帆萬里渡重洋，浩海無際千星引——<o:p></o:p></p>
+                                    <p class="MsoNormal">&nbsp;</p>
                                 </div>
                             </div>
                         </div>
 
-                        <h3><span class="h3-tit"><a name="3">-----------------【復刻活動-霸王別姬】-----------------</a></span><span class="date">活動時間： 月 日05:00至 月 日23:59</span><p class="MsoNormal"><font size="4">——台前不見婆娑舞，幕後猶餘繞樑音——<o:p></o:p></font></p></h3>
-                        <div class="detail-div"><div class="container mid"><p class="MsoNormal"><font size="4">食魂：霸王别姬<o:p></o:p></font></p><div id="image1" style="background-image: url(originalImage.jpg); position: absolute; left: 210px;">
-                            <img src="https://1.bp.blogspot.com/-XEdTvNh8cUc/WzTMxnI_yvI/AAAAAAAAXQg/4z0M8e_Avoc6s31yMbdBL5YyKgxz4oRjwCLcBGAs/s1600/blank.gif" height="330px" width="380px">
-                        </div><img src="img/fd/浮水_食物語_霸王別姬.png" alt="霸王别姬" title="霸王别姬" width="50%"></div></div>
-                        <h3><span class="h3-tit"><a name="4">【賞燈之約】</a></span><span class="date">活動時間： 月 日05:00至 月 日23:59</span><p class="MsoNormal"><font size="4">——華裾籠輕紗，張燈溢光彩——<o:p></o:p></font></p></h3>
+                        
+                        <h3><span class="h3-tit"><a name="4">【賞燈之約】</a></span><span class="date">活動時間： 月 日05:00至 月 日23:59</span><p class="MsoNormal">——華裾籠輕紗，張燈溢光彩——<o:p></o:p></p></h3>
                         <div class="detail-div">
                             <div class="container">
-                                <p class="MsoNormal"><font size="4">【賞燈之約】特訓活動限時開啟！<o:p></o:p></font></p>
-                                <p class="MsoNormal"><font size="4">活動說明： 特訓活動，提升等級到50等可獲得隨機御品常駐食魂。另外購買「色彩搭配進階」秘籍，可額外獲得少主時裝「流光雅韻」！<o:p></o:p></font></p>                              
+                                <p class="MsoNormal">【賞燈之約】特訓活動限時開啟！<o:p></o:p></p>
+                                <p class="MsoNormal">活動說明： 特訓活動，提升等級到50等可獲得隨機御品常駐食魂。另外購買「色彩搭配進階」秘籍，可額外獲得少主時裝「流光雅韻」！<o:p></o:p></p>                              
                                 <p class="p-tit1">～～ 任務 ～～</p>
                                 <div class="conleft">
                                     <p class="p-tit2">「少主時裝．流光雅韻」</p>
@@ -401,47 +435,47 @@
 
                             </div>
                             <div class="container mid">
-                                <p><font>PV</font></p>
+                                <p>PV</p>
                                 <video src=""></video>
                             </div>
                             <div class="container">
                                 <div>
-                                    <p class="MsoNormal"><font size="4">新食魂: 纏花雲夢肉（CV.錢文青）、鬼火綠（CV.kinsen）<o:p></o:p></font></p>
+                                    <p class="MsoNormal">新食魂: 纏花雲夢肉（CV.錢文青）、鬼火綠（CV.kinsen）<o:p></o:p></p>
                                     <div id="image1" style="background-image: url(originalImage.jpg); position: absolute;">
                                         <img src="https://1.bp.blogspot.com/-XEdTvNh8cUc/WzTMxnI_yvI/AAAAAAAAXQg/4z0M8e_Avoc6s31yMbdBL5YyKgxz4oRjwCLcBGAs/s1600/blank.gif" height="305px" width="445px">
                                     </div><img src="img/fd/介紹_纏花雲夢肉.jpg" alt="纏花雲夢肉" title="纏花雲夢肉" width="30%"><img src="img/fd/介紹_鬼火綠.jpg" alt="鬼火綠" title="鬼火綠" width="30%">
-                                    <p class="MsoNormal"><font size="4">&nbsp;</font></p>
-                                    <p class="MsoNormal"><font size="4">【主線劇情】主線第十三章劇情關卡開啟<o:p></o:p></font></p>
-                                    <p class="MsoNormal"><font size="4">——暗潮湧愛恨意難平，同敵愾燎原勢初成——<o:p></o:p></font></p>
-                                    <p class="MsoNormal"><font size="4">劇情簡介：15級以上可限時通關低難度關卡，74級以上可永久開啟本章節。<o:p></o:p></font></p>
-                                    <p class="MsoNormal"><font size="4">鵠羹將迎來再一次的成長。鵠羹成長活動【羽翼漸豐】將在通關先行體驗關卡或正式主線十三章後開啟，參與活動達指定要求，鵠羹將蛻變為最終型態，成長為御品食魂。<o:p></o:p></font></p>
-                                    <p class="MsoNormal"><font size="4">——穿雲過千險，柔羽亦成鋒——<o:p></o:p></font></p>
+                                    <p class="MsoNormal">&nbsp;</p>
+                                    <p class="MsoNormal">【主線劇情】主線第十三章劇情關卡開啟<o:p></o:p></p>
+                                    <p class="MsoNormal">——暗潮湧愛恨意難平，同敵愾燎原勢初成——<o:p></o:p></p>
+                                    <p class="MsoNormal">劇情簡介：15級以上可限時通關低難度關卡，74級以上可永久開啟本章節。<o:p></o:p></p>
+                                    <p class="MsoNormal">鵠羹將迎來再一次的成長。鵠羹成長活動【羽翼漸豐】將在通關先行體驗關卡或正式主線十三章後開啟，參與活動達指定要求，鵠羹將蛻變為最終型態，成長為御品食魂。<o:p></o:p></p>
+                                    <p class="MsoNormal">——穿雲過千險，柔羽亦成鋒——<o:p></o:p></p>
                                     <p><div id="image1" style="background-image: url(originalImage.jpg); position: absolute;">
                                         <img src="https://1.bp.blogspot.com/-XEdTvNh8cUc/WzTMxnI_yvI/AAAAAAAAXQg/4z0M8e_Avoc6s31yMbdBL5YyKgxz4oRjwCLcBGAs/s1600/blank.gif" height="285px" width="520px">
                                     </div><img src="img/fd/浮水_食物語_鵠羹.png" alt="鵠羹" title="鵠羹" width="40%"><img src="img/fd/介紹_御品_鵠羹.jpg" alt="御品_鵠羹" title="御品_鵠羹" width="30%"></p>
-                                    <p class="MsoNormal"><font size="4">&nbsp;</font></p>
-                                    <p class="MsoNormal"><font size="4">【限時祈福】套裝「學海無涯」登場！校園主題家俱限時祈福<o:p></o:p></font></p>
-                                    <p class="MsoNormal"><font size="4">&nbsp;</font></p>
-                                    <p class="MsoNormal"><font size="4">【花前月下】鬼城麻辣雞專屬時裝「風月入懷」限時登場！<o:p></o:p></font></p>
-                                    <p class="MsoNormal"><font size="4">活動說明：活動期間累積儲值達指定積分。<o:p></o:p></font></p>
-                                    <p class="MsoNormal"><font size="4">——拈紅弄花色，春光盡入懷——<o:p></o:p></font></p>
+                                    <p class="MsoNormal">&nbsp;</p>
+                                    <p class="MsoNormal">【限時祈福】套裝「學海無涯」登場！校園主題家俱限時祈福<o:p></o:p></p>
+                                    <p class="MsoNormal">&nbsp;</p>
+                                    <p class="MsoNormal">【花前月下】鬼城麻辣雞專屬時裝「風月入懷」限時登場！<o:p></o:p></p>
+                                    <p class="MsoNormal">活動說明：活動期間累積儲值達指定積分。<o:p></o:p></p>
+                                    <p class="MsoNormal">——拈紅弄花色，春光盡入懷——<o:p></o:p></p>
                                     <p><div id="image1" style="background-image: url(originalImage.jpg); position: absolute;">
                                         <img src="https://1.bp.blogspot.com/-XEdTvNh8cUc/WzTMxnI_yvI/AAAAAAAAXQg/4z0M8e_Avoc6s31yMbdBL5YyKgxz4oRjwCLcBGAs/s1600/blank.gif" height="280px" width="330px">
                                     </div><img src="img/fd/浮水_食物語_鬼城麻辣雞.png" alt="鬼城麻辣雞" title="鬼城麻辣雞" width="40%"></p>                
-                                    <p class="MsoNormal"><font size="4">&nbsp;</font></p>
-                                    <p class="MsoNormal"><font size="4">【赤膽忠心】參與活動贏取蓮花血鴨時裝「紅蓮傳說」！<o:p></o:p></font></p>
-                                    <p class="MsoNormal"><font size="4">活動說明：金玉轉盤。<o:p></o:p></font></p>
-                                    <p class="MsoNormal"><font size="4">——長槍斬夙仇，紅蓮綻舊城——<o:p></o:p></font></p>
+                                    <p class="MsoNormal">&nbsp;</p>
+                                    <p class="MsoNormal">【赤膽忠心】參與活動贏取蓮花血鴨時裝「紅蓮傳說」！<o:p></o:p></p>
+                                    <p class="MsoNormal">活動說明：金玉轉盤。<o:p></o:p></p>
+                                    <p class="MsoNormal">——長槍斬夙仇，紅蓮綻舊城——<o:p></o:p></p>
                                     <p><div id="image1" style="background-image: url(originalImage.jpg); position: absolute;">
                                         <img src="https://1.bp.blogspot.com/-XEdTvNh8cUc/WzTMxnI_yvI/AAAAAAAAXQg/4z0M8e_Avoc6s31yMbdBL5YyKgxz4oRjwCLcBGAs/s1600/blank.gif" height="280px" width="330px">
                                     </div><img src="img/fd/浮水_食物語_蓮花血鴨.png" alt="蓮花血鴨" title="蓮花血鴨/蓮華/將軍" width="40%"></p>                                   
-                                    <p class="MsoNormal"><font size="4">&nbsp;</font></p>
-                                    <p class="MsoNormal"><font size="4">【繪憶上新】新增「德州扒雞」專屬繪憶「悠悠旅行」！<o:p></o:p></font></p>
-                                    <p class="MsoNormal"><font size="4">——悠悠旅途長，月台留客心——<o:p></o:p></font></p>
+                                    <p class="MsoNormal">&nbsp;</p>
+                                    <p class="MsoNormal">【繪憶上新】新增「德州扒雞」專屬繪憶「悠悠旅行」！<o:p></o:p></p>
+                                    <p class="MsoNormal">——悠悠旅途長，月台留客心——<o:p></o:p></p>
                                     <p><div id="image1" style="background-image: url(originalImage.jpg); position: absolute;">
                                         <img src="https://1.bp.blogspot.com/-XEdTvNh8cUc/WzTMxnI_yvI/AAAAAAAAXQg/4z0M8e_Avoc6s31yMbdBL5YyKgxz4oRjwCLcBGAs/s1600/blank.gif" height="280px" width="330px">
                                     </div><img src="img/fd/浮水_食物語_德州扒雞.png" alt="德州扒雞" title="德州扒雞/德州" width="40%"></p>
-                                    <p class="MsoNormal"><font size="4">&nbsp;</font></p>                                
+                                    <p class="MsoNormal">&nbsp;</p>                                
                                 </div>
                             </div>                         
                             <div class="container">
@@ -523,17 +557,17 @@
                             </div>
                             <div class="container">
                                 <div class="mid">
-                                    <p class="MsoNormal"><font size="5">【】世界王<o:p></o:p></font></p>
-                                    <p class="MsoNormal"><font size="4">——詭夢虛實莫測，怪奇幻化由心——<o:p></o:p></font></p>
-                                    <p class="MsoNormal"><font size="4">&nbsp;</font></p>
+                                    <p class="MsoNormal" style="font-size: 0.25rem;">【】世界王<o:p></o:p></p>
+                                    <p class="MsoNormal">——詭夢虛實莫測，怪奇幻化由心——<o:p></o:p></p>
+                                    <p class="MsoNormal">&nbsp;</p>
                                 </div>
                             </div> 
                         </div>
                         
                         
                         
-                        <h3><span class="h3-tit"><a name="6">-----------------【復刻活動―對弈山河】-----------------</a></span><span class="date">活動時間： 月 日05:00至 月 日23:59</span><p class="MsoNormal"><font size="4">——神器出，山河隕，鶉火崩，鶉首興——<o:p></o:p></font></p></h3>
-                        <div class="detail-div"><div class="container"><p class="MsoNormal mid"><font size="4">食魂：楚夷花糕、西鳳酒<o:p></o:p></font></p><div id="image1" style="background-image: url(originalImage.jpg); position: absolute;">
+                        <h3><span class="h3-tit"><a name="6">-----------------【復刻活動―對弈山河】-----------------</a></span><span class="date">活動時間： 月 日05:00至 月 日23:59</span><p class="MsoNormal">——神器出，山河隕，鶉火崩，鶉首興——<o:p></o:p></p></h3>
+                        <div class="detail-div"><div class="container"><p class="MsoNormal mid">食魂：楚夷花糕、西鳳酒<o:p></o:p></p><div id="image1" style="background-image: url(originalImage.jpg); position: absolute;">
                             <img src="https://1.bp.blogspot.com/-XEdTvNh8cUc/WzTMxnI_yvI/AAAAAAAAXQg/4z0M8e_Avoc6s31yMbdBL5YyKgxz4oRjwCLcBGAs/s1600/blank.gif" height="350px" width="740px">
                         </div><img src="img/fd/浮水_食物語_楚夷花糕.png" alt="楚夷花糕" title="楚夷花糕" width="50%"><img src="img/fd/浮水_食物語_西鳳酒.png" alt="西鳳酒" title="西鳳酒" width="50%"></div></div>
                         <h3><span class="h3-tit"><a name="7">---------------------【十年窗下】---------------------</a></span><span class="date">活動時間： 月 日05:00至 月 日23:59</span></h3>
@@ -542,32 +576,32 @@
 
                             </div>
                             <div class="container mid">
-                                <p><font>PV</font></p>
+                                <p><font>PV</p>
                                 <video src=""></video>
                             </div>
                             <div class="container">
                                 <div>
-                                    <p class="MsoNormal"><font size="4">新食魂: 過橋米線（CV.李昕）、狀元及第粥（CV.景向誰依）<o:p></o:p></font></p>
+                                    <p class="MsoNormal">新食魂: 過橋米線（CV.李昕）、狀元及第粥（CV.景向誰依）<o:p></o:p></p>
                                     <div id="image1" style="background-image: url(originalImage.jpg); position: absolute;">
                                         <img src="https://1.bp.blogspot.com/-XEdTvNh8cUc/WzTMxnI_yvI/AAAAAAAAXQg/4z0M8e_Avoc6s31yMbdBL5YyKgxz4oRjwCLcBGAs/s1600/blank.gif" height="300px" width="445px">
                                     </div><img src="img/fd/介紹_過橋米線.jpg" alt="過橋米線" title="過橋米線" width="30%"><img src="img/fd/介紹_狀元及第粥.jpg" alt="狀元及第粥" title="狀元及第粥" width="30%">
-                                    <p class="MsoNormal"><font size="4">&nbsp;</font></p>
-                                    <p class="MsoNormal"><font size="4">【限時祈福】套裝「大魁天下」登場！殿試主題家俱限時祈福<o:p></o:p></font></p>
-                                    <p class="MsoNormal"><font size="4">&nbsp;</font></p>
-                                    <p class="MsoNormal"><font size="4">【四寶淵藪】櫻桃畢羅專屬時裝「貓影翩躚」限時登場！<o:p></o:p></font></p>
-                                    <p class="MsoNormal"><font size="4">活動說明：活動期間累積儲值達指定積分。<o:p></o:p></font></p>
-                                    <p class="MsoNormal"><font size="4">——萌貓繞身畔，步步皆翩翩——<o:p></o:p></font></p>
+                                    <p class="MsoNormal">&nbsp;</p>
+                                    <p class="MsoNormal">【限時祈福】套裝「大魁天下」登場！殿試主題家俱限時祈福<o:p></o:p></p>
+                                    <p class="MsoNormal">&nbsp;</p>
+                                    <p class="MsoNormal">【四寶淵藪】櫻桃畢羅專屬時裝「貓影翩躚」限時登場！<o:p></o:p></p>
+                                    <p class="MsoNormal">活動說明：活動期間累積儲值達指定積分。<o:p></o:p></p>
+                                    <p class="MsoNormal">——萌貓繞身畔，步步皆翩翩——<o:p></o:p></p>
                                     <p><div id="image1" style="background-image: url(originalImage.jpg); position: absolute;">
                                         <img src="https://1.bp.blogspot.com/-XEdTvNh8cUc/WzTMxnI_yvI/AAAAAAAAXQg/4z0M8e_Avoc6s31yMbdBL5YyKgxz4oRjwCLcBGAs/s1600/blank.gif" height="280px" width="330px">
                                     </div><img src="img/fd/浮水_食物語_櫻桃畢羅.png" alt="櫻桃畢羅" title="櫻桃畢羅" width="40%"></p>                                   
-                                    <p class="MsoNormal"><font size="4">&nbsp;</font></p>
-                                    <p class="MsoNormal"><font size="4">【時裝預售】西鳳酒時裝「飛隼巡軍」預售開始！<o:p></o:p></font></p>
-                                    <p class="MsoNormal"><font size="4">活動說明：少主可在預售期間通過活動介面購買預售禮包，獲取代金券。時裝「飛隼巡軍」於正式售賣時，屆時擁有對應代金券的少主可使用則扣價格購買時裝「飛隼巡軍」。<o:p></o:p></font></p>
-                                    <p class="MsoNormal"><font size="4">——風氅展韜略，飛隼巡三軍——<o:p></o:p></font></p>
+                                    <p class="MsoNormal">&nbsp;</p>
+                                    <p class="MsoNormal">【時裝預售】西鳳酒時裝「飛隼巡軍」預售開始！<o:p></o:p></p>
+                                    <p class="MsoNormal">活動說明：少主可在預售期間通過活動介面購買預售禮包，獲取代金券。時裝「飛隼巡軍」於正式售賣時，屆時擁有對應代金券的少主可使用則扣價格購買時裝「飛隼巡軍」。<o:p></o:p></p>
+                                    <p class="MsoNormal">——風氅展韜略，飛隼巡三軍——<o:p></o:p></p>
                                     <p><div id="image1" style="background-image: url(originalImage.jpg); position: absolute;">
                                         <img src="https://1.bp.blogspot.com/-XEdTvNh8cUc/WzTMxnI_yvI/AAAAAAAAXQg/4z0M8e_Avoc6s31yMbdBL5YyKgxz4oRjwCLcBGAs/s1600/blank.gif" height="280px" width="330px">
                                     </div><img src="img/fd/浮水_食物語_西鳳酒.png" alt="西鳳酒" title="西鳳酒" width="40%"></p>   
-                                    <p class="MsoNormal"><font size="4">&nbsp;</font></p>
+                                    <p class="MsoNormal">&nbsp;</p>
                                 </div>
                             </div>
                             <div class="container">
@@ -612,15 +646,15 @@
                             </div>
                             <div class="container">
                                 <div class="mid">
-                                    <p class="MsoNormal"><font size="5">【鹿鳴取賢】世界王<o:p></o:p></font></p>
-                                    <p class="MsoNormal"><font size="4">——十年窗下無人知，一舉成名天下聞；文人風骨哪堪折，書生意氣破青雲——<o:p></o:p></font></p>
-                                    <p class="MsoNormal"><font size="4">&nbsp;</font></p>
+                                    <p class="MsoNormal" style="font-size: 0.25rem;">【鹿鳴取賢】世界王<o:p></o:p></p>
+                                    <p class="MsoNormal">——十年窗下無人知，一舉成名天下聞；文人風骨哪堪折，書生意氣破青雲——<o:p></o:p></p>
+                                    <p class="MsoNormal">&nbsp;</p>
                                 </div>
                             </div> 
                         </div>
 
-                        <h3><span class="h3-tit"><a name="8">-----------------【復刻活動-萬曲和鳴】-----------------</a></span><span class="date">活動時間： 月 日05:00至 月 日23:59</span><p class="MsoNormal"><font size="4">——幻樂起蜃樓，暖風撥新音——<o:p></o:p></font></p></h3>
-                        <div class="detail-div"><div class="container mid"><p class="MsoNormal"><font size="4">食魂：素蒸音聲部<o:p></o:p></font></p><div id="image1" style="background-image: url(originalImage.jpg); position: absolute; left: 210px;">
+                        <h3><span class="h3-tit"><a name="8">-----------------【復刻活動-萬曲和鳴】-----------------</a></span><span class="date">活動時間： 月 日05:00至 月 日23:59</span><p class="MsoNormal">——幻樂起蜃樓，暖風撥新音——<o:p></o:p></p></h3>
+                        <div class="detail-div"><div class="container mid"><p class="MsoNormal">食魂：素蒸音聲部<o:p></o:p></p><div id="image1" style="background-image: url(originalImage.jpg); position: absolute; left: 210px;">
                             <img src="https://1.bp.blogspot.com/-XEdTvNh8cUc/WzTMxnI_yvI/AAAAAAAAXQg/4z0M8e_Avoc6s31yMbdBL5YyKgxz4oRjwCLcBGAs/s1600/blank.gif" height="350px" width="400px">
                         </div><img src="img/fd/浮水_食物語_素蒸音聲部.png" alt="素蒸音聲部" title="素蒸音聲部" width="50%"></div></div>
                         <h3><span class="h3-tit"><a name="9">---------------------【勠力同心】---------------------</a></span><span class="date">活動時間： 月 日05:00至 月 日23:59</span></h3>
@@ -629,36 +663,36 @@
 
                             </div>
                             <div class="container mid">
-                                <p><font>PV</font></p>
+                                <p><font>PV</p>
                                 <video src=""></video>
                             </div>
                             <div class="container">
                                 <div>
-                                    <p class="MsoNormal"><font size="4">食魂: 雉羹（CV.王敏納）<o:p></o:p></font></p>
+                                    <p class="MsoNormal">食魂: 雉羹（CV.王敏納）<o:p></o:p></p>
                                     <div id="image1" style="background-image: url(originalImage.jpg); position: absolute;">
                                         <img src="https://1.bp.blogspot.com/-XEdTvNh8cUc/WzTMxnI_yvI/AAAAAAAAXQg/4z0M8e_Avoc6s31yMbdBL5YyKgxz4oRjwCLcBGAs/s1600/blank.gif" height="295px" width="520px">
                                     </div><img src="img/fd/介紹_雉羹.jpg" alt="雉羹" title="雉羹" width="70%">
-                                    <p class="MsoNormal"><font size="4">【破魔定乾坤】主線第一部終章．下，全語音劇情即將開啟！<o:p></o:p></font></p>
-                                    <p class="MsoNormal"><font size="4">&nbsp;</font></p>
-                                    <p class="MsoNormal"><font size="4">【限時祈福】套裝「甜趣蜜意」登場！甜品風格家俱限時祈福<o:p></o:p></font></p>
-                                    <p class="MsoNormal"><font size="4">&nbsp;</font></p>
-                                    <p class="MsoNormal"><font size="4">【稚兔踏春】青團專屬時裝「豎耳聆春」限時登場！<o:p></o:p></font></p>
-                                    <p class="MsoNormal"><font size="4">活動說明：活動期間累積儲值達指定積分。<o:p></o:p></font></p>
-                                    <p class="MsoNormal" style="color: red;"><font size="4">**之後永久上架時裝商店**<o:p></o:p></font></p>
-                                    <p class="MsoNormal"><font size="4">——春半踏青行，傾耳辨佳音——<o:p></o:p></font></p>
+                                    <p class="MsoNormal">【破魔定乾坤】主線第一部終章．下，全語音劇情即將開啟！<o:p></o:p></p>
+                                    <p class="MsoNormal">&nbsp;</p>
+                                    <p class="MsoNormal">【限時祈福】套裝「甜趣蜜意」登場！甜品風格家俱限時祈福<o:p></o:p></p>
+                                    <p class="MsoNormal">&nbsp;</p>
+                                    <p class="MsoNormal">【稚兔踏春】青團專屬時裝「豎耳聆春」限時登場！<o:p></o:p></p>
+                                    <p class="MsoNormal">活動說明：活動期間累積儲值達指定積分。<o:p></o:p></p>
+                                    <p class="MsoNormal" style="color: red;">**之後永久上架時裝商店**<o:p></o:p></p>
+                                    <p class="MsoNormal">——春半踏青行，傾耳辨佳音——<o:p></o:p></p>
                                     <p><div id="image1" style="background-image: url(originalImage.jpg); position: absolute;">
                                         <img src="https://1.bp.blogspot.com/-XEdTvNh8cUc/WzTMxnI_yvI/AAAAAAAAXQg/4z0M8e_Avoc6s31yMbdBL5YyKgxz4oRjwCLcBGAs/s1600/blank.gif" height="280px" width="330px">
                                     </div><img src="img/fd/浮水_食物語_青團.png" alt="青團" title="青團" width="40%"></p>                                   
-                                    <p class="MsoNormal"><font size="4">&nbsp;</font></p>
-                                    <p class="MsoNormal"><font size="4">【蒼龍蹈海】風生水起時裝「諸海縱橫」！<o:p></o:p></font></p>
-                                    <p class="MsoNormal"><font size="4">活動說明：金玉轉盤。<o:p></o:p></font></p>
-                                    <p class="MsoNormal"><font size="4">——玄冰起狂潮，潛龍騰海淵——<o:p></o:p></font></p>
+                                    <p class="MsoNormal">&nbsp;</p>
+                                    <p class="MsoNormal">【蒼龍蹈海】風生水起時裝「諸海縱橫」！<o:p></o:p></p>
+                                    <p class="MsoNormal">活動說明：金玉轉盤。<o:p></o:p></p>
+                                    <p class="MsoNormal">——玄冰起狂潮，潛龍騰海淵——<o:p></o:p></p>
                                     <p><div id="image1" style="background-image: url(originalImage.jpg); position: absolute;">
                                         <img src="https://1.bp.blogspot.com/-XEdTvNh8cUc/WzTMxnI_yvI/AAAAAAAAXQg/4z0M8e_Avoc6s31yMbdBL5YyKgxz4oRjwCLcBGAs/s1600/blank.gif" height="280px" width="330px">
                                     </div><img src="img/fd/浮水_食物語_風生水起.png" alt="風生水起" title="風生水起/俞生" width="40%"></p>                                 
-                                    <p class="MsoNormal"><font size="4">&nbsp;</font></p>
-                                    <p class="MsoNormal"><font size="4">【師法自然】限時活動召喚陣開啟，御品「普茶料理」、珍品「乾燒蝦仁」召喚機率提升！<o:p></o:p></font></p>
-                                    <p class="MsoNormal"><font size="4">&nbsp;</font></p>
+                                    <p class="MsoNormal">&nbsp;</p>
+                                    <p class="MsoNormal">【師法自然】限時活動召喚陣開啟，御品「普茶料理」、珍品「乾燒蝦仁」召喚機率提升！<o:p></o:p></p>
+                                    <p class="MsoNormal">&nbsp;</p>
                                 </div>
                             </div>
                             <div class="container">
@@ -704,16 +738,34 @@
                             </div>
                             <div class="container">
                                 <div class="mid">
-                                    <p class="MsoNormal"><font size="5">【同心破魔】世界王<o:p></o:p></font></p>
-                                    <p class="MsoNormal"><font size="4">——解夙仇親友共聚首，齊心力破魔定乾坤——<o:p></o:p></font></p>
-                                    <p class="MsoNormal"><font size="4">&nbsp;</font></p>
+                                    <p class="MsoNormal" style="font-size: 0.25rem;">【同心破魔】世界王<o:p></o:p></p>
+                                    <p class="MsoNormal">——解夙仇親友共聚首，齊心力破魔定乾坤——<o:p></o:p></p>
+                                    <p class="MsoNormal">&nbsp;</p>
                                 </div>
                             </div> 
                         </div>
                     </div>               
             </div>
-        </div>
+        </div>       
     </div>
+    <script type="text/javascript">
+        $(function() {
+            /* 按下GoTop按鈕時的事件 */
+            $('#gotop').click(function(){
+                $('html,body').animate({ scrollTop: 0 }, 'slow');   /* 返回到最頂上 */
+                return false;
+            });
+            
+            /* 偵測卷軸滑動時，往下滑超過400px就讓GoTop按鈕出現 */
+            $(window).scroll(function() {
+                if ( $(this).scrollTop() > 400){
+                    $('#gotop').fadeIn();
+                } else {
+                    $('#gotop').fadeOut();
+                }
+            });
+        });
+    </script>
     <!--圖片防下載-->
     <!--<script>
         //<![CDATA[

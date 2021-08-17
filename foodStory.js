@@ -13,7 +13,7 @@
 		if (width > maxWidth) {
 			width = maxWidth;
 		}
-		//与淘宝做法不同，直接采用简单的rem换算方法1rem=100px
+		//直接采用簡單的rem換算方法 1rem=100px
 		var rem = width * 100 / designWidth;
 		//兼容UC开始
 		rootStyle="html{font-size:"+rem+'px !important}';

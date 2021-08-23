@@ -1,135 +1,12 @@
-.slider_container {
-    margin: 30px auto;
-    width: 272px;
-    height: 340px;
-    position: relative;
-    border: 20px solid;    
-    border-color: #fff;
-    border-bottom-width: 50px;
-    background-color: #f5f5f5;
-    box-shadow: #666 0 0 5px;
+html {
+    font-size: 16px;
 }
-
-.slider_container div {
-    position: absolute;
-    top: 0;
-    left: 0;
-    opacity: 0;
-    filter: alpha(opacity=0);
-}
-/*當圖片數量增加，影片長度需更改，變為5s*圖片數量*/
-.slider_container div {
-    -webkit-animation: round 45s linear infinite;
-            animation: round 45s linear infinite;
-}
-
-/*100/45=2.222...2.222..=1sec*/
-@-webkit-keyframes round {
-    2% {
-        opacity: 1;
-        filter: alpha(opacity=100);
-        /* 0 - 1秒 淡入*/
-    }
-    10% {
-        opacity: 1;
-        filter: alpha(opacity=100);
-        /* 1- 5秒靜止*/
-    }
-    12% {
-        opacity: 0;
-        filter: alpha(opacity=0);
-        /* 5-6秒淡出*/
-    }
-}
-@keyframes round {
-    2% {
-        opacity: 1;
-        filter: alpha(opacity=100);
-        /* 0 - 1秒 淡入*/
-    }
-    10% {
-        opacity: 1;
-        filter: alpha(opacity=100);
-        /* 1- 5秒靜止*/
-    }
-    12% {
-        opacity: 0;
-        filter: alpha(opacity=0);
-        /* 5-6秒淡出*/
-    }
-}
-
-
-.slider_container div:nth-child(9) {
-    -webkit-animation-delay: 0s;
-            animation-delay: 0s;
-}
-
-.slider_container div:nth-child(8) {
-    -webkit-animation-delay: 5s;
-            animation-delay: 5s;
-}
-
-.slider_container div:nth-child(7) {
-    -webkit-animation-delay: 10s;
-            animation-delay: 10s;
-}
-
-.slider_container div:nth-child(6) {
-    -webkit-animation-delay: 15s;
-            animation-delay: 15s;
-}
-
-.slider_container div:nth-child(5) {
-    -webkit-animation-delay: 20s;
-            animation-delay: 20s;
-}
-.slider_container div:nth-child(4) {
-    -webkit-animation-delay: 25s;
-            animation-delay: 25s;
-}
-.slider_container div:nth-child(3) {
-    -webkit-animation-delay: 30s;
-            animation-delay: 30s;
-}
-.slider_container div:nth-child(2) {
-    -webkit-animation-delay: 35s;
-            animation-delay: 35s;
-}
-.slider_container div:nth-child(1) {
-    -webkit-animation-delay: 40s;
-            animation-delay: 40s;
-}
-
-
-.slider_container span {    
-    color: #000;
-    background: #fff;
-    position: absolute;
-    left: 0%;
-    top: 330px;
-    width: 340px;
-    height: 50px;
-    font-size: 20px;
-    text-align: center;
-    line-height: 50px;
-    -webkit-transform:scaleY(0);
-        -ms-transform:scaleY(0);
-            transform:scaleY(0);
-    -webkit-transition: all 0.5s ease-in-out;
-            transition: all 0.5s ease-in-out;
-}
-
-.slider_container:hover span {
-    width: 100%;
-    -webkit-transform:scaleY(1);
-        -ms-transform:scaleY(1);
-            transform:scaleY(1);
-}
-
-.slider_container:hover div {
-    -webkit-animation-play-state: paused;
-            animation-play-state: paused;
+p {
+    display: block;
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
 }
 .menu-sty {
     position: fixed;
@@ -138,4 +15,48 @@
     background-color: rgba(175, 103, 40, 0.582); 
     width: 8%;
 }
-
+.sitebody {
+    margin: 0 auto;
+}
+.header {
+    text-align: center;
+    height: 80px;
+    line-height: 80px;
+    background-color:#FFD4D4;
+}
+.left-side {
+    /*float: left;
+    /*width: 100%;*/
+    margin-left: 180px;
+    margin-right: 300px;
+    padding: 0;
+    background-color: rgb(175, 175, 228);
+}
+.detail-div {
+    float: left;
+    width: 99%;
+    line-height: 25px;
+    box-shadow: 2px 2px 2px gray;
+    background-color:#ffff;
+}
+.right-side {
+    float: right;
+    /*position: absolute;
+    right: -180px;
+    top: 0;*/
+    /*z-index: 10;*/
+    width: 300px;
+    height: 600px;
+    background-color: rgb(253, 231, 240);
+}
+.r-MsoNormal {
+    float: left;
+    width: 100%;
+    font-size: 0.14rem;
+    line-height: 16px;
+}
+.footer {
+    clear: both;
+    height: 80px;
+    background-color: #ffff;
+}

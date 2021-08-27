@@ -1,10 +1,13 @@
 @media only screen and (max-width: 480px) {
+    .main {
+        clear: both;
+    }
     .left-side {
         clear: both;
         /*紫色區塊*/
     }
     .detail-div {
-        width: 272px;
+        width: 280px;
         /*水藍色區塊*/
     }
     .right-side {
@@ -108,7 +111,7 @@ body {
     float: left;
     margin-top: 20px;
     padding: 30px;
-    line-height: 36px;
+    line-height: 0.36rem;
     color: #792e10;
     box-shadow: 2px 2px 2px gray;
     background-color:#bae0f8;
@@ -132,7 +135,7 @@ p {
     padding-bottom: 10px;
     width: 100%;
     /*font-weight: bold;      /*粗體字*/
-    font-size: 18px; 
+    font-size: 0.18rem; 
     background-color: rgba(255, 255, 255, 0.904);
 }
 .MsoNormal {
@@ -140,7 +143,7 @@ p {
     width: 100%;
     /*margin: 5px;*/  /*不會有反應除非比.detail-div p裡還大*/
     line-height: 20px;
-    font-size: 20px;
+    font-size: 0.2rem;
 }
 .p-tit1 {
     float: left;
@@ -149,7 +152,7 @@ p {
     padding-top: 30px;
     padding-bottom: 30px;
     line-height: 36px;
-    font-size: 25px;
+    font-size: 0.25rem;
     color: darkblue;
 }
 /*Links文章去除連結底線*/
@@ -167,19 +170,19 @@ a:hover {
     width: 100%;
     padding-top: 10px;
     padding-bottom: 10px;
-    font-size: 20px;
+    font-size: 0.2rem;
     color: rgb(0, 41, 155);
 }
 .p-con {
     float: left;
     margin-bottom: 10px;
     line-height: 20px;
-    font-size: 18px;
+    font-size: 0.18rem;
     color: rgb(0, 84, 163);
 }
 .sp-con {
     color: rgb(118, 184, 32); 
-    font-size: 15px;
+    font-size: 0.15rem;
     line-height: 15px;
     margin: 0px;
 }
@@ -209,7 +212,7 @@ a:hover {
 }
 .con-box-p {
     line-height: 20px;
-    font-size: 15px;
+    font-size: 0.15rem;
     color: rgb(0, 72, 139);  
 }
 .conright {

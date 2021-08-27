@@ -1,8 +1,6 @@
 @media only screen and (max-width: 480px) {
-    .right-side {
-        width: 150px;
-        min-height: 600px;  
-    }
+    
+    
 }
 div {
     display: block;

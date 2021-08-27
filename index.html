@@ -5,10 +5,20 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>主頁</title>
+    <script src='//ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js'></script>
     <link rel="stylesheet" href="index.css" />
     <script src="./index.js"></script>
 </head>
 <body> 
+    <script type="text/javascript">
+        $(document).ready(init);
+
+        function init() {
+            var now = new Date();
+            var str_NowDate = (now.getFullYear()) + "/" + (now.getMonth() + 1) + "/" + now.getDate();
+            $("#div_date").html(str_NowDate);       
+        }
+    </script>
     <div class="menu-sty"> 
         <!-- style="float: left" 浮起來 立體的-->
         <ul style=" margin: 0px; padding: 15px; padding-right: 0.1rem;">
@@ -22,27 +32,34 @@
 
         </div>
         <div class="left-side">
-            <div class="detail-div">   
-                <!-- CSS -->  <!-- style="background-color: --> <!-- style="border:5px solid 顏色... -->
-                <div style="color: rgb(44, 19, 9);">
-                    <!-- <h1~6></h1~6> 字體大小 --><!-- <font>字型 size="" face="字體" color="#...." -->      
-                    <h1 align="middle"><font face="標楷體">版主大廳</font></h1>
-                </div>  
-                <!--<span style="display: block;">
-                    <img src="img/無情.png" alt="無情" title="食物語_孟婆湯/無情" align="middle" border="2" width="120" height="120">
-                </span>-->
-                <p><img src="img/無情.png" alt="無情" title="食物語_孟婆湯/無情" style="display:block; margin:auto;" border="2" width="120" height="120"></p>
-                
-                <div style="text-align:center; line-height:100px;">
-                    <!--<p style="display:inline;" align="middle"><font color="#604020"><u>Welcome</u></font></p>--> 
-                    <span><font color="#604020"><u>Welcome</u></font></span>
+            <div class="detail-div">  
+                 <p style="color: darkred;">更新日期 <span id="div_date"></span></p>
+                <div class="mid">                  
+                    <!-- CSS -->  <!-- style="background-color: --> <!-- style="border:5px solid 顏色... -->
+                    <div style="color: rgb(44, 19, 9);">
+                        <!-- <h1~6></h1~6> 字體大小 --><!-- <font>字型 size="" face="字體" color="#...." -->      
+                        <h1><font face="標楷體">版主大廳</font></h1>
+                    </div>                
+                    <!--<span style="display: block;">
+                        <img src="img/無情.png" alt="無情" title="食物語_孟婆湯/無情" align="middle" border="2" width="120" height="120">
+                    </span>-->
+                    <p><img src="img/無情.png" alt="無情" title="食物語_孟婆湯/無情" border="2" width="120" height="120"></p>
+                    
+                    <div style="text-align:center; line-height:100px;">
+                        <!--<p style="display:inline;" align="middle"><font color="#604020"><u>Welcome</u></font></p>--> 
+                        <span><font color="#604020"><u>Welcome</u></font></span>
+                    </div>
                 </div>
             </div>
         </div> 
-        <div class="right-side">
-            <p class="r-MsoNormal" style="text-align: center;">うたの☆プリンスさまっ♪ SHINING STAR STAGE -LOVE in DREAM- ≪SHINING ver.≫</p>
-            <video id="video0" src="vid/うたの☆プリンスさまっ♪ SHINING STAR STAGE -LOVE in DREAM- __ Trailer ≪SHINING ver.≫.mp4" controls style="width: 100%; margin-top: 10px;"></video>
+        <div class="right-side mid">
+            <h2>————NEWS————</h2>
+            <p class="r-MsoNormal">うたの☆プリンスさまっ♪ SHINING STAR STAGE -LOVE in DREAM- ≪SHINING ver.≫</p>
+            <video id="video0" src="vid/うたの☆プリンスさまっ♪ SHINING STAR STAGE -LOVE in DREAM- __ Trailer ≪SHINING ver.≫.mp4" controls style="width: 100%;"></video>
             <script>myvid = document.getElementById("video0");  myvid.volume = 0.2</script>
+            <p class="r-MsoNormal">&nbsp;</p>
+            <p class="r-MsoNormal">【浩海揚帆】8/27~9/16 限時開啟</p>
+            <img src="img/fd/浩海揚帆.jpg" alt="浩海揚帆" style="width: 100%;">
         </div>
         <div class="footer"></div>
     </div>

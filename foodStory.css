@@ -283,6 +283,7 @@ button:hover{
 
 .detail-div {
     float: left;    /*不可缺，h3會被吃掉*/
+    position: relative;
     margin-top: 20px;
     padding: 30px;
     line-height: 0.36rem;  /*所有間距*/

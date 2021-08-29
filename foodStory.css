@@ -1,9 +1,6 @@
 @media only screen and (max-width: 480px) {
-    /*.main {
-        width: 272px;
-    }*/
     .detail-div {
-        width: 272px;
+        width: 280px;
         background-color: #ffff;
     }
     .conleft {

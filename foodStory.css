@@ -136,7 +136,8 @@ html {
     right: 0px; 
     background-color: rgba(255, 255, 255, 0.774); 
     width: 20%; 
-    height: 1.15rem;
+    /*height: 1.15rem;*/
+    text-align: center;
 }
 .mus-box {
     float: left;     

@@ -14,8 +14,8 @@
         <audio id="mus1" loop>
             <source src="music/【BGM】琳琅匠心.mp3" type="audio/mpeg">
         </audio>
-        <button id="btplay">播放</button>
-        <button id="btpause">暫停</button>
+        <button style="float: left;" id="btplay">播放</button>
+        <button style="float: left;" id="btpause">暫停</button>
         <script>
             myVid=document.getElementById("mus1"); myVid.volume=0.8
             var ebtplay = document.querySelector("#btplay");
@@ -28,9 +28,9 @@
                 emus1.pause();
             }
         </script>
-        <span class="mus-box">――原聲音樂「琳琅匠心」――</span>
-        <span class="mus-box" style="font-size: 0.1rem;">·食物語音樂商店·</span>
-        <span class="mus-box hide" style="font-size: 0.1rem; background-color: rgba(255, 255, 255, 0.774);">這次是交響樂，開場小提琴有get到我*0^0*</span>    
+        <p class="mus-box">――原聲音樂「琳琅匠心」――</p>
+        <p class="mus-box" style="font-size: 0.1rem;">·食物語音樂商店·</p>
+        <p class="mus-box hide" style="font-size: 0.1rem;">這次是交響樂，開場小提琴有get到我*0^0*</p>    
     </div>
      
     <a id="gotop" href="https://www.blogger.com/blogger.g?blogID=2031514508322140995#" style="text-decoration: none;">TOP</a>
@@ -39,11 +39,12 @@
         $(document).ready(init);
 
         function init() {
-            var now = new Date();
-            var str_NowDate = (now.getFullYear()) + "/" + (now.getMonth() + 1) + "/" + now.getDate();
+            var now = new Date(document.lastModified);
+            var str_NowDate = (now.getFullYear()) + "/" + (now.getMonth() + 1) + "/" + now.getDate() + " " + now.getHours() + ":" + now.getMinutes();
             $("#div_date").html(str_NowDate);       
         }
-    </script>        
+    </script>
+    
     <div class="header">
         <div class="wrap">
             <div class="nav">
@@ -326,7 +327,7 @@
                                 </div><img src="img/fd/浩海揚帆.jpg" alt="浩海揚帆" title="活動_浩海揚帆" width="100%" height="100%">
                                 <p class="MsoNormal">&nbsp;</p>
                                 <p><font>PV</font></p>
-                                <video id="video3" src="img/fd/台服_浩海揚帆PV.mp4" controls width="70%">無法載入影片</video>
+                                <video id="video3" src="img/fd/台服_浩海揚帆PV.mp4" controls width="90%">無法載入影片</video>
                                 <script>myVid = document.getElementById("video3");  myVid.volume = 0.2</script>
                             </div>
                             <div class="container">

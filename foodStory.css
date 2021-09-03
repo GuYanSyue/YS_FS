@@ -129,6 +129,16 @@ div {
 html {
     font-size: 16px;
 }
+.renew {
+    position: fixed;
+    z-index: 5;
+    bottom: 1rem;
+    padding-left: 10px;
+    padding-right: 10px;
+    font-size: 0.15rem;
+    color: rgb(3, 63, 119);
+    background-color: rgba(255, 255, 255, 0.589);
+}
 .music-sty {
     position: fixed; 
     z-index: 20;

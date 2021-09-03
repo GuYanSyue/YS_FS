@@ -20,21 +20,45 @@ p {
     width: 100%;
     text-align: center;
 }
-.menu-sty {
-    position: fixed;
-    z-index: 20;
-    top: 100px; 
-    background-color: rgba(175, 103, 40, 0.582); 
-    width: 8%;
-}
+
 .sitebody {
     margin: 0 auto;
 }
 .header {
-    text-align: center;
+    /*position: absolute;     /*設定absolute，該元素就會完全跳脫該頁面，換個說法，它浮在頁面之上。原本所占用的空間將不復存在*/
+    overflow: hidden;
+    /*text-align: center;*/
     height: 80px;
     line-height: 80px;
+    font-family: DFkai-sb, sans-serif;
     background-color:#FFD4D4;
+}
+.nav {
+    position: relative;
+    /*float: left;*/
+    /*display: inline;*/
+    margin: 0 auto;
+    width: 700px;
+    height: 80px;
+}
+.nav a:link, .nav a:visited {
+    color: rgb(26, 140, 185);     /*超連結字體顏色*/
+    text-decoration: none       /*none ←加這句 去除連結底線*/
+}
+.nav a:hover {
+    color: rgb(11, 110, 150);     /*滑鼠停在超連結中文字的顏色*/
+    background-color: #c1f8ab;  /*滑鼠停留在超連結中文字的底色*/
+    text-decoration: none;      /*none ←加這句 去除連結底線*/
+}
+.btn-index {
+    float: left;
+    display: inline;
+    text-align: center;
+    /*padding-top: 25px;*/
+    margin-left: 50px;
+    width: 150px;
+    height: 80px;
+    font-size: 25px;
 }
 .left-side {
     /*float: left;

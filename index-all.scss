@@ -1,0 +1,186 @@
+* {
+    box-sizing: border-box;
+  }
+  @mixin pc {
+    @media (max-width: 1024px) {
+      @content;
+    }
+  }
+  
+  @mixin pad {
+    @media (max-width: 768px) {
+      @content;
+    }
+  }
+  
+  @mixin phone {
+    @media (max-width: 375px) {
+      @content;
+    }
+  }
+  
+  $font-m: 16px;
+  $font-l: $font-m * 1.5;
+  $font-s: $font-m * 0.8;
+  $primary-color:#ffbe0b;
+
+  a {
+    text-decoration: none;
+    font-size: $font-m;
+  }
+
+  h2 {
+    font-size: $font-l;
+    font-weight: bold;
+    padding-left: 16px;
+    padding-top: 1em;
+}
+
+  p {
+    line-height: 1.8;
+    padding: 1em;
+  }
+
+  .container {
+    position: relative;
+    overflow: hidden;
+    margin: 0 auto;
+    max-width: 1200px;  
+    height: auto;
+  }
+
+  .mobile_close,
+  .mobile_open {
+      display: inline-block;
+      // 使用 inline-block 才可以調整大小
+      font-size: $font-m;
+      padding: 1px;
+      color: $primary-color;
+      line-height: 50px;
+  }
+
+  .mobile_open {
+    display: none;
+
+    @include pad {
+        display: inline-block;
+    }
+  }
+
+  .aside {
+    overflow: hidden;
+    // 在 PC 時隱藏
+    width: 270px;
+    background-color: #333;
+    transform: translateX(-270px);
+    // 在 PC 顯示下，往左邊推擠到 container 外
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    // 將 aside 選單絕對定位在 container 上，並且使用上方與下方都為 0px ，靠左邊對齊，讓 header 可往上移動
+
+
+    @include pad {
+        display: block;
+        border-right: 3px solid $primary-color;
+        transition: all 0.5s;
+
+        li {
+            margin: 1em;
+            // 在 pad 螢幕用 margin 推擠出 li 的空間
+
+            a {
+                display: block;
+                // 在 pad 螢幕下屬性改成 block 佔滿整行
+                color: $primary-color;
+                border-bottom: 1px dashed $primary-color;
+                padding: 1em;
+
+                &:hover {
+                    background-color: $primary-color;
+                    color: #333;
+                    transition: 0.3s;
+                }
+            }
+        }
+    }
+  }
+
+  .main{
+    transform: translateX(0px);
+    transition: all 0.5s;
+    // 讓 aside 在收闔時，可以同步收闔
+  }
+
+  .header {
+    background-color: #333;
+    height: 50px;
+    border-bottom: 3px solid $primary-color;
+
+    .menu {
+        float: right;
+        margin-right: 1em;
+
+        li {
+            float: left;
+
+            a {
+                color: $primary-color;
+                font-size: $font-m;
+                padding-right: 1em;
+                padding-left: 1em;
+                line-height: 50px;
+
+                &:hover {
+                    background-color: $primary-color;
+                    padding-top: 17px;
+                    padding-bottom: 15px;
+                    color: #333;
+                    transition: all 0.3s;
+                    // 滑鼠移過去有漸變效果
+                }
+            }
+        }
+    }
+
+    @include pad {
+        .menu {
+            display: none;
+            // 在 pad 螢幕以下會不顯示選單
+            transition: all 0.5s;
+
+            li {
+                float: left;
+
+                a {
+                    display: block;
+                    // pad 螢幕以下 aside 選單內的 a 連結顯示占滿整行
+                    color: $primary-color;
+                    line-height: 50px;
+                    border-bottom: 1px dashed $primary-color;
+                    transition: all 0.5s;
+
+                    &:hover {
+                        background-color: $primary-color;
+                        color: #333;
+                    }
+                }
+            }
+        }
+    }
+  }
+
+  // 透過 jQuery 增加 class open 觸發選單
+  .open {
+    .main {
+        transform: translateX(270px);
+        // 當觸發 .open 時，main 會跳出選單
+        transition: all 0.5s;
+    }
+
+    .aside {
+        transform: translateX(0);
+        // 當觸發 .open 時， aside 會打開
+        transition: all 0.5s;
+    }
+  }

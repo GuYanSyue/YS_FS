@@ -193,9 +193,9 @@ button:hover{
     background-color: rgb(98, 136, 33);
 }
 .nav {
+    position: relative;
     float: left;
     display: inline;
-    position: relative;
     width: 7rem;
     height: 0.8rem;
 }
@@ -208,7 +208,7 @@ button:hover{
     width: 1.5rem;
     height: 0.55rem;
     font-size: 0.25rem;
-    font-family: DFkai-sb;
+    font-family: DFkai-sb, sans-serif;
 }
 /*Links文章去除連結底線*/
 .nav a:link, .nav a:visited {

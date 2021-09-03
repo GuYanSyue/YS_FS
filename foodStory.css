@@ -129,6 +129,9 @@ div {
 html {
     font-size: 16px;
 }
+a:link, a:visited, a:hover {
+    text-decoration: none       /*none ←加這句 去除連結底線*/
+}
 .renew {
     position: fixed;
     z-index: 5;
@@ -138,6 +141,23 @@ html {
     font-size: 0.15rem;
     color: rgb(3, 63, 119);
     background-color: rgba(255, 255, 255, 0.589);
+}
+.menu-sty {
+    position: fixed;
+    z-index: 15;
+    top: 0.2rem;
+    padding-left: 0.1rem;
+    font-size: 0.15rem;
+    line-height: 0.3rem;
+    color: rgb(43, 83, 5);
+    background-color: rgba(255, 255, 255, 0.589);
+}
+.menu-sty a:link, .menu-sty a:visited{
+    color: rgb(76, 128, 129);
+}
+.menu-sty a:hover {
+    color: rgb(149, 225, 228);
+    background-color: rgb(21, 105, 153);
 }
 .music-sty {
     position: fixed; 

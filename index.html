@@ -9,7 +9,8 @@
     <script src='//ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js'></script>
     <link rel="stylesheet" href="index.css" />
     <link rel="stylesheet" href="index-all.css" />
-    <script src="./index.js"></script>
+    <script src="index.js"></script>
+    <script src="all.js"></script>
     <script type="text/javascript">
         $(document).ready(init);
 
@@ -21,17 +22,29 @@
     </script>
 </head>
 <body> 
-    <div class="container">
-        <div class="sitebody">
-            <div class="header">
-                <div class="nav">
-                    <a class="btn-index" title="主廳" href="index.html">主廳</a>
-                    <a class="btn-index" title="食物語" href="Home_foodStory.html">食物語</a>
-                    <p class="btn-index" style="padding: 0; padding-top: 15px; margin-top: 0rem; margin-bottom: 0rem; color: rgb(4, 73, 66);">待開發...</p>
-                </div>
+    <div class="sitebody">
+        <div class="aside">
+            <a href="#" class="mobile_close"><i class="fas fa-window-close"></i></a>
+            <div class="aside-menu">
+                <h2>————NEWS————</h2>
+                <p class="r-MsoNormal">うたの☆プリンスさまっ♪ SHINING STAR STAGE -LOVE in DREAM- ≪SHINING ver.≫</p>
+                <video id="video0" src="vid/うたの☆プリンスさまっ♪ SHINING STAR STAGE -LOVE in DREAM- __ Trailer ≪SHINING ver.≫.mp4" controls style="width: 100%;"></video>
+                <script>myvid = document.getElementById("video0");  myvid.volume = 0.2</script>
+                <p class="r-MsoNormal">&nbsp;</p>
+                <p class="r-MsoNormal">【浩海揚帆】8/27~9/16 限時開啟</p>
+                <img src="img/fd/浩海揚帆.jpg" alt="浩海揚帆" style="width: 100%;">
             </div>
-            
+        </div>
+        <div class="header">         
+            <div class="nav">
+                <a class="btn-index" title="主廳" href="index.html">主廳</a>
+                <a class="btn-index" title="食物語" href="Home_foodStory.html">食物語</a>
+                <a class="btn-index" title="待開發" style="color: rgb(4, 73, 66);">待開發</a>
+            </div>
+        </div>       
+        <div class="main">           
             <div class="left-side">
+                <a href="#" class="mobile_open"><i class="fas fa-list"></i></a>
                 <div class="detail-div">  
                     <p style="color: darkred;">更新日期 <span id="div_date"></span></p>
                     <div class="mid">                  
@@ -43,28 +56,25 @@
                         <!--<span style="display: block;">
                             <img src="img/無情.png" alt="無情" title="食物語_孟婆湯/無情" align="middle" border="2" width="120" height="120">
                         </span>-->
-                        <p><img src="img/無情.png" alt="無情" title="食物語_孟婆湯/無情" border="2" width="120" height="120"></p>
-                        
+                        <p><img src="img/無情.png" alt="無情" title="食物語_孟婆湯/無情" border="2" width="120" height="120"></p>               
                         <div style="text-align:center; line-height:100px;">
                             <!--<p style="display:inline;" align="middle"><font color="#604020"><u>Welcome</u></font></p>--> 
                             <span><font color="#604020"><u>Welcome</u></font></span>
-                        </div>
+                        </div>                      
                     </div>
                 </div>
             </div> 
-            <div class="ri-wrap">
-                <div class="right-side mid">
-                    <h2>————NEWS————</h2>
-                    <p class="r-MsoNormal">うたの☆プリンスさまっ♪ SHINING STAR STAGE -LOVE in DREAM- ≪SHINING ver.≫</p>
-                    <video id="video0" src="vid/うたの☆プリンスさまっ♪ SHINING STAR STAGE -LOVE in DREAM- __ Trailer ≪SHINING ver.≫.mp4" controls style="width: 100%;"></video>
-                    <script>myvid = document.getElementById("video0");  myvid.volume = 0.2</script>
-                    <p class="r-MsoNormal">&nbsp;</p>
-                    <p class="r-MsoNormal">【浩海揚帆】8/27~9/16 限時開啟</p>
-                    <img src="img/fd/浩海揚帆.jpg" alt="浩海揚帆" style="width: 100%;">
-                </div>
+            <div class="right-side mid">
+                <h2>————NEWS————</h2>
+                <p class="r-MsoNormal">うたの☆プリンスさまっ♪ SHINING STAR STAGE -LOVE in DREAM- ≪SHINING ver.≫</p>
+                <video id="video0" src="vid/うたの☆プリンスさまっ♪ SHINING STAR STAGE -LOVE in DREAM- __ Trailer ≪SHINING ver.≫.mp4" controls style="width: 100%;"></video>
+                <script>myvid = document.getElementById("video0");  myvid.volume = 0.2</script>
+                <p class="r-MsoNormal">&nbsp;</p>
+                <p class="r-MsoNormal">【浩海揚帆】8/27~9/16 限時開啟</p>
+                <img src="img/fd/浩海揚帆.jpg" alt="浩海揚帆" style="width: 100%;">
             </div>
             <div class="footer"></div>
-        </div>
+        </div> 
     </div>
 </body>
 </html>

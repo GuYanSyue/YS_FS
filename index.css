@@ -1,6 +1,26 @@
 @media only screen and (max-width: 480px) {
     
-    
+}
+
+@media only screen and (max-width: 768px) {
+    .btn-index {
+        margin-left: 0px;
+        width: 115px;
+    }
+    .left-side {
+        margin: 0;
+        min-width: 310px;
+    }
+}
+@media only screen and (min-width: 769px) {
+    .btn-index {
+        margin-left: 50px;
+        width: 150px;
+    }
+    .left-side {
+        margin-left: 180px;
+        margin-right: 300px;
+    }
 }
 div {
     display: block;
@@ -20,25 +40,27 @@ p {
     width: 100%;
     text-align: center;
 }
-
 .sitebody {
+    position: relative;
+    overflow: hidden;
     margin: 0 auto;
+    height: auto;
+    max-width: 1200px;
+    font-family: DFkai-sb, sans-serif;
 }
 .header {
-    /*position: absolute;     /*設定absolute，該元素就會完全跳脫該頁面，換個說法，它浮在頁面之上。原本所占用的空間將不復存在*/
-    overflow: hidden;
-    /*text-align: center;*/
+    /*overflow: hidden;*/
+    text-align: center;
     height: 80px;
-    line-height: 80px;
-    font-family: DFkai-sb, sans-serif;
+    line-height: 80px; 
     background-color:#FFD4D4;
+    border-bottom: 3px solid #ffd460;
 }
 .nav {
     position: relative;
-    /*float: left;*/
-    /*display: inline;*/
-    margin: 0 auto;
-    width: 700px;
+    display: inline-block;
+    text-align: center;
+    /*width: 700px;*/
     height: 80px;
 }
 .nav a:link, .nav a:visited {
@@ -52,28 +74,27 @@ p {
 }
 .btn-index {
     float: left;
-    display: inline;
+    display: inline;  
+    /*margin-left: 50px;*/
     text-align: center;
-    /*padding-top: 25px;*/
-    margin-left: 50px;
-    width: 150px;
+    /*width: 150px;*/
     height: 80px;
     font-size: 25px;
 }
 .left-side {
-    /*float: left;
-    /*width: 100%;*/
-    margin-left: 180px;
-    margin-right: 300px;
+    /*margin-left: 180px;
+    margin-right: 300px;*/
+    max-width: 710px;
     padding: 0;
-    background-color: rgb(175, 175, 228);
+    background-color: rgb(171, 171, 228);
 }
 .detail-div {
     float: left;
     display: block;
     margin: 0 auto;
-    width: 99%;
+    width: 100%;
     line-height: 25px;
+    height: 800px;
     box-shadow: 2px 2px 2px gray;
     background-color:#ffff;
 }
@@ -84,6 +105,11 @@ p {
     font-weight: bold;
     color: rgb(99, 1, 1);
     background-color: rgb(253, 231, 240);
+}
+.aside-menu {
+    margin: 1em;
+    text-align: center;
+    overflow-y: scroll;
 }
 .r-MsoNormal {
     float: left;

@@ -15,7 +15,7 @@
         $(document).ready(init);
 
         function init() {
-            var now = new Date();
+            var now = new Date(document.lastModified);
             var str_NowDate = (now.getFullYear()) + "/" + (now.getMonth() + 1) + "/" + now.getDate() + " " + now.getHours() + ":" + now.getMinutes();
             $("#div_date").html(str_NowDate);       
         }

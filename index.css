@@ -18,7 +18,7 @@
         width: 150px;
     }
     .left-side {
-        margin-left: 180px;
+        margin-left: 130px;
         margin-right: 300px;
     }
 }
@@ -84,7 +84,7 @@ p {
 .left-side {
     /*margin-left: 180px;
     margin-right: 300px;*/
-    max-width: 710px;
+    max-width: 760px;
     padding: 0;
     background-color: rgb(171, 171, 228);
 }

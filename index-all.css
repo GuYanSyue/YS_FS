@@ -44,7 +44,9 @@ a {
 
 .aside {
   overflow: hidden;
+  overflow-y: scroll;
   width: 300px;
+  max-height: 600px;
   background-color: #fde7f0;
   -webkit-transform: translateX(-300px);
           transform: translateX(-300px);
@@ -59,6 +61,7 @@ a {
   .aside {
     display: block;
     border-right: 3px solid #ffbe0b;
+    border-bottom: 3px solid #ffbe0b;
     -webkit-transition: all 0.5s;
     transition: all 0.5s;
     /*a {

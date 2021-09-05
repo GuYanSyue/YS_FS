@@ -66,7 +66,9 @@
   .aside {
     overflow: hidden;
     // 在 PC 時隱藏
+    overflow-y: scroll;
     width: 300px;
+    max-height: 600px;
     background-color: rgb(253, 231, 240);
     transform: translateX(-300px);
     // 在 PC 顯示下，往左邊推擠到 container 外
@@ -80,6 +82,7 @@
     @include pad {
         display: block;
         border-right: 3px solid $primary-color;
+        border-bottom: 3px solid $primary-color;
         transition: all 0.5s;
 
         /*a {

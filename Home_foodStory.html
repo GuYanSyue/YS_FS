@@ -14,18 +14,16 @@
         $(document).ready(init);
 
         function init() {
-            var now = new Date();
+            var now = new Date(document.lastModified);
             var str_NowDate = (now.getFullYear()) + "/" + (now.getMonth() + 1) + "/" + now.getDate();
             $("#div_date").html(str_NowDate);       
         }
     </script>
-    <div class="header">
-        <div class="wrap">
-            <div class="nav">
-                <a class="btn-index" title="主廳" href="index.html">主廳</a>
-                <a class="btn-index" title="食物語" href="Home_foodStory.html">食物語</a>
-                <p class="btn-index" style="margin-top: 0rem; margin-bottom: 0rem; color: rgb(4, 73, 66);">待開發...</p>
-            </div>
+    <div class="header">   
+        <div class="nav">
+            <a class="btn-index" title="主廳" href="index.html">主廳</a>
+            <a class="btn-index" title="食物語" href="Home_foodStory.html">食物語</a>
+            <p class="btn-index" style="margin-top: 0rem; margin-bottom: 0rem; color: rgb(4, 73, 66);">待開發...</p>
         </div>
     </div>     
     <div class="a-container">

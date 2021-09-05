@@ -62,8 +62,6 @@ p {
 .nav {
     position: relative;
     display: inline-block;
-    text-align: center;
-    /*width: 700px;*/
     height: 80px;
 }
 .nav a:link, .nav a:visited {

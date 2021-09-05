@@ -1,0 +1,99 @@
+@media only screen and (max-width: 768px) {
+    .btn-index {
+        margin-left: 0px;
+        width: 115px;
+    }
+    .left-side {
+        margin: 0;
+        min-width: 310px;
+    }
+    .aside {
+        max-height: 800px;
+    }
+}
+@media only screen and (min-width: 769px) {
+    .btn-index {
+        margin-left: 50px;
+        width: 150px;
+    }
+    .left-side {
+        margin-left: 130px;
+        margin-right: 300px;
+    }
+}
+div {
+    display: block;
+}
+html {
+    font-size: 16px;
+}
+p {
+    display: block;
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+}
+.mid {
+    float: left;
+    width: 100%;
+    text-align: center;
+}
+.sitebody {
+    position: relative;
+    overflow: hidden;
+    margin: 0 auto;
+    height: auto;
+    max-width: 1200px;
+    font-family: DFkai-sb, sans-serif;
+}
+.header {
+    /*overflow: hidden;*/
+    text-align: center;
+    height: 80px;
+    line-height: 80px; 
+    background-color:#1f6cb4;
+    border-bottom: 3px solid #ffd460;
+}
+.nav {
+    position: relative;
+    display: inline-block;
+    height: 80px;
+}
+.nav a:link, .nav a:visited {
+    color: rgb(122, 187, 212);     /*超連結字體顏色*/
+    text-decoration: none       /*none ←加這句 去除連結底線*/
+}
+.nav a:hover {
+    color: rgb(11, 110, 150);     /*滑鼠停在超連結中文字的顏色*/
+    background-color: #abeff8;  /*滑鼠停留在超連結中文字的底色*/
+    text-decoration: none;      /*none ←加這句 去除連結底線*/
+}
+.btn-index {
+    float: left;
+    display: inline;  
+    /*margin-left: 50px;*/
+    text-align: center;
+    /*width: 150px;*/
+    height: 80px;
+    font-size: 25px;
+}
+.detail-div {
+    float: left;
+    display: block;
+    margin: 0 auto;
+    width: 100%;
+    line-height: 25px;
+    height: 800px;
+    box-shadow: 2px 2px 2px gray;
+    background-color:#ffff;
+}
+.container{
+    float: left;
+    overflow: hidden;
+    padding-bottom: 40px;
+    width: 100%;
+    /*font-weight: bold;      /*粗體字*/
+    font-size: 18px; 
+    background-color: rgba(255, 255, 255, 0.904);
+}

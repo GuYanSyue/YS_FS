@@ -100,8 +100,9 @@ p {
 }
 .right-side {
     float: right;
+    padding: 3px;
     max-width: 300px;
-    height: 600px;  
+    height: auto;  
     font-weight: bold;
     color: rgb(99, 1, 1);
     background-color: rgb(253, 231, 240);
@@ -120,6 +121,18 @@ p {
     line-height: 16px;
     font-family: PMingLiU, san-serifs;
     color: rgb(167, 57, 6);
+}
+.block {
+    text-align: left;
+    border: 5px;
+    border-color: black;
+    height: 100px;
+    overflow-y: scroll;
+    font-size: 12px;
+    line-height: 18px;
+    font-family: Microsoft JhengHei;
+    color: rgb(2, 108, 207);
+    background-color: rgba(255, 255, 255, 0.712);
 }
 .footer {
     clear: both;

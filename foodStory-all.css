@@ -1,0 +1,70 @@
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+.mobile_close,
+.mobile_open {
+  color: #001b4e;
+}
+
+.mobile_open {
+  display: none;
+  position: fixed;
+}
+
+@media (max-width: 768px) {
+  .mobile_open {
+    z-index: 90;
+    top: 100px;
+    left: 0;
+    -webkit-transition: all 0.5s;
+    transition: all 0.5s;
+  }
+}
+
+.fas {
+  padding: 1em;
+}
+
+.aside {
+  position: fixed;
+  display: none;
+  width: 192px;
+  height: 305px;
+  background-color: rgba(255, 255, 255, 0.589);
+  -webkit-transform: translateX(-192px);
+          transform: translateX(-192px);
+  z-index: 90;
+  top: 100px;
+}
+
+@media (max-width: 768px) {
+  .aside {
+    -webkit-transition: all 0.5s;
+    transition: all 0.5s;
+  }
+}
+
+@media (max-width: 768px) {
+  .main .menu-sty {
+    display: none;
+    -webkit-transition: all 0.5s;
+    transition: all 0.5s;
+  }
+}
+
+.open .mobile_open {
+  -webkit-transform: translateX(192px);
+          transform: translateX(192px);
+  -webkit-transition: all 0.5s;
+  transition: all 0.5s;
+}
+
+.open .aside {
+  -webkit-transform: translateX(0);
+          transform: translateX(0);
+  -webkit-transition: all 0.5s;
+  transition: all 0.5s;
+}
+/*# sourceMappingURL=foodStory-all.css.map */

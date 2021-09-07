@@ -213,7 +213,7 @@ button:hover{
 }
 /*網頁最上方*/
 .header {   /*使未調整內容可以靠右*/
-    position: absolute;     /*設定absolute，該元素就會完全跳脫該頁面，換個說法，它浮在頁面之上。原本所占用的空間將不復存在*/
+    /*position: absolute;     /*設定absolute，該元素就會完全跳脫該頁面，換個說法，它浮在頁面之上。原本所占用的空間將不復存在*/
     overflow: hidden;   /*自動隱藏超出的文字或圖片*/
     left: 0;
     top: 0;

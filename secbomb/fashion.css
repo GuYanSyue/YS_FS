@@ -1,24 +1,17 @@
+
 @media only screen and (max-width: 768px) {
     .btn-index {
         margin-left: 0px;
         width: 115px;
     }
-    .left-side {
-        margin: 0;
-        min-width: 310px;
-    }
-    .aside {
-        max-height: 800px;
+    .con-box {
+        position: relative;
     }
 }
 @media only screen and (min-width: 769px) {
     .btn-index {
         margin-left: 50px;
         width: 150px;
-    }
-    .left-side {
-        margin-left: 130px;
-        margin-right: 300px;
     }
 }
 div {
@@ -78,13 +71,19 @@ p {
     height: 80px;
     font-size: 25px;
 }
+.detail {
+    max-width: 760px;
+    margin: 0 auto;     /*網頁置中關鍵*/
+    padding: 0;
+    background-color: rgb(171, 171, 228);
+}
 .detail-div {
     float: left;
     display: block;
-    margin: 0 auto;
-    width: 100%;
+    padding: 10px;
+    max-width: 800px;
     line-height: 25px;
-    height: 800px;
+    height: 100%;
     box-shadow: 2px 2px 2px gray;
     background-color:#ffff;
 }
@@ -96,4 +95,80 @@ p {
     /*font-weight: bold;      /*粗體字*/
     font-size: 18px; 
     background-color: rgba(255, 255, 255, 0.904);
+}
+.MsoNormal {
+    float: left;
+    width: 100%;
+    /*margin: 5px;*/  /*不會有反應除非比.detail-div p裡還大*/
+    line-height: 20px;
+    font-size: 18px;
+}
+
+.p-tit1 {
+    width: 100%;
+    text-align: center;
+    padding-top: 30px;
+    padding-bottom: 30px;
+    line-height: 36px;
+    font-size: 25px;
+    color: darkblue;
+}
+.p-tit2 {
+    width: 100%;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    font-size: 20px;
+    color: rgb(0, 41, 155);
+}
+.p-con {
+    padding-top: 10px;
+    padding-bottom: 10px;
+    font-size: 18px;
+    color: rgb(0, 72, 139);
+}
+.mid {
+    float: left;
+    width: 100%;
+    text-align: center;     /*圖片置中關鍵*/
+}
+.con {
+    float: left;
+    width: 100%;
+    padding-top: 40px;
+    padding-bottom: 40px;
+    margin-top: 40px;
+    margin-bottom: 40px;
+}
+.conleft {
+    position: relative;
+    float: left;
+    width: 50%;
+    min-height: 530px;  /*530*/
+}
+.div-box {
+    float: left;
+}
+.con-box {
+    bottom: 10px; 
+    width: 100%;
+}
+.con-box-p-tit {
+    font-size: 18px;
+    color: rgb(0, 41, 155);
+}
+.con-box-p {
+    overflow: hidden;
+    font-size: 14px;
+    line-height: 20px;  /*20*/
+    color: rgb(0, 72, 139);
+}
+.conright {
+    float: right;
+    width: 49%;
+    min-height: 530px;
+}
+.Mso-con {
+    line-height: 20px;
+    font-size: 16px;
+    color: #d1521f;
 }

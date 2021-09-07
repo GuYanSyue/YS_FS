@@ -1,0 +1,9 @@
+{
+    "version": 3,
+    "mappings": "AAAA,AAAA,CAAC,CAAC;EACE,UAAU,EAAE,UAAU;CACvB;;AAEC,MAAM,EAAE,SAAS,EAAE,MAAM;EAe3B,AAAA,QAAQ,CAAC;IAED,QAAQ,EAAE,QAAQ;GAEzB",
+    "sources": [
+        "fashion-all.scss"
+    ],
+    "names": [],
+    "file": "fashion-all.css"
+}

@@ -6,13 +6,11 @@
       @content;
     }
   }
-  
   @mixin pad {
     @media (max-width: 768px) {
       @content;
     }
   }
-  
   @mixin phone {
     @media (max-width: 375px) {
       @content;
@@ -24,23 +22,24 @@
   $font-s: $font-m * 0.8;
   $primary-color:#001b4e;
 
-  
-  
+
 
   .mobile_close,
   .mobile_open {     
+      display: inline-block;
       color: $primary-color;
   }
 
   .mobile_open {
-    display: none;
+    display: none;  
     position: fixed;
+    z-index: 90;
+    top: 100px;
+    left: 0;
+    transition: all 0.5s;
 
-    @include pad {     
-        z-index: 90;
-        top: 100px;
-        left: 0;
-        transition: all 0.5s;
+    @include pad {          
+      display: inline-block;      
     }
   }
 
@@ -49,19 +48,18 @@
   }
 
   .aside {
-    position: fixed;
     display: none;
-    
-    width: 192px;
-    height: 305px;
-    background-color: rgba(255, 255, 255, 0.589);
-    transform: translateX(-192px);
-    // 在 PC 顯示下，往左邊推擠到 container 外
+    position: fixed;
     z-index: 90;  
     top: 100px;
-    // 將 aside 選單絕對定位在 container 上，並且使用上方與下方都為 0px ，靠左邊對齊，讓 header 可往上移動
+    transform: translateX(-192px);
+    // 在 PC 顯示下，往左邊推擠到 container 外
+    width: 192px;
+    height: auto;
+    background-color: rgba(255, 255, 255, 0.589);
     
     @include pad {
+        display: inline-block;
         transition: all 0.5s;
     }
   }
@@ -70,8 +68,7 @@
     @include pad {
         .menu-sty {
             display: none;
-            // 在 pad 螢幕以下會不顯示選單
-            transition: all 0.5s;
+            // 在 pad 時候隱藏
         }
     }
   }

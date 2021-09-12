@@ -5,21 +5,23 @@
 
 .mobile_close,
 .mobile_open {
+  display: inline-block;
   color: #001b4e;
 }
 
 .mobile_open {
   display: none;
   position: fixed;
+  z-index: 90;
+  top: 100px;
+  left: 0;
+  -webkit-transition: all 0.5s;
+  transition: all 0.5s;
 }
 
 @media (max-width: 768px) {
   .mobile_open {
-    z-index: 90;
-    top: 100px;
-    left: 0;
-    -webkit-transition: all 0.5s;
-    transition: all 0.5s;
+    display: inline-block;
   }
 }
 
@@ -28,19 +30,20 @@
 }
 
 .aside {
-  position: fixed;
   display: none;
-  width: 192px;
-  height: 305px;
-  background-color: rgba(255, 255, 255, 0.589);
-  -webkit-transform: translateX(-192px);
-          transform: translateX(-192px);
+  position: fixed;
   z-index: 90;
   top: 100px;
+  -webkit-transform: translateX(-192px);
+          transform: translateX(-192px);
+  width: 192px;
+  height: auto;
+  background-color: rgba(255, 255, 255, 0.589);
 }
 
 @media (max-width: 768px) {
   .aside {
+    display: inline-block;
     -webkit-transition: all 0.5s;
     transition: all 0.5s;
   }
@@ -49,8 +52,6 @@
 @media (max-width: 768px) {
   .main .menu-sty {
     display: none;
-    -webkit-transition: all 0.5s;
-    transition: all 0.5s;
   }
 }
 

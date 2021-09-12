@@ -130,8 +130,10 @@ html {
     font-size: 16px;
 }
 a:link, a:visited, a:hover {
-    text-decoration: none       /*none ←加這句 去除連結底線*/
+    text-decoration: none;       /*none ←加這句 去除連結底線*/
+    color: rgb(76, 128, 129);
 }
+
 .renew {
     position: fixed;
     z-index: 5;
@@ -143,6 +145,7 @@ a:link, a:visited, a:hover {
     background-color: rgba(255, 255, 255, 0.589);
 }
 .menu-sty {
+    display: none;
     position: fixed;
     z-index: 15;
     top: 0.2rem;
@@ -179,6 +182,10 @@ a:link, a:visited, a:hover {
     color: rgb(44, 59, 16);
 }
 button {
+    background: none;
+    border: none;
+}
+.music-sty button {
     width: 40px;
     height: 0.4rem;
     background: rgb(2, 221, 148);
@@ -188,15 +195,15 @@ button {
     cursor: pointer;
     transition: 0.5s;
 }
-button:hover{
+.music-sty button:hover{
     background: #750f0f;
 }
 #gotop {
+    display: none;
     position: fixed;
     z-index: 90;
     right: 0.3rem;
-    bottom: 0.31rem;
-    display: none;
+    bottom: 0.31rem; 
     width: 0.5rem;
     height: 0.5rem;
     color:#fff;
@@ -236,7 +243,7 @@ button:hover{
     padding-top: 0.25rem;
     margin-left: 0.5rem;
     width: 1.5rem;
-    height: 0.55rem;
+    height: 100%;
     font-size: 0.25rem;
     font-family: DFkai-sb, sans-serif;
 }

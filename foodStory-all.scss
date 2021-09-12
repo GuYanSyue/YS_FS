@@ -63,7 +63,7 @@
     // 在 PC 顯示下，往左邊推擠到 container 外
     width: 192px;
     height: auto;
-    background-color: rgba(255, 255, 255, 0.589);
+    background-color: rgba(255, 255, 255, 0.822);
     
     @include pad {
         display: inline-block;
@@ -85,7 +85,7 @@
 
   // 透過 jQuery 增加 class open 觸發選單
   .open {
-    .mobile_open {
+    #m-open {
         transform: translateX(192px);
         // 當觸發 .open 時， aside 會打開
         transition: all 0.5s;

@@ -1,19 +1,37 @@
 @media only screen and (max-width: 480px) {
-    .main {
-        clear: both;
+    .hide {
+        display: none;
     }
-    .left-side {
-        clear: both;
-        /*紫色區塊*/
+}
+@media only screen and (min-width: 481px) {
+    .show {
+        display: none;
+    }
+}
+@media only screen and (max-width: 768px) {
+    .btn-index {
+        margin-left: 0px;
+        width: 115px;
     }
     .detail-div {
-        width: 280px;
+        min-width: 280px;
         /*水藍色區塊*/
+        padding: 15px;
     }
     .right-side {
         display:none
     }
 }
+@media only screen and (min-width: 769px) {
+    .btn-index {
+        margin-left: 50px;
+        width: 150px;
+    }
+    .detail-div {
+        padding: 30px;
+    }
+}
+
 *{
     margin: 0;
     padding: 0;
@@ -24,6 +42,7 @@ div {
 body {
     font-size: 16px;
 }
+
 .mid {
     float: left;
     width: 100%;
@@ -36,32 +55,26 @@ body {
     color: rgb(170, 62, 62);
 }
 .header {   /*使未調整內容可以靠右*/
-    position: absolute;     /*設定absolute，該元素就會完全跳脫該頁面，換個說法，它浮在頁面之上。原本所占用的空間將不復存在*/
-    overflow: hidden;   /*自動隱藏超出的文字或圖片*/
-    left: 0;
-    top: 0;
-    z-index: 10;
-    width: 100%;
-    height: 0.8rem;
+    /*overflow: hidden;*/
     text-align: center;
+    height: 80px;
+    line-height: 80px; 
     background-color:#744926;
 }
 .nav {
-    display: inline-block;
     position: relative;
-    width: 7rem;
-    height: 0.8rem;
+    display: inline-block;
+    height: 80px;
 }
 .btn-index {
     float: left;
-    display: inline;
+    display: inline;  
+    /*margin-left: 50px;*/
     text-align: center;
-    padding-top: 0.25rem;
-    margin-left: 0.5rem;
-    width: 1.5rem;
-    height: 0.55rem;
-    font-size: 0.25rem;
-    font-family: DFkai-sb;
+    /*width: 150px;*/
+    height: 80px;
+    font-size: 25px;
+    font-family: DFkai-sb, sans-serif;
 }
 /*Links文章去除連結底線*/
 .nav a:link, .nav a:visited {
@@ -82,6 +95,7 @@ body {
 .a-container{    /*背景*/
     overflow: hidden;
     font-weight: bold;      /*粗體字*/
+    font-family: DFkai-sb, sans-serif;
     background-color: rgb(204, 156, 110);
 }
 .h-top {
@@ -110,7 +124,7 @@ body {
 .detail-div {
     float: left;
     margin-top: 20px;
-    padding: 30px;
+    /*padding: 30px;*/
     line-height: 0.36rem;
     color: #792e10;
     box-shadow: 2px 2px 2px gray;
@@ -129,13 +143,12 @@ p {
     word-break: normal;     /*亞洲語言及非亞洲語言的文字斷行規則來進行換行*/
 }
 .container{
-    /*float: left;*/
     overflow: hidden;
     padding-top: 40px;
     padding-bottom: 10px;
     width: 100%;
     /*font-weight: bold;      /*粗體字*/
-    font-size: 0.18rem; 
+    font-size: 18px; 
     background-color: rgba(255, 255, 255, 0.904);
 }
 .MsoNormal {
@@ -143,7 +156,7 @@ p {
     width: 100%;
     /*margin: 5px;*/  /*不會有反應除非比.detail-div p裡還大*/
     line-height: 20px;
-    font-size: 0.2rem;
+    font-size: 18px;
 }
 .p-tit1 {
     float: left;
@@ -152,7 +165,7 @@ p {
     padding-top: 30px;
     padding-bottom: 30px;
     line-height: 36px;
-    font-size: 0.25rem;
+    font-size: 25px;
     color: darkblue;
 }
 /*Links文章去除連結底線*/
@@ -170,19 +183,19 @@ a:hover {
     width: 100%;
     padding-top: 10px;
     padding-bottom: 10px;
-    font-size: 0.2rem;
+    font-size: 18px;
     color: rgb(0, 41, 155);
 }
 .p-con {
     float: left;
     margin-bottom: 10px;
     line-height: 20px;
-    font-size: 0.18rem;
+    font-size: 16px;
     color: rgb(0, 84, 163);
 }
 .sp-con {
     color: rgb(118, 184, 32); 
-    font-size: 0.15rem;
+    font-size: 10px;
     line-height: 15px;
     margin: 0px;
 }

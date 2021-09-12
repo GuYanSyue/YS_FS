@@ -32,7 +32,8 @@
         </div>
     </div>       
     <div class="main">
-        <button id="m-open" class="mobile_open"><i class="fas fa-angle-right"></i></button>       
+        <button id="m-open" class="mobile_open"><i class="fas fa-angle-right"></i></button>
+        <button id="m-open2" class="mobile_open"><i class="fas fa-angle-right"></i></button>       
         <div class="renew">
             <p>更新日期 <span id="div_date"></span></p>
             <div style="font-size: 0.1rem;">
@@ -54,30 +55,29 @@
                 <li><a href="#8">【復刻_萬曲和鳴】</a></li>
             </ul>    
         </div>
-    </div>
-    <div class="music-sty">
-        <audio id="mus1" loop>
-            <source src="music/【BGM】琳琅匠心.mp3" type="audio/mpeg">
-        </audio>
-        <button style="float: left;" id="btplay">播放</button>
-        <button style="float: left;" id="btpause">暫停</button>
-        <script>
-            myVid=document.getElementById("mus1"); myVid.volume=0.8
-            var ebtplay = document.querySelector("#btplay");
-            var ebtpause = document.querySelector("#btpause");
-            var emus1 = document.querySelector("#mus1");
-            ebtplay.onclick = function(){
-                emus1.play();
-            }
-            ebtpause.onclick = function(){
-                emus1.pause();
-            }
-        </script>
-        <p class="mus-box">――原聲音樂「琳琅匠心」――</p>
-        <p class="mus-box" style="font-size: 0.1rem;">·食物語音樂商店·</p>
-        <p class="mus-box hide" style="font-size: 0.1rem;">這次是交響樂，開場小提琴有get到我*0^0*</p>    
-    </div>
-     
+        <div class="music-sty">
+            <audio id="mus1" loop>
+                <source src="music/【BGM】琳琅匠心.mp3" type="audio/mpeg">
+            </audio>
+            <button style="float: left;" id="btplay">播放</button>
+            <button style="float: left;" id="btpause">暫停</button>
+            <script>
+                myVid=document.getElementById("mus1"); myVid.volume=0.8
+                var ebtplay = document.querySelector("#btplay");
+                var ebtpause = document.querySelector("#btpause");
+                var emus1 = document.querySelector("#mus1");
+                ebtplay.onclick = function(){
+                    emus1.play();
+                }
+                ebtpause.onclick = function(){
+                    emus1.pause();
+                }
+            </script>
+            <p class="mus-box">――原聲音樂「琳琅匠心」――</p>
+            <p class="mus-box" style="font-size: 0.1rem;">·食物語音樂商店·</p>
+            <p class="mus-box hide" style="font-size: 0.1rem;">這次是交響樂，開場小提琴有get到我*0^0*</p>    
+        </div>
+    </div> 
     <a id="gotop" href="https://www.blogger.com/blogger.g?blogID=2031514508322140995#" style="text-decoration: none;">TOP</a>
         <!--<i class="fa fa-angle-up"></i>-->
     <script type="text/javascript">

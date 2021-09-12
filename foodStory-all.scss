@@ -25,7 +25,8 @@
 
 
   .mobile_close,
-  .mobile_open {     
+  .mobile_open,
+  .mobile_open2 {     
       display: inline-block;
       color: $primary-color;
   }
@@ -34,13 +35,19 @@
     display: none;  
     position: fixed;
     z-index: 90;
-    top: 100px;
-    left: 0;
-    transition: all 0.5s;
-
+    transition: all 0.5s;  
+    
     @include pad {          
       display: inline-block;      
     }
+  }
+  #m-open {
+    top: 100px;
+    left: 0;
+  }
+  #m-open2 {
+    top: 60px;
+    right: 0;
   }
 
   .fas {
@@ -66,10 +73,13 @@
 
   .main {
     @include pad {
-        .menu-sty {
-            display: none;
-            // 在 pad 時候隱藏
-        }
+      .music-sty, .menu-sty {
+          display: none;
+          // 在 pad 時候隱藏
+      }
+    }
+    #m-open2 .fas {
+      transform: scaleX(-1);
     }
   }
 

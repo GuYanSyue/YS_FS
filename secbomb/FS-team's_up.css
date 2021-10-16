@@ -1,0 +1,180 @@
+@media only screen and (max-width: 480px) {
+    .hide {
+        display: none;
+    }
+}
+@media only screen and (min-width: 481px) {
+    .show {
+        display: none;
+    }
+}
+@media only screen and (max-width: 768px) {
+    .btn-index {
+        margin-left: 0px;
+        width: 115px;
+    }
+    .detail-div {
+        min-width: 280px;
+        /*水藍色區塊*/
+        padding: 15px;
+    }
+    .container {
+        width: 100%;
+    }
+}
+@media only screen and (min-width: 769px) {
+    .btn-index {
+        margin-left: 50px;
+        width: 150px;
+    }
+    .detail-div {
+        padding: 30px;
+    }
+    .container {
+        width: 740px;
+    }
+}
+div {
+    display: block;
+}
+html {
+    font-size: 16px;
+}
+p {
+    display: block;
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+}
+.mid {
+    float: left;
+    width: 100%;
+    text-align: center;
+}
+.header {
+    /*overflow: hidden;*/
+    text-align: center;
+    height: 80px;
+    line-height: 80px; 
+    background-color:#f7c195;
+    border-bottom: 3px solid #dbe678;
+}
+.nav {
+    position: relative;
+    display: inline-block;
+    height: 80px;
+}
+.nav a:link, .nav a:visited {
+    color: rgb(26, 140, 185);     /*超連結字體顏色*/
+    text-decoration: none       /*none ←加這句 去除連結底線*/
+}
+.nav a:hover {
+    color: rgb(11, 110, 150);     /*滑鼠停在超連結中文字的顏色*/
+    background-color: #c1f8ab;  /*滑鼠停留在超連結中文字的底色*/
+    text-decoration: none;      /*none ←加這句 去除連結底線*/
+}
+.btn-index {
+    float: left;
+    display: inline;  
+    /*margin-left: 50px;*/
+    text-align: center;
+    /*width: 150px;*/
+    height: 80px;
+    font-size: 25px;
+    font-family: DFkai-sb, Microsoft JhengHei, sans-serif;
+}
+
+/*重要!!撐開wrap*/
+.h-top {
+    height: 100px;
+}
+/*----------------------------------------------------------------*/
+.a-container {
+    overflow: hidden;
+    height: auto !important;
+    font-family: DFkai-sb, sans-serif;
+    background-color: rgb(233, 216, 180);
+    /*position: relative;
+    overflow: hidden;
+    margin: 0 auto;
+    height: auto;
+    max-width: 1200px;
+    font-family: DFkai-sb, sans-serif;
+    background-color: rgb(201, 177, 154);*/
+}
+/*從 a-container 分離*/
+.wrap {
+    position: relative;
+    max-width: 800px;      /*不能刪*/
+    margin: 0 auto;     /*重要div置中*/
+    background-color: rgb(143, 188, 143);
+}
+/*main 將 left detail-div 合併*/
+.main {   
+    position: relative;     /*未來對應*/
+    float: left;            /*不能刪，刪了沒作用*/
+    margin-bottom: 30px;
+    /*max-width: 800px;*/
+    background-color:#f0ff9e;
+}
+.left-side {
+    position: relative;     /**/
+    float: left;        /*不可刪，刪了沒作用*/
+    width: 100%;    /**/
+    padding: 0;     /**/
+    background-color: rgb(175, 175, 228);
+    /*max-width: 760px;
+    padding: 0;
+    background-color: rgb(171, 171, 228);*/
+}
+
+.detail-div {
+    float: left;
+    display: block;     /**/
+    margin-top: 20px;
+    line-height: 25px;
+    color: #792e10;
+    box-shadow: 2px 2px 2px gray;
+    background-color:#bae0f8;
+    /*float: left;
+    display: block;
+    margin: 0 auto;
+    width: 100%;
+    line-height: 25px;
+    height: 800px;
+    box-shadow: 2px 2px 2px gray;
+    background-color:#ffff;*/
+}
+.container{
+    overflow: hidden;   /*重要!!不可刪*/
+    padding-top: 40px;
+    padding-bottom: 10px;
+    /*max-width: 800px;   /**/
+    /*width: 100%;    /**/ 
+    font-size: 18px; 
+    background-color: rgba(255, 255, 255, 0.904);
+}
+.MsoNormal {
+    float: left;
+    width: 100%;
+    font-size: 18px;
+    line-height: 20px;
+    color: rgb(41, 92, 35);
+}
+.Mso-con {
+    float: left;
+    width: 100%;
+    margin: 0;
+    line-height: 18px;
+    font-size: 16px;
+    color: rgb(194, 74, 4);
+}
+.p-con {
+    float: left;
+    width: 100%;
+    margin: 2px;
+    line-height: 16px;
+    font-size: 16px;
+    color: rgb(194, 74, 4);
+}

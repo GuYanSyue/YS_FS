@@ -86,6 +86,7 @@ body {
     background-color: #eec780e8;  /*滑鼠停留在超連結中文字的底色*/
     text-decoration: none;      /*none ←加這句 去除連結底線*/
 }
+/*從 a-container 分離*/
 .wrap {
     position: relative;
     max-width: 800px;      /*不能刪*/
@@ -98,12 +99,14 @@ body {
     font-family: DFkai-sb, sans-serif;
     background-color: rgb(204, 156, 110);
 }
+/*重要!!撐開wrap*/
 .h-top {
     height: 100px;
 }
+/*main 將 left detail-div 合併*/
 .main {   
-    position: relative;
-    float: left;
+    position: relative;     /*未來對應*/
+    float: left;            /*不能刪，刪了沒作用*/
     margin-bottom: 30px;
     /*max-width: 800px;*/
     background-color:#f0ff9e;
@@ -143,11 +146,10 @@ p {
     word-break: normal;     /*亞洲語言及非亞洲語言的文字斷行規則來進行換行*/
 }
 .container{
-    overflow: hidden;
+    overflow: hidden;       /*重要!!不可刪*/
     padding-top: 40px;
     padding-bottom: 10px;
     width: 100%;
-    /*font-weight: bold;      /*粗體字*/
     font-size: 18px; 
     background-color: rgba(255, 255, 255, 0.904);
 }

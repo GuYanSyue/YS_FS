@@ -155,6 +155,16 @@ p {
     font-size: 18px; 
     background-color: rgba(255, 255, 255, 0.904);
 }
+.p-tit1 {
+    float: left;
+    width: 100%;
+    text-align: center;
+    /*padding-top: 30px;*/
+    padding-bottom: 30px;
+    line-height: 36px;
+    font-size: 25px;
+    color: rgb(9, 75, 61);
+}
 .MsoNormal {
     float: left;
     width: 100%;

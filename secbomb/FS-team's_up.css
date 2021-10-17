@@ -34,6 +34,10 @@ div {
 html {
     font-size: 16px;
 }
+*{
+    margin: 0;
+    padding: 0;
+}
 p {
     display: block;
     margin-block-start: 1em;
@@ -92,16 +96,9 @@ p {
 /*----------------------------------------------------------------*/
 .a-container {
     overflow: hidden;
-    /*height: auto !important;*/
+    height: auto !important;
     font-family: DFkai-sb, Microsoft JhengHei, sans-serif;
     background-color: rgb(233, 216, 180);
-    /*position: relative;
-    overflow: hidden;
-    margin: 0 auto;
-    height: auto;
-    max-width: 1200px;
-    font-family: DFkai-sb, sans-serif;
-    background-color: rgb(201, 177, 154);*/
 }
 /*從 a-container 分離*/
 .wrap {
@@ -121,35 +118,19 @@ p {
 .left-side {
     position: relative;     /*未來*/
     float: left;        /*不可刪，刪了沒作用*/
-    width: 100%;    /**/
-    background-color: rgb(175, 175, 228);
-    /*max-width: 760px;
-    padding: 0;
-    background-color: rgb(171, 171, 228);*/
-}
-.details{
-    margin: 0 auto;     /*重要div置中*/
     width: 100%;
-    height: auto !important;  
-    background-color:#fff;  
+    background-color: rgb(175, 175, 228);
 }
+
 .detail-div {
     float: left;
-    /*display: block;     /**/
     margin-top: 20px;
+    max-width: 740px;
     /*max-width: 800px;*/
     /*line-height: 25px;*/
     color: #792e10;
     box-shadow: 2px 2px 2px gray;
     background-color:#bae0f8;
-    /*float: left;
-    display: block;
-    margin: 0 auto;
-    width: 100%;
-    line-height: 25px;
-    height: 800px;
-    box-shadow: 2px 2px 2px gray;
-    background-color:#ffff;*/
 }
 .container{
     overflow: hidden;   /*重要!!不可刪*/
@@ -193,14 +174,6 @@ p {
     width: 100%;
     /*margin: 0;*/
     line-height: 18px;
-    font-size: 16px;
-    color: rgb(194, 74, 4);
-}
-.p-con {
-    float: left;
-    width: 100%;
-    /*margin: 2px;*/
-    line-height: 16px;
     font-size: 16px;
     color: rgb(194, 74, 4);
 }

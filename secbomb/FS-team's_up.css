@@ -168,8 +168,18 @@ p {
     padding-top: 30px;
     padding-bottom: 30px;
     line-height: 36px;
-    font-size: 25px;
+    font-size: 28px;
     color: rgb(9, 75, 61);
+}
+.p-tit2 {
+    float: left;
+    width: 100%;
+    text-align: center;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    line-height: 30px;
+    font-size: 25px;
+    color: rgb(16, 82, 3);
 }
 .MsoNormal {
     float: left;

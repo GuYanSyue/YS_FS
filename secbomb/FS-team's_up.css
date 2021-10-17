@@ -18,9 +18,6 @@
         /*水藍色區塊*/
         padding: 15px;
     }
-    .container {
-        width: 100%;
-    }
 }
 @media only screen and (min-width: 769px) {
     .btn-index {
@@ -29,9 +26,6 @@
     }
     .detail-div {
         padding: 30px;
-    }
-    .container {
-        width: 740px;
     }
 }
 div {
@@ -47,6 +41,12 @@ p {
     margin-inline-start: 0px;
     margin-inline-end: 0px;
 }
+.detail-div p{
+    margin: 5px 0;      /*上下5 左右0*/
+    word-wrap: break-all;
+    word-break: normal;     /*亞洲語言及非亞洲語言的文字斷行規則來進行換行*/
+}
+
 .mid {
     float: left;
     width: 100%;
@@ -119,7 +119,7 @@ p {
     background-color:#f0ff9e;
 }
 .left-side {
-    position: relative;     /**/
+    position: relative;     /*未來*/
     float: left;        /*不可刪，刪了沒作用*/
     width: 100%;    /**/
     padding: 0;     /**/
@@ -133,7 +133,8 @@ p {
     float: left;
     display: block;     /**/
     margin-top: 20px;
-    line-height: 25px;
+    max-width: 800px;
+    /*line-height: 25px;*/
     color: #792e10;
     box-shadow: 2px 2px 2px gray;
     background-color:#bae0f8;
@@ -148,18 +149,19 @@ p {
 }
 .container{
     overflow: hidden;   /*重要!!不可刪*/
-    padding-top: 40px;
-    padding-bottom: 10px;
+    /*padding-top: 40px;*/
+    padding-bottom: 40px;
     /*max-width: 800px;   /**/
     /*width: 100%;    /**/ 
     font-size: 18px; 
     background-color: rgba(255, 255, 255, 0.904);
 }
+
 .p-tit1 {
     float: left;
     width: 100%;
     text-align: center;
-    /*padding-top: 30px;*/
+    padding-top: 30px;
     padding-bottom: 30px;
     line-height: 36px;
     font-size: 25px;
@@ -175,7 +177,7 @@ p {
 .Mso-con {
     float: left;
     width: 100%;
-    margin: 0;
+    /*margin: 0;*/
     line-height: 18px;
     font-size: 16px;
     color: rgb(194, 74, 4);
@@ -183,7 +185,7 @@ p {
 .p-con {
     float: left;
     width: 100%;
-    margin: 2px;
+    /*margin: 2px;*/
     line-height: 16px;
     font-size: 16px;
     color: rgb(194, 74, 4);

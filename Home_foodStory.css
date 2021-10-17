@@ -112,8 +112,8 @@ body {
     background-color:#f0ff9e;
 }
 .left-side {
-    float: left;
     position: relative;
+    float: left;   
     width: 100%;
     background-color: rgb(175, 175, 228);
 }

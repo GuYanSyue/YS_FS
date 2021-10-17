@@ -92,8 +92,8 @@ p {
 /*----------------------------------------------------------------*/
 .a-container {
     overflow: hidden;
-    height: auto !important;
-    font-family: DFkai-sb, sans-serif;
+    /*height: auto !important;*/
+    font-family: DFkai-sb, Microsoft JhengHei, sans-serif;
     background-color: rgb(233, 216, 180);
     /*position: relative;
     overflow: hidden;
@@ -122,18 +122,22 @@ p {
     position: relative;     /*未來*/
     float: left;        /*不可刪，刪了沒作用*/
     width: 100%;    /**/
-    padding: 0;     /**/
     background-color: rgb(175, 175, 228);
     /*max-width: 760px;
     padding: 0;
     background-color: rgb(171, 171, 228);*/
 }
-
+.details{
+    margin: 0 auto;     /*重要div置中*/
+    width: 100%;
+    height: auto !important;  
+    background-color:#fff;  
+}
 .detail-div {
     float: left;
-    display: block;     /**/
+    /*display: block;     /**/
     margin-top: 20px;
-    max-width: 800px;
+    /*max-width: 800px;*/
     /*line-height: 25px;*/
     color: #792e10;
     box-shadow: 2px 2px 2px gray;
@@ -152,7 +156,7 @@ p {
     /*padding-top: 40px;*/
     padding-bottom: 40px;
     /*max-width: 800px;   /**/
-    /*width: 100%;    /**/ 
+    width: 100%;    /**/ 
     font-size: 18px; 
     background-color: rgba(255, 255, 255, 0.904);
 }

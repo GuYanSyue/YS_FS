@@ -107,37 +107,24 @@ p {
     margin: 0 auto;     /*重要div置中*/
     background-color: rgb(143, 188, 143);
 }
-/*main 將 left detail-div 合併*/
-.main {   
-    position: relative;     /*未來對應*/
-    float: left;            /*不能刪，刪了沒作用*/
-    margin-bottom: 30px;
-    /*max-width: 800px;*/
-    background-color:#f0ff9e;
-}
 .left-side {
     position: relative;     /*未來*/
     float: left;        /*不可刪，刪了沒作用*/
     width: 100%;
+    margin-bottom: 50px;
     background-color: rgb(175, 175, 228);
 }
-
 .detail-div {
     float: left;
-    margin-top: 20px;
-    max-width: 740px;
-    /*max-width: 800px;*/
-    /*line-height: 25px;*/
+    margin-top: 20px;   /*擠出紫色*/
     color: #792e10;
     box-shadow: 2px 2px 2px gray;
     background-color:#bae0f8;
 }
 .container{
     overflow: hidden;   /*重要!!不可刪*/
-    /*padding-top: 40px;*/
     padding-bottom: 40px;
-    /*max-width: 800px;   /**/
-    width: 100%;    /**/ 
+    width: 100%;    
     font-size: 18px; 
     background-color: rgba(255, 255, 255, 0.904);
 }
@@ -172,7 +159,6 @@ p {
 .Mso-con {
     float: left;
     width: 100%;
-    /*margin: 0;*/
     line-height: 20px;
     font-size: 16px;
     color: rgb(194, 74, 4);

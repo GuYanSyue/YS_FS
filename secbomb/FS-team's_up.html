@@ -8,8 +8,78 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.css">
     <script src='../jquery-3.6.0.min.js'></script>
     <link rel="stylesheet" href="FS-team's_up.css">
+    <link rel="stylesheet" href="FS-team's_up-all.css">
+    <script src="./FS-team's-up.js"></script>
 </head>
 <body>
+    <div id="fix-aside" class="aside">
+        <button id="m-close" class="mobile_close"><i class="fas fa-window-close"></i></button>
+        <div class="aside-menu">
+            <ul style="padding: 15px;">
+                <li><a href="#0">Go Top</a></li>
+                <li class="mid" style="font-weight: bold;"><a href="#1">～～地圖～～</a></li>
+                <li><a href="#1-1">【推圖】</a></li>
+                <li class="mid" style="font-weight: bold;"><a href="#2">～～琳瑯幻境～～</a></li>
+                <li><a href="#2-1">【水月閣】</a></li>                   
+                <li><a href="#2-2">【謙風閣】</a></li>
+                <li><a href="#2-3">【離虹閣】</a></li>
+                <li><a href="#2-4">【坤嶽閣】</a></li>
+                <li><a href="#2-5">【萬鈞閣】</a></li>
+                <li class="mid" style="font-weight: bold;"><a href="#3">～～金秋願林～～</a></li>
+                <li><a href="#3-1">【腰果林】</a></li>                   
+                <li><a href="#3-2">【榛子林】</a></li>
+                <li><a href="#3-3">【胡桃林】</a></li>
+                <li><a href="#3-4">【金杏林】</a></li>
+                <li class="mid" style="font-weight: bold;"><a href="#4">～～瑛瑤之澤～～</a></li>
+                <li><a href="#4-1">【瑛瑤8】</a></li>
+                <li class="mid" style="font-weight: bold;"><a href="#5">～～值日～～</a></li>
+                <li><a href="#5-1">【辣條】</a></li>                   
+                <li><a href="#5-2">【毒蘑菇】</a></li>
+                <li><a href="#5-3">【餓殍鬼】</a></li>
+                <li><a href="#5-4">【魚腥蟹】</a></li>
+                <li><a href="#5-5">【糖果】</a></li>
+                <li class="mid" style="font-weight: bold;"><a href="#6">～～週末王～～</a></li> 
+                <li><a href="#6-1">【天狗】</a></li>                   
+                <li><a href="#6-2">【機關兔】</a></li>
+                <li><a href="#6-3">【樓蘭王】</a></li>
+                <li><a href="#6-4">【蘇青】</a></li>
+                <li><a href="#6-5">【黑白無常】</a></li>             
+            </ul>
+        </div>
+    </div>
+    <button id="m-open" class="mobile_open"><i class="fas fa-angle-right"></i></button>
+    <div class="menu-sty"> 
+        <ul style="padding: 15px;">
+            <li><a href="#0">Go Top</a></li>
+            <li class="mid" style="font-weight: bold;"><a href="#1">～～地圖～～</a></li>
+            <li><a href="#1-1">【推圖】</a></li>
+            <li class="mid" style="font-weight: bold;"><a href="#2">～～琳瑯幻境～～</a></li>
+            <li><a href="#2-1">【水月閣】</a></li>                   
+            <li><a href="#2-2">【謙風閣】</a></li>
+            <li><a href="#2-3">【離虹閣】</a></li>
+            <li><a href="#2-4">【坤嶽閣】</a></li>
+            <li><a href="#2-5">【萬鈞閣】</a></li>
+            <li class="mid" style="font-weight: bold;"><a href="#3">～～金秋願林～～</a></li>
+            <li><a href="#3-1">【腰果林】</a></li>                   
+            <li><a href="#3-2">【榛子林】</a></li>
+            <li><a href="#3-3">【胡桃林】</a></li>
+            <li><a href="#3-4">【金杏林】</a></li>
+            <li class="mid" style="font-weight: bold;"><a href="#4">～～瑛瑤之澤～～</a></li>
+            <li><a href="#4-1">【瑛瑤8】</a></li>
+            <li class="mid" style="font-weight: bold;"><a href="#5">～～值日～～</a></li>
+            <li><a href="#5-1">【辣條】</a></li>                   
+            <li><a href="#5-2">【毒蘑菇】</a></li>
+            <li><a href="#5-3">【餓殍鬼】</a></li>
+            <li><a href="#5-4">【魚腥蟹】</a></li>
+            <li><a href="#5-5">【糖果】</a></li>
+            <li class="mid" style="font-weight: bold;"><a href="#6">～～週末王～～</a></li> 
+            <li><a href="#6-1">【天狗】</a></li>                   
+            <li><a href="#6-2">【機關兔】</a></li>
+            <li><a href="#6-3">【樓蘭王】</a></li>
+            <li><a href="#6-4">【蘇青】</a></li>
+            <li><a href="#6-5">【黑白無常】</a></li>              
+        </ul>    
+    </div>
     <script type="text/javascript">
         $(document).ready(init);
 
@@ -19,20 +89,21 @@
             $("#div_date").html(str_NowDate);       
         }
     </script>
-    <div class="header">   
+    <a name="0"></a> 
+    <div class="header">      
         <div class="nav">
             <a class="btn-index" title="主廳" href="../index.html">主廳</a>
             <a class="btn-index" title="食物語" href="../Home_foodStory.html">食物語</a>
             <p class="btn-index" style="margin-top: 0rem; margin-bottom: 0rem; color: rgb(4, 73, 66);">待開發...</p>
         </div>
     </div>  
-    <div class="a-container">
+    <div class="a-container">   
         <div class="wrap">           
             <div class="h-top"></div>      
             <div class="left-side">            
                 <div class="detail-div">
                     <div class="container">
-                        <p class="p-tit1"><span class="hide">——</span>——．隊伍組成．——<span class="hide">——</span></p>
+                        <p class="p-tit1"></a><span class="hide">——</span>——．隊伍組成．——<span class="hide">——</span></p>
                         <p class="MsoNormal mid" style="color: rgb(31, 54, 0); font-size: 14px;">更新日期 <span id="div_date"></p>                               
                         <p class="MsoNormal" style="color: rgb(54, 146, 150);">．<span style="color: rgb(3, 78, 82);">膳具</span>：攻擊套 => 酸枝木、彩陶。攻擊套不夠用青白玉代替。沒寫隨便帶，沒有也隨便帶。</p>
                         <p class="MsoNormal" style="color: rgb(54, 146, 150);">**命中不用整套，通常湯匙跟碗有命中(粉彩、釉裡紅)，酒器最好爆傷或爆擊(攻擊套/青白玉)**</p>
@@ -43,34 +114,34 @@
                         <p class="MsoNormal" style="color: rgb(54, 146, 150);">．<span style="color: rgb(3, 78, 82);">群攻</span>：爆擊C帶酸枝木，其他攻擊套。龍井 > 畢羅 > 鍋包肉 > 阿符 >  烤鴨C > 一品C > 無情C</p>
                         <p class="MsoNormal" style="color: rgb(54, 146, 150);">．<span style="color: rgb(3, 78, 82);">其他</span>：阿喻(命中)</p>                          
                         <p class="MsoNormal">&nbsp;</p>
-                        <p class="p-tit2"><span class="hide">～～</span>～～．活動/普通地圖．～～<span class="hide">～～</span></p>
+                        <p class="p-tit2"><a name="1"><span class="hide">～～</span>～～．活動/普通地圖．～～<span class="hide">～～</span></a></p>
                         <p class="MsoNormal mid" style="color: rgb(187, 52, 3);">二三技有群攻全都上!</p>
-                        <div class="mid"><img src="fd-2/地圖.png" alt="第十三章副本" width="80%"></div>                               
+                        <div class="mid"><a name="1-1"><img src="fd-2/地圖.png" alt="第十三章副本" width="80%"></a></div>                               
                         <p class="Mso-con">&nbsp;</p>
                         <p class="MsoNormal">【推圖】<br>&emsp;&emsp;教授/白菜(攻擊套>青白玉)、龍井(攻擊套)、烤鴨(酸枝木)、畢羅/鬼城(攻擊套)<br>==> 要練的群攻都可上！</p>
                         <p class="MsoNormal">&nbsp;</p><p class="MsoNormal">&nbsp;</p>
-                        <p class="p-tit2"><span class="hide">～～</span>～～．琳瑯幻境．～～<span class="hide">～～</span></p>
+                        <p class="p-tit2"><a name="2"><span class="hide">～～</span>～～．琳瑯幻境．～～<span class="hide">～～</span></a></p>
                         <p class="MsoNormal mid" style="color: rgb(187, 52, 3);">膳具閣一律掛機自動不多說了。</p>
-                        <div class="mid"><img src="fd-2/水月閣.png" alt="水月閣" width="80%"></div>
+                        <div class="mid"><a name="2-1"><img src="fd-2/水月閣.png" alt="水月閣" width="80%"></a></div>
                         <p class="Mso-con">&nbsp;</p>
                         <p class="MsoNormal">【水月閣】<br>&emsp;&emsp;阿喻(命中)/阿符(命中)/芋泥(命中)、香腰(攻擊套)、八仙(酸枝木)、東璧/國主(都攻擊套)</p>
                         <p class="Mso-con">阿喻不斷偷！偷爆戶盾！&emsp;阿喻：「水月閣之主在此。」</p>   
                         <p class="MsoNormal">&nbsp;</p><p class="MsoNormal">&nbsp;</p>          
-                        <div class="mid"><img src="fd-2/謙風閣.png" alt="謙風閣" width="80%"></div>
+                        <div class="mid"><a name="2-2"><img src="fd-2/謙風閣.png" alt="謙風閣" width="80%"></a></div>
                         <p class="Mso-con">&nbsp;</p>
                         <p class="MsoNormal">【謙風閣】<br>&emsp;&emsp;小鱖魚(命中)、提爆、單體/6花八寶(酸枝木)、東璧(酸枝木)</p>
                         <p class="Mso-con">謙風、世界、週末、廚藝，八寶是你的好夥伴。謙風有八寶2回合就over！</p>
                         <p class="MsoNormal">&nbsp;</p><p class="MsoNormal">&nbsp;</p>
-                        <div class="mid"><img src="fd-2/離虹閣.png" alt="離虹閣" width="80%"></div>
+                        <div class="mid"><a name="2-3"><img src="fd-2/離虹閣.png" alt="離虹閣" width="80%"></a></div>
                         <p class="Mso-con">&nbsp;</p>
                         <p class="MsoNormal">【離虹閣】<br>&emsp;&emsp;宮保(填漆)、魚叔(全命中)、國主(攻擊套)/東璧(攻擊套)、八仙(酸枝木)</br>==> 雲托(命中，3花填漆)、八仙(酸枝木)、東璧(攻擊套)、德州</p>
                         <p class="Mso-con">魚叔帶全命中是為了普攻附毒。離虹閣主有夠帥，長的像俞生，因為是親媽。但是攻擊是所有閣主最狠的...(淚，有機率翻車。</p> 
                         <p class="MsoNormal">&nbsp;</p><p class="MsoNormal">&nbsp;</p>
-                        <div class="mid"><img src="fd-2/坤嶽閣.png" alt="坤嶽閣" width="80%"></div>
+                        <div class="mid"><a name="2-4"><img src="fd-2/坤嶽閣.png" alt="坤嶽閣" width="80%"></a></div>
                         <p class="Mso-con">&nbsp;</p>
                         <p class="MsoNormal">【坤嶽閣】<br>&emsp;&emsp;提爆(白菜優)、破防、龍井(攻擊套)、畢羅(攻擊套)</br>==> 白菜、鍋包肉(命中，酒器爆傷)、阿符(攻擊套)、群攻</p>
                         <p class="MsoNormal">&nbsp;</p><p class="MsoNormal">&nbsp;</p>
-                        <div class="mid"><img src="fd-2/萬鈞閣.png" alt="萬鈞閣" width="80%"></div>
+                        <div class="mid"><a name="2-5"><img src="fd-2/萬鈞閣.png" alt="萬鈞閣" width="80%"></a></div>
                         <p class="Mso-con">&nbsp;</p>
                         <p class="MsoNormal">【萬鈞閣】<br>&emsp;&emsp;多段群攻、群攻、群攻、吉利蝦/小杏</br>==> 未滿花金玉滿堂、1花俞生、無情、小杏</p>  
                         <p class="Mso-con">．補師：小杏 > 吉利蝦</p> 
@@ -90,65 +161,97 @@
                         <div class="hide"><iframe width="70%" height="315" src="https://www.youtube.com/embed/Vdd7KW7cfOw" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></div>
                         <div class="show"><iframe width="100%" height="230" src="https://www.youtube.com/embed/Vdd7KW7cfOw" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></div>
                         <p class="MsoNormal">&nbsp;</p><p class="MsoNormal">&nbsp;</p>
-                        <p class="p-tit2"><span class="hide">～～</span>～～．值日．～～<span class="hide">～～</span></p>
+                        <p class="p-tit2"><a name="3"><span class="hide">～～</span>～～．金秋願林．～～<span class="hide">～～</span></a></p>
+                        <div class="mid"><a name="3-1"><img src="fd-2/腰果林.png" alt="腰果林" width="80%"></a></div>
+                        <p class="Mso-con">&nbsp;</p>
+                        <p class="Mso-con">．禁療．</p>
+                        <p class="MsoNormal">【腰果林】<br>&emsp;&emsp;白菜、金玉滿堂、鬼城、龍珠(酸枝木)</p>
+                        <p class="Mso-con">全部帶*攻擊套*。</p>
+                        <p class="MsoNormal">&nbsp;</p><p class="MsoNormal">&nbsp;</p>
+                        <div class="mid"><a name="3-2"><img src="fd-2/榛子林.png" alt="榛子林" width="80%"></a></div>
+                        <p class="Mso-con">&nbsp;</p>
+                        <p class="Mso-con">．治療．</p>
+                        <p class="MsoNormal">【榛子林】<br>&emsp;&emsp;小羊、八仙(酸枝木)、東璧、德州</br>==> 吉利蝦、白菜、金玉滿堂、龍珠(酸枝木)</p>
+                        <p class="Mso-con">全部帶*攻擊套*。</p>
+                        <p class="MsoNormal">&nbsp;</p><p class="MsoNormal">&nbsp;</p>
+                        <div class="mid"><a name="3-3"><img src="fd-2/胡桃林.png" alt="胡桃林" width="80%"></a></div>
+                        <p class="Mso-con">&nbsp;</p>
+                        <p class="Mso-con">．破防．</p>
+                        <p class="MsoNormal">【榛子林】<br>&emsp;&emsp;小鱖魚(命中)、龍井、龍珠、單體</br>==> 小鱖魚(命中)、金玉滿堂、龍珠、德州</p>
+                        <p class="Mso-con">沒寫的帶*攻擊套*。</p>
+                        <p class="MsoNormal">&nbsp;</p><p class="MsoNormal">&nbsp;</p>
+                        <div class="mid"><a name="3-4"><img src="fd-2/金杏林.png" alt="金杏林" width="80%"></a></div>
+                        <p class="Mso-con">&nbsp;</p>
+                        <p class="Mso-con">．附毒．</p>
+                        <p class="MsoNormal">【榛子林】<br>&emsp;&emsp;吉利蝦(疊血/瑪瑙)、牛肉(命中)、蟹黃湯包(命中)、德州(命中+酸枝碗+命中)</br>==> 金玉滿堂、牛肉(命中)、臘八粥(命中)、臘味(命中)</p>
+                        <p class="Mso-con">沒寫的帶*攻擊套*。</p>
+                        <p class="MsoNormal">&nbsp;</p><p class="MsoNormal">&nbsp;</p>
+                        <p class="p-tit2"><a name="4"><span class="hide">～～</span>～～．瑛瑤之澤．～～<span class="hide">～～</span></a></p>
+                        <div class="mid"><a name="4-1"><img src="fd-2/瑛瑤之澤.png" alt="瑛瑤" width="80%"></a></div>
+                        <p class="Mso-con">&nbsp;</p>
+                        <p class="Mso-con">．自動．</p>
+                        <p class="MsoNormal">【瑛瑤8】<br>&emsp;&emsp;畢羅(青白玉)、單體、單體、月餅>吉利蝦</br>==> 龍鳳配(疊血)、年年有餘(填漆)、牛肉(命中)、臘味(命中)</p>
+                        <p class="Mso-con">一位抗上限傷害。</p>
+                        <p class="MsoNormal">&nbsp;</p><p class="MsoNormal">&nbsp;</p>
+                        <p class="p-tit2"><a name="5"><span class="hide">～～</span>～～．值日．～～<span class="hide">～～</span></a></p>
                         <p class="MsoNormal mid" style="color: rgb(187, 52, 3);">一律掛機，沒特別說明一律5張全選。</p>
                         <p class="MsoNormal mid" style="color: rgb(187, 52, 3);">第一回合龍珠被暈眩or第二回合青團被暈眩 ==> 退掉重來。</p>
                         <p class="MsoNormal mid" style="color: rgb(82, 4, 4);">確保按自動後，點擊鎖定Boss打(除了醉酒鎖定歪了不算)。</p>
-                        <div class="mid"><img src="fd-2/辣條.jpg" alt="辣條" width="80%"></div>
+                        <div class="mid"><a name="5-1"><img src="fd-2/辣條.jpg" alt="辣條" width="80%"></a></div>
                         <p class="Mso-con">&nbsp;</p>
                         <p class="Mso-con">．被動多次攻擊．</p>
                         <p class="MsoNormal">【辣條】<br>&emsp;&emsp;青團、香腰(攻擊套)、阿符(命中/攻擊套)、龍珠>國主</p>
                         <p class="Mso-con">醉酒阿符2技打歪了就算了。</p>
                         <p class="MsoNormal">&nbsp;</p><p class="MsoNormal">&nbsp;</p>
-                        <div class="mid"><img src="" alt="" width="80%"></div>
+                        <div class="mid"><a name="5-2"><img src="" alt="" width="80%"></a></div>
                         <p class="Mso-con">&nbsp;</p>
                         <p class="Mso-con">．附毒、暈眩．</p>
                         <p class="MsoNormal">【毒蘑菇】<br>&emsp;&emsp;青團(抵抗)、香腰(攻擊套)、龍井、龍珠>國主</p> 
                         <p class="Mso-con">第一回合龍珠被暈眩or第二回合青團被暈眩 ==> 退掉重來。</p>
                         <p class="MsoNormal">&nbsp;</p><p class="MsoNormal">&nbsp;</p>
-                        <div class="mid"><img src="" alt="" width="80%"></div>
+                        <div class="mid"><a name="5-3"><img src="" alt="" width="80%"></a></div>
                         <p class="Mso-con">&nbsp;</p>
                         <p class="Mso-con">．爆擊時冷卻清零．</p>
                         <p class="Mso-con" style="color: darkred;">**第1回合自動，第2回合取消自動。2回合結束戰鬥**</p>
                         <p class="MsoNormal">【餓殍鬼】<br>&emsp;&emsp;青團(抵抗、青白玉)、香腰(攻擊套)、金玉滿堂(酸枝木)、龍珠>國主</p> 
                         <p class="Mso-con">(自動會變成守護)第二回香腰手動3技攻擊。第二回合合金玉滿堂若沒有爆擊觸發*多次攻擊(下一個龍珠一擊幹不掉或剩太多血)時 ==> 退掉重來。</p>
                         <p class="MsoNormal">&nbsp;</p><p class="MsoNormal">&nbsp;</p>
-                        <div class="mid"><img src="" alt="" width="80%"></div>
+                        <div class="mid"><a name="5-4"><img src="" alt="" width="80%"></a></div>
                         <p class="Mso-con">&nbsp;</p>
                         <p class="Mso-con">．爆炸魷魚、復活、自己回血．</p>
                         <p class="MsoNormal">【魚腥蟹】<br>&emsp;&emsp;青團(抵抗、青白玉)、香腰(攻擊套)、鬼城、龍珠</p> 
                         <p class="Mso-con">確保按自動後，點擊鎖定Boss打。鬼城大招禁療一定要打在Boss身上，第一次沒打到 ==> 退掉重來。</p>
                         <p class="MsoNormal">&nbsp;</p><p class="MsoNormal">&nbsp;</p>
-                        <div class="mid"><img src="" alt="" width="80%"></div>
+                        <div class="mid"><a name="5-5"><img src="fd-2/糖果.png" alt="糖果" width="80%"></a></div>
                         <p class="Mso-con">&nbsp;</p>
                         <p class="Mso-con">．血防禦爆厚，有4回合死一隻我方的卡片不要選．</p>
                         <p class="MsoNormal">【糖果】<br>&emsp;&emsp;青團(抵抗)、香腰(攻擊套)、吉利蝦(瑪瑙、抵抗、堆血)、龍珠/國主</p>
                         <p class="Mso-con">沒有別的方法，土法煉鋼，在規定回合內打過就好。打不過就再少幾張牌，先少暈眩。</p> 
                         <p class="MsoNormal">&nbsp;</p><p class="MsoNormal">&nbsp;</p>
-                        <p class="p-tit2"><span class="hide">～～</span>～～．週末王．～～<span class="hide">～～</span></p>
-                        <div class="mid"><img src="fd-2/天狗.png" alt="天狗" width="80%"></div>
+                        <p class="p-tit2"><a name="6"><span class="hide">～～</span>～～．週末王．～～<span class="hide">～～</span></a></p>
+                        <div class="mid"><a name="6-1"><img src="fd-2/天狗.png" alt="天狗" width="80%"></a></div>
                         <p class="Mso-con">&nbsp;</p>
                         <p class="MsoNormal">【天狗】<br>&emsp;&emsp;擔仔麵(填漆)、香腰(撐血量[瑪瑙.主套酸枝木.釉裡紅])、6花羅響/國主1位、飛龍(彩陶)/6花八寶</p>
                         <p class="Mso-con">==> 活越久越好，單體有大就放，開局擔仔麵2技、香腰開大守護兩回合，第三回合擔仔麵3技給香腰、香腰2技轉連續守護。**擔仔麵3技綁定香腰2技**香腰必須整場守護，沒有守護就等死了。</p>
                         <p class="MsoNormal">&nbsp;</p><p class="MsoNormal">&nbsp;</p>
-                        <div class="mid"><img src="fd-2/機關兔.jpg" alt="機關兔" width="80%"></div>
+                        <div class="mid"><a name="6-2"><img src="fd-2/機關兔.jpg" alt="機關兔" width="80%"></a></div>
                         <p class="Mso-con">&nbsp;</p>
                         <p class="MsoNormal">【機關兔】<br>&emsp;&emsp;小鱖魚(命中)、香腰(撐血量[第2套酸枝木酒器])、東璧/國主1位、飛龍/國主1位<br><span style="margin: 0px; font-size: 16px;">其他隊 ==> 見排行榜上誰放什麼就放什麼。</span></p>                              
                         <p class="Mso-con">==> 第一回合小鱖魚不要放2技、香腰3技、龍珠2技，之後開自動</p>
                         <p class="MsoNormal">&nbsp;</p><p class="MsoNormal">&nbsp;</p>
-                        <div class="mid"><img src="fd-2/樓蘭騎兵.png" alt="樓蘭王" width="80%"></div>
+                        <div class="mid"><a name="6-3"><img src="fd-2/樓蘭騎兵.png" alt="樓蘭王" width="80%"></a></div>
                         <p class="Mso-con">&nbsp;</p>
                         <p class="MsoNormal">【樓蘭王】<br>&emsp;&emsp;阿喻(攻擊套)、龍井(酸枝木)、飛龍(彩陶)、吉利蝦(攻擊套)<br>==> 阿符(攻擊套，沒3花命中)、芋泥(命中)、單體、吉利蝦</p>
                         <p class="Mso-con">==> 開局龍井2技、吉利蝦2技金身第一位，之後單體有招就放、王大招(3技)前吉利蝦2技金身第一位，然後王4技配合阿喻3技[王4技開盾要驅散掉]，龍井2技有招就放*只要留3技清小怪即可(配合王的2技)。</p>
                         <p class="Mso-con">&nbsp;</p>
                         <p class="Mso-con">==> 開局阿符普攻、芋泥3技、吉利蝦2技金身第一位，之後單體有招就放、王大招(3技)前吉利蝦2技金身第一位，然後王4技配合阿符跟芋泥的2技[王4技開盾要驅散掉]。</p>
                         <p class="MsoNormal">&nbsp;</p><p class="MsoNormal">&nbsp;</p>
-                        
+                        <div class="mid"><a name="6-4"><img src="" alt="蘇青" width="80%"></a></div>
                         <p class="Mso-con">&nbsp;</p>
                         <p class="MsoNormal">【蘇青】<br>&emsp;&emsp;畢羅(青白)、龍鳳配、羅響(酸枝木)、烤乳豬(酸枝木)</p>
                         <p class="Mso-con">==> 第一回合全隊普攻[召喚小怪攻擊1位]，第二回合羅響2技保龍鳳配不死、烤乳豬3技後光榮退位[小怪攻擊全隊]，第三回合畢羅可開第一次大、龍鳳配2技平均血量、羅響開大[小怪攻擊1位後死亡]，第四回合後畢羅二次開大完後留到第十三回合吸血(不留60%機率會死在14回)。</p>
                         <p class="MsoNormal">&nbsp;</p><p class="MsoNormal">&nbsp;</p>
-                        
+                        <div class="mid"><a name="6-5"><img src="" alt="黑白無常" width="80%"></a></div>
                         <p class="Mso-con">&nbsp;</p>
                         <p class="MsoNormal">【黑白無常】<br>&emsp;&emsp;</p>
                         <p class="Mso-con"></p>

@@ -50,7 +50,10 @@ p {
     word-wrap: break-all;
     word-break: normal;     /*亞洲語言及非亞洲語言的文字斷行規則來進行換行*/
 }
-
+button {
+    background: rgba(192, 235, 195, 0.74);
+    border: none;
+}
 .mid {
     float: left;
     width: 100%;
@@ -88,7 +91,34 @@ p {
     font-size: 25px;
     font-family: DFkai-sb, Microsoft JhengHei, sans-serif;
 }
-
+.menu-sty {
+    position: fixed;
+    z-index: 15;
+    top: 20px;
+    padding-left: 10px;
+    height: 400px;
+    overflow-y: scroll;
+    font-size: 15px;
+    line-height: 25px;
+    color: rgb(43, 83, 5);
+    background-color: rgba(255, 255, 255, 0.589);
+}
+.menu-sty a:link, .menu-sty a:visited{
+    color: rgb(185, 63, 26);     /*超連結字體顏色*/
+    text-decoration: none       /*none ←加這句 去除連結底線*/
+}
+.menu-sty a:hover {
+    color: rgb(121, 34, 8);
+    background-color: rgb(255, 188, 4);
+}
+.aside-menu a:link, .aside-menu a:visited {
+    color: rgb(185, 63, 26);     /*超連結字體顏色*/
+    text-decoration: none       /*none ←加這句 去除連結底線*/
+}
+.aside-menu a:hover {
+    color: rgb(121, 34, 8);
+    background-color: rgb(255, 188, 4);
+}
 /*重要!!撐開wrap*/
 .h-top {
     height: 100px;

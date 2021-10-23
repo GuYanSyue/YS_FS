@@ -1,0 +1,89 @@
+* {
+    box-sizing: border-box;
+  }
+  @mixin pc {
+    @media (max-width: 1024px) {
+      @content;
+    }
+  }
+  @mixin pad {
+    @media (max-width: 768px) {
+      @content;
+    }
+  }
+  @mixin phone {
+    @media (max-width: 375px) {
+      @content;
+    }
+  }
+
+  $font-m: 16px;
+  $font-l: $font-m * 1.5;
+  $font-s: $font-m * 0.8;
+  $primary-color:#001b4e;
+
+  .mobile_close,
+  .mobile_open {     
+      display: inline-block;
+      color: $primary-color;
+  }
+
+  .mobile_open {
+    display: none;      // 在 pc 時 按鈕 隱藏
+    position: fixed;
+    z-index: 90;
+    transition: all 0.5s;  
+    
+    @include pad {          
+      display: inline-block;    // 在 pad 時 按鈕 顯示
+    }
+  }
+  #m-open {         // 按鈕設定
+    top: 100px;
+    left: 0;
+  }
+
+  .fas {
+    padding: 1em;
+  }
+
+  .aside {
+    display: none;      // 在 pc 時隱藏
+    position: fixed;
+    z-index: 90;  
+    top: 100px;
+    transform: translateX(-192px);
+    // 在 PC 顯示下，往左邊推擠到 container 外
+    width: 192px;
+    height: 300px;
+    overflow-y: scroll;
+    line-height: 25px;
+    background: rgba(192, 235, 195, 0.74);
+    
+    @include pad {
+        display: inline-block;  // 在 pad 時顯示
+        transition: all 0.5s;   // 動畫
+    }
+  }
+
+    @include pad {
+      .music-sty, .menu-sty {
+          display: none;
+          // 在 pad 時隱藏
+      }
+    }
+  
+
+  // 透過 jQuery 增加 class open 觸發選單
+  .open {
+    #m-open {
+        transform: translateX(192px);
+        // 當觸發 .open 時， aside 會打開
+        transition: all 0.5s;
+    }
+    .aside {
+        transform: translateX(0);
+        // 當觸發 .open 時， aside 會打開
+        transition: all 0.5s;
+    }
+  }

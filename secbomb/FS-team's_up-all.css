@@ -58,8 +58,8 @@
   position: fixed;
   bottom: 0px;
   z-index: 100;
-  -webkit-transform: translateX(-300px);
-          transform: translateX(-300px);
+  -webkit-transform: translateX(-450px);
+          transform: translateX(-450px);
 }
 
 @media (max-width: 768px) {

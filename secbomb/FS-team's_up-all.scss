@@ -55,11 +55,23 @@
     transform: translateX(-192px);
     // 在 PC 顯示下，往左邊推擠到 container 外
     width: 192px;
-    height: 300px;
-    overflow-y: scroll;
+    height: 45%;
     line-height: 25px;
-    background: rgba(192, 235, 195, 0.74);
+    background: rgba(169, 201, 170, 0.74);
     
+    @include pad {
+        display: inline-block;  // 在 pad 時顯示
+        transition: all 0.5s;   // 動畫
+    }
+  }
+  .aside-girl {
+    display: none;      // 在 pc 時隱藏
+    position: fixed;
+    bottom: 0px;
+    z-index: 100;  
+    transform: translateX(-300px);
+    // 在 PC 顯示下，往左邊推擠到 container 外
+
     @include pad {
         display: inline-block;  // 在 pad 時顯示
         transition: all 0.5s;   // 動畫
@@ -83,6 +95,11 @@
     }
     .aside {
         transform: translateX(0);
+        // 當觸發 .open 時， aside 會打開
+        transition: all 0.5s;
+    }
+    .aside-girl {
+        transform: translateX(100px);
         // 當觸發 .open 時， aside 會打開
         transition: all 0.5s;
     }

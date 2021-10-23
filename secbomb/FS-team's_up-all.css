@@ -40,14 +40,30 @@
   -webkit-transform: translateX(-192px);
           transform: translateX(-192px);
   width: 192px;
-  height: 300px;
-  overflow-y: scroll;
+  height: 45%;
   line-height: 25px;
-  background: rgba(192, 235, 195, 0.74);
+  background: rgba(169, 201, 170, 0.74);
 }
 
 @media (max-width: 768px) {
   .aside {
+    display: inline-block;
+    -webkit-transition: all 0.5s;
+    transition: all 0.5s;
+  }
+}
+
+.aside-girl {
+  display: none;
+  position: fixed;
+  bottom: 0px;
+  z-index: 100;
+  -webkit-transform: translateX(-300px);
+          transform: translateX(-300px);
+}
+
+@media (max-width: 768px) {
+  .aside-girl {
     display: inline-block;
     -webkit-transition: all 0.5s;
     transition: all 0.5s;
@@ -70,6 +86,13 @@
 .open .aside {
   -webkit-transform: translateX(0);
           transform: translateX(0);
+  -webkit-transition: all 0.5s;
+  transition: all 0.5s;
+}
+
+.open .aside-girl {
+  -webkit-transform: translateX(100px);
+          transform: translateX(100px);
   -webkit-transition: all 0.5s;
   transition: all 0.5s;
 }

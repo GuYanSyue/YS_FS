@@ -51,7 +51,7 @@ p {
     word-break: normal;     /*亞洲語言及非亞洲語言的文字斷行規則來進行換行*/
 }
 button {
-    background: rgba(192, 235, 195, 0.74);
+    background: rgba(169, 201, 170, 0.74);
     border: none;
 }
 .mid {
@@ -101,7 +101,7 @@ button {
     font-size: 15px;
     line-height: 25px;
     color: rgb(43, 83, 5);
-    background-color: rgba(255, 255, 255, 0.589);
+    background: rgba(169, 201, 170, 0.74);
 }
 .menu-sty a:link, .menu-sty a:visited{
     color: rgb(185, 63, 26);     /*超連結字體顏色*/
@@ -110,6 +110,19 @@ button {
 .menu-sty a:hover {
     color: rgb(121, 34, 8);
     background-color: rgb(255, 188, 4);
+}
+#gotop a:link, #gotop a:visited {
+    color: darkred;    /*超連結字體顏色*/
+    text-decoration: none       /*none ←加這句 去除連結底線*/
+}
+#gotop a:hover {
+    color: rgb(255, 188, 4);
+    background-color: rgb(116, 7, 7);
+}
+.aside-menu {
+    width: 100%;
+    height: 70%;
+    overflow-y: scroll;
 }
 .aside-menu a:link, .aside-menu a:visited {
     color: rgb(185, 63, 26);     /*超連結字體顏色*/

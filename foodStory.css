@@ -451,5 +451,10 @@ p {
 .Mso-con {
     line-height: 20px;
     font-size: 0.16rem;
-    color: #d1521f;
+    color: #ca4e1d;
+}
+.Mso-con2 {
+    line-height: 18px;
+    font-size: 0.14rem;
+    color: #258568;
 }

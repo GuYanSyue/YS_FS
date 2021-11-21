@@ -150,7 +150,7 @@ html {
 }
 a:link, a:visited, a:hover {
     text-decoration: none;       /*none ←加這句 去除連結底線*/
-    color: rgb(76, 128, 129);
+    color: rgb(58, 105, 107);
 }
 
 .renew {

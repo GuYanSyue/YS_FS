@@ -348,6 +348,7 @@ button {
     position: relative;
     margin-top: 20px;
     /*padding: 30px;*/
+    width: 100%;    /*不可缺*/
     line-height: 0.36rem;  /*所有間距*/
     font-size: 18px;
     box-shadow: 2px 2px 2px gray;

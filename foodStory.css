@@ -155,7 +155,7 @@ a:link, a:visited, a:hover {
 
 .renew {
     position: fixed;
-    z-index: 5;
+    z-index: 3;
     bottom: 1rem;
     padding-left: 10px;
     padding-right: 10px;

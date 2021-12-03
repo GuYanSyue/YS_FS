@@ -97,7 +97,7 @@ body {
     width: 120px;
     height: 40px;
     padding-top: 10px;
-    margin: 0px 0px 8px 8px;   
+    margin: 0px 8px 0px 8px;   
     border: solid 3px;
     border-radius: 12px;
     border-color: rgb(245, 165, 18);
@@ -114,6 +114,17 @@ body {
 .index-block a:hover {
     color: rgb(247, 197, 137);     /*滑鼠停在超連結中文字的顏色*/
     background-color: rgb(60, 92, 23);   /*滑鼠停留在超連結中文字的底色*/
+    text-decoration: none;      /*none ←加這句 去除連結底線*/
+}
+.right-side a:link, .right-side a:visited {
+    color: rgb(5, 59, 46);    /*超連結字體顏色*/
+    text-decoration: none       /*none ←加這句 去除連結底線*/
+}
+.right-side a:hover {
+    color: rgb(255, 188, 4);        /*滑鼠停在超連結中文字的顏色*/
+    background-color: rgb(116, 7, 7);       /*滑鼠停留在超連結中文字的底色*/
+    padding-top: 5px;
+    padding-bottom: 5px;
     text-decoration: none;      /*none ←加這句 去除連結底線*/
 }
 
@@ -210,6 +221,8 @@ a, a:link, a:visited {
 a:hover {
     color: rgb(0, 41, 155);     /*滑鼠停在超連結中文字的顏色*/
     background-color: #f8d2ab;  /*滑鼠停留在超連結中文字的底色*/
+    padding-top: 5px;
+    padding-bottom: 5px;
     text-decoration: none;      /*none ←加這句 去除連結底線*/
 }
 .p-tit2 {
@@ -276,6 +289,7 @@ a:hover {
     z-index: 2;
     width: 225px;
     height: 600px;
+    overflow-y: scroll;
     background-color: rgb(255, 226, 237);
 }
 .r-MsoNormal {

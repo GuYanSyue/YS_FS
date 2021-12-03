@@ -284,6 +284,20 @@ button {
     background-color: #c1f8ab;  /*滑鼠停留在超連結中文字的底色*/
     text-decoration: none;      /*none ←加這句 去除連結底線*/
 }
+#block_word a:hover {
+    color: rgb(255, 188, 4);        /*滑鼠停在超連結中文字的顏色*/
+    background-color: rgb(116, 7, 7);       /*滑鼠停留在超連結中文字的底色*/
+    padding-top: 5px;
+    padding-bottom: 5px;
+}
+.block {
+    height: 500px;
+    overflow-y: scroll;
+    box-shadow: 1px 1px 2px 2px gray;
+    margin-left: 3px;
+    margin-right: 3px;
+}
+
 .wrap {
     position: relative;
     margin: 0 auto;     /*重要區塊置中*/

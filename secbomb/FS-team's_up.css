@@ -127,8 +127,8 @@ button {
     text-decoration: none       /*none ←加這句 去除連結底線*/
 }
 #gotop a:hover {
-    color: rgb(255, 188, 4);
-    background-color: rgb(116, 7, 7);
+    color: rgb(255, 188, 4);        /*滑鼠停在超連結中文字的顏色*/
+    background-color: rgb(116, 7, 7);       /*滑鼠停留在超連結中文字的底色*/
 }
 .aside-menu {
     float: left;

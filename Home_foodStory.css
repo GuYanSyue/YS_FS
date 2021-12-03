@@ -86,6 +86,38 @@ body {
     background-color: #eec780e8;  /*滑鼠停留在超連結中文字的底色*/
     text-decoration: none;      /*none ←加這句 去除連結底線*/
 }
+.index-block{
+    position: relative;
+    display: inline-block;
+    margin-top: 20px;
+}
+.ib-index{
+    float: left;
+    display: inline;
+    width: 120px;
+    height: 40px;
+    padding-top: 10px;
+    margin: 0px 0px 8px 8px;   
+    border: solid 3px;
+    border-radius: 12px;
+    border-color: rgb(245, 165, 18);
+    background-color: rgba(243, 190, 125, 0.699);
+    box-shadow: 2px 2px 2px darkslategrey;
+    text-align: center;
+    font-size: 20px;
+    font-family: DFkai-sb, sans-serif;
+}
+.index-block a:link, .index-block a:visited {
+    color: rgb(5, 59, 46);    /*超連結字體顏色*/
+    text-decoration: none       /*none ←加這句 去除連結底線*/
+}
+.index-block a:hover {
+    color: rgb(247, 197, 137);     /*滑鼠停在超連結中文字的顏色*/
+    background-color: rgb(60, 92, 23);   /*滑鼠停留在超連結中文字的底色*/
+    text-decoration: none;      /*none ←加這句 去除連結底線*/
+}
+
+
 /*從 a-container 分離*/
 .wrap {
     position: relative;

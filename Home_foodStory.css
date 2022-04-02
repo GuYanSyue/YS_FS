@@ -4,6 +4,7 @@
     }
     .p-con {
         font-size: 14px;
+        font-weight: lighter;
     }
 }
 @media only screen and (min-width: 481px) {

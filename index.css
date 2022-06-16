@@ -85,6 +85,7 @@ p {
 .left-side {
     /*margin-left: 180px;
     margin-right: 300px;*/
+    /*max-height: 1200px;*/
     max-width: 760px;
     padding: 0;
     background-color: rgb(171, 171, 228);
@@ -95,7 +96,7 @@ p {
     margin: 0 auto;
     width: 100%;
     line-height: 25px;
-    height: 800px;
+    height: auto;
     box-shadow: 2px 2px 2px gray;
     background-color:#ffff;
 }
@@ -141,3 +142,36 @@ p {
     background-color: #ffff;
 }
 
+/*-------------------------------------*/
+.MsoNormal {
+    float: left;
+    width: 100%;
+    /*margin: 5px;*/  /*不會有反應除非比.detail-div p裡還大*/
+    line-height: 20px;
+    font-size: 18px;
+}
+.p-tit1 {
+    float: left;
+    width: 100%;
+    text-align: center;
+    padding-top: 30px;
+    padding-bottom: 30px;
+    line-height: 36px;
+    font-size: 25px;
+    color: darkblue;
+}
+.p-tit2 {
+    float: left;
+    width: 100%;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    font-size: 18px;
+    color: rgb(0, 41, 155);
+}
+.p-con {
+    float: left;
+    margin-bottom: 10px;
+    line-height: 20px;
+    font-size: 16px;
+    color: rgb(0, 84, 163);
+}

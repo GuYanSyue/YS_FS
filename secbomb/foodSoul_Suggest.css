@@ -1,0 +1,182 @@
+@media only screen and (max-width: 480px) {
+    .hide {
+        display: none;
+    }
+    #fd-girl {
+        min-width: 100%;
+    }
+}
+@media only screen and (min-width: 481px) {
+    .show {
+        display: none;
+    }
+}
+@media only screen and (max-width: 768px) {
+    .btn-index {
+        margin-left: 0px;
+        width: 115px;
+    }
+    .detail-div {
+        min-width: 280px;
+        /*水藍色區塊*/
+        padding: 15px;
+    }
+    #fd-girl {
+        width: 70%;
+    }
+}
+@media only screen and (min-width: 769px) {
+    .btn-index {
+        margin-left: 50px;
+        width: 150px;
+    }
+    .detail-div {
+        padding: 30px;
+    }
+}
+div {
+    display: block;
+}
+html {
+    font-size: 16px;
+}
+*{
+    margin: 0;
+    padding: 0;
+}
+p {
+    display: block;
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+}
+.detail-div p{
+    margin: 5px 0;      /*上下5 左右0*/
+    word-wrap: break-all;
+    word-break: normal;     /*亞洲語言及非亞洲語言的文字斷行規則來進行換行*/
+}
+button {
+    background: rgba(169, 201, 170, 0.74);
+    border: none;
+}
+.mid {
+    float: left;
+    width: 100%;
+    text-align: center;
+}
+.header {
+    /*overflow: hidden;*/
+    text-align: center;
+    height: 80px;
+    line-height: 80px; 
+    background-color:#8cc9bc;
+    border-bottom: 3px solid #dbe678;
+}
+.nav {
+    position: relative;
+    display: inline-block;
+    height: 80px;
+}
+.nav a:link, .nav a:visited {
+    color: rgb(223, 236, 255);     /*超連結字體顏色*/
+    text-decoration: none       /*none ←加這句 去除連結底線*/
+}
+.nav a:hover {
+    color: rgb(11, 110, 150);     /*滑鼠停在超連結中文字的顏色*/
+    background-color: #abf8db;  /*滑鼠停留在超連結中文字的底色*/
+    text-decoration: none;      /*none ←加這句 去除連結底線*/
+}
+.btn-index {
+    float: left;
+    display: inline;  
+    /*margin-left: 50px;*/
+    text-align: center;
+    /*width: 150px;*/
+    height: 80px;
+    font-size: 25px;
+    font-family: DFkai-sb, Microsoft JhengHei, sans-serif;
+}
+#gotop a:link, #gotop a:visited {
+    color: darkred;    /*超連結字體顏色*/
+    text-decoration: none       /*none ←加這句 去除連結底線*/
+}
+#gotop a:hover {
+    color: rgb(255, 188, 4);        /*滑鼠停在超連結中文字的顏色*/
+    background-color: rgb(116, 7, 7);       /*滑鼠停留在超連結中文字的底色*/
+}
+/*重要!!撐開wrap*/
+.h-top {
+    height: 100px;
+}
+
+/*----------------------------------------------------------------*/
+.a-container {
+    overflow: hidden;
+    height: auto !important;
+    font-family: DFkai-sb, Microsoft JhengHei, sans-serif;
+    background-color: rgb(148, 180, 176);
+}
+/*從 a-container 分離*/
+.wrap {
+    position: relative;
+    max-width: 800px;      /*不能刪*/
+    margin: 0 auto;     /*重要div置中*/
+    background-color: rgb(143, 188, 143);
+}
+.left-side {
+    position: relative;     /*未來*/
+    float: left;        /*不可刪，刪了沒作用*/
+    width: 100%;
+    margin-bottom: 50px;
+    background-color: rgb(175, 175, 228);
+}
+.detail-div {
+    float: left;
+    margin-top: 20px;   /*擠出紫色*/
+    color: #792e10;
+    box-shadow: 2px 2px 2px gray;
+    background-color:#bae0f8;
+}
+.container{
+    overflow: hidden;   /*重要!!不可刪*/
+    padding-bottom: 40px;
+    width: 100%;    
+    font-size: 18px; 
+    background-color: rgba(255, 255, 255, 0.904);
+}
+
+.p-tit1 {
+    float: left;
+    width: 100%;
+    text-align: center;
+    padding-top: 30px;
+    padding-bottom: 30px;
+    line-height: 36px;
+    font-size: 28px;
+    color: rgb(9, 75, 61);
+}
+.p-tit2 {
+    float: left;
+    width: 100%;
+    text-align: center;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    line-height: 30px;
+    font-size: 25px;
+    color: rgb(16, 82, 3);
+}
+.MsoNormal {
+    float: left;
+    width: 100%;
+    font-size: 18px;
+    line-height: 22px;
+    color: rgb(41, 92, 35);
+}
+.Mso-con {
+    float: left;
+    width: 100%;
+    line-height: 20px;
+    font-size: 16px;
+    color: rgb(194, 74, 4);
+}

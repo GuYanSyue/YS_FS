@@ -1,4 +1,8 @@
 @media only screen and (max-width: 480px) {
+    /*重要!!撐開wrap*/
+    .h-top {
+        min-height: 150px;
+    }
     .hide {
         display: none;
     }
@@ -99,9 +103,9 @@ body {
     float: left;
     display: inline;
     width: 120px;
-    height: 40px;
+    height: 35px;
     padding-top: 10px;
-    margin: 0px 8px 0px 8px;   
+    margin: 8px 8px 0px 8px;   
     border: solid 3px;
     border-radius: 12px;
     border-color: rgb(245, 165, 18);

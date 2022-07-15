@@ -169,14 +169,19 @@ button {
 .MsoNormal {
     float: left;
     width: 100%;
-    font-size: 18px;
     line-height: 22px;
-    color: rgb(41, 92, 35);
+    font-size: 18px;
+    color: rgb(52, 80, 36);
 }
 .Mso-con {
     float: left;
     width: 100%;
-    line-height: 20px;
+    line-height: 18px;
     font-size: 16px;
-    color: rgb(194, 74, 4);
+    color: rgb(12, 136, 136);
+}
+.enter-line {
+    float: left;
+    width: 100%;
+    font-size: 32px;
 }
